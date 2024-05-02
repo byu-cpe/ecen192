@@ -1,0 +1,100 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "ECEn 192: ???"
+class_name: ???
+class_number: ECEn 192
+email: lundrigan@byu.edu
+description:
+baseurl: "/ecen192" # the subpath of your site, e.g. /blog
+host: localhost
+url: "https://byu-cpe.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-target-blank
+  - jekyll-sitemap
+
+# Turn on the button to allow students to submit PRs to change a page
+suggest_edits:
+  enable: true
+  link: https://github.com/byu-cpe/ecen192/issues/new
+
+# Set the color theme of the page
+colors:
+  text_color: "#111"
+  frame_color: "rgb(248, 249, 250)"
+  background_color: "#fdfdfd"
+  brand_color: "#66cce8"
+  secondary_color: "#cb8ebe"
+  text_selection_color: "#cce3a7"
+  sidebar_hover_color: "#ef8eb1"
+
+  # text_color: "#fff"
+
+  # background_color: "#222"
+  # brand_color: "#60B3BE"
+  # secondary_color: "#52439B"
+  # text_selection_color: "#FEF081"
+  # sidebar_hover_color: "#7D5FA9"
+
+# Set the fonts
+fonts:
+  base: "'arboria', sans-serif"
+  header: "'arboria', sans-serif"
+
+collections:
+  labs:
+    output: true
+    permalink: /:collection/:title/
+    sort_by: number
+  pages:
+    output: true
+    permalink: /:name/
+    order:
+      - overview.md
+      - resources.md
+      - coding_standard.md
+      - lab_setup.md
+      - craftsmanship.md
+      - ta_hours.md
+      - help_queue.md
+      - schedule.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "labs"
+    values:
+      layout: "lab"
+      toc: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Makefile
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - docker-compose.yml
+  - _site/
