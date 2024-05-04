@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-number: 1
+title: Component Exploration
+number: 3
 layout: lab
 ---
 
