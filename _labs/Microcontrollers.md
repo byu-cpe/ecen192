@@ -4,16 +4,14 @@ number: 5
 layout: lab
 ---
 
-## Objectives
+## Overview
 
-[Put objectives here]
+## Background/Preparation
 
-[Put lab content here]
+## Equipment and Materials
 
-## Submission
+## Procedure
 
-[Put submission instructions here]
+## Post-Lab Work
 
-## Explore More!
-
-[Put additional resources here]
+## Rubric/Submission
