@@ -10,8 +10,8 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 <img src="{% link /assets/Y-Badge_Intro/Y-Board.jpg %}" width="300"/>
 
 ## Background/Preparation
-- You should have finished the previous lab for a software and coding intro.
-- You should have the student code cloned from github open in VS Code.
+- You should have finished the previous lab for a software, github, and coding intro.
+- You should have the student code cloned from github open in VS Code (found here: [student code](https://github.com/byu-cpe/ecen192_student)). You may want to make a fork of the repository.
 
 
 ## Equipment and Materials
@@ -31,28 +31,44 @@ Go to the main.cpp file to uncomment the function labeled `Y_Badge_Intro()` and 
 ### Functions
 The function to set an LED looks like this:
 
-`leds_set_color(<LED number>, <red>, <green>, <blue>);` 
+`Yboard.set_led_color(<LED number>, <red>, <green>, <blue>);` 
 
 - The `<LED number>` can be any value from 1 to 20.
 - The red, green, and blue values represent the brightness of that color and can be any value from 0 to 255.
 
-`leds_set_brightness(<brightness>);`
+`Yboard.set_led_brightness(<brightness>);`
 - The brightness is specified as an integer between 0 (off) and 255 (full brightness).
 
-### Turn on an LED
-To make LED3 display bright red, you should use this statement in your code (don’t forget to add the semicolon):
+You can also turn on all LEDs the same color with this line:
 
-`leds_set_color(3, 255, 0, 0);`
+`Yboard.set_all_leds_color(<red>, <green>, <blue>)`
 
-To make LED15 display bright yellow, you should turn on the red and green pixels to max brightness:
+### Examples
+#### Turn on an LED
+1. To make LED3 display bright red, you should use this statement in your code (don’t forget to add the semicolon):
 
-`leds_set_color(15, 255, 255, 0);`
+    `Yboard.set_led_color(3, 255, 0, 0);`
+
+2. To make LED15 display bright yellow, you should turn on the red and green pixels to max brightness:
+
+    `Yboard.set_led_color(15, 255, 255, 0);`
 
 Copy these two lines of code into the `led_exploration()` function in VS Code. Don’t forget to click “upload” in the top right corner dropdown to program your board with new code!
 
+
+3. Try putting this line of code before setting the LED colors and see what happens:
+
+    `Yboard.set_led_brightness(10);`
+
+4. If you want to turn on all LEDs white, try this line of code:
+
+    `Yboard.set_all_leds_color(255, 255, 255)`
+
+
+
 ### Challenge 1
 - Turn on at least 5 LEDs with different colors. Feel free to play around with the brightness value. Show a neighbor your LEDs.
-    - Hint: put `leds_set_brightness()` before `leds_set_color()`.
+    - Hint: make sure `Yboard.set_led_brightness()` is before `Yboard.set_led_color()`.
 
 <img src="{% link /assets/Y-Badge_Intro/led_challenge1.jpg %}" width="400"/>
 <img src="{% link /assets/Y-Badge_Intro/led_challenge2.jpg %}" width="400"/>
@@ -66,24 +82,24 @@ What if we wanted to use a while loop to make the first 10 leds blink one time e
 ```
 int currentLed = 1;
 while(currentLed <= 10) {
-    leds_set_color(currentLed, 255, 0, 0);
+    Yboard.set_led_color(currentLed, 255, 0, 0);
     delay(250);
-    leds_set_color(currentLed, 0, 0, 0);
+    Yboard.set_led_color(currentLed, 0, 0, 0);
     currentLed++;
 }
 ```
 - This loop has a loop condition that isn’t always true, because we increment the value of currentLed every time it runs using currentLed++;. We want it to run as long as currentLed <= 10 is true. Once currentLed is 11 or larger, the loop won’t run again.
 - The `delay(250)` means it will wait for 250 ms, or a quarter of a second, before turning the next LED on.
 
-Copy this code into the `loops_exploration()` function, and don't forget to change which funtion is commented out under `Y_Badge_Intro()`. Also feel free to change the number of LED or the colors. 
+Copy this code into the `loops_exploration()` function, and ___don't forget to change which funtion is commented out under `Y_Badge_Intro()`.___ Also feel free to change the number of LED or the colors. 
 
 ### For Loops
 A `for` loop to do the same thing as above looks like the following:
 ```
 for(int currentLed = 1; currentLed <= 10; currentLed++) {
-    leds_set_color(currentLed, 255, 0, 0);
+    Yboard.set_led_color(currentLed, 255, 0, 0);
     delay(250);
-    leds_set_color(currentLed, 0, 0, 0);
+    Yboard.set_led_color(currentLed, 0, 0, 0);
 }
 ```
 - Our code to make the first 10 leds blink using a `while` loop is a little clunky. Did you notice that we had to declare a variable outside of our loop called `currentLed` to keep track of our condition? And then we had to increment it inside of our loop. That’s a little confusing.
@@ -95,34 +111,23 @@ for(int currentLed = 1; currentLed <= 10; currentLed++) {
 Replace the `while` loop with the `for` loop and upload the code. You should notice that it does the same thing.
 
 ### Examples
-1. Use a loop to turn all the LEDs white
-```
-for(int currentLed = 1; currentLed <= 20; currentLed++) {
-    leds_set_color(currentLed, 255, 255, 255);
-}
-```
-- Notice that this loop goes from 1 to 20 for LED1 to LED20.
 
-2. Make all the LEDs blink. On for 500ms then off for 500ms, repeated forever.
+Make all the LEDs blink. On for 500ms then off for 500ms, repeated forever.
 ```
 while(true){
-    for(int currentLed = 1; currentLed <= 20; currentLed++) {
-        leds_set_color(currentLed, 255, 255, 255);
-    }
+    Yboard.set_all_leds_color(255, 255, 255);
     delay(500);
-    for(int currentLed = 1; currentLed <= 20; currentLed++) {
-        leds_set_color(currentLed, 0, 0, 0);
-    }
+    Yboard.set_all_leds_color(0, 0, 0);
     delay(500);
 }
 ```
 - Note that you can also nest `for` loops inside of `while` loops.
 
-Replace the previous code with this example code under the `loops_exploration` function to test it out. Feel free to change the delay time or colors of the LEDs as you wish.
+Replace the previous code with this example code under the `loops_exploration` function to test it out. Feel free to change the delay time, brightness, or colors of the LEDs as you wish.
 
 ### Challenge 2
 - Make a single LED circle the board continueously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
-    - Hint: use the code from the For Loops section as a base
+    - Hint: use the code from the For Loops section as a base and make it loop forever
 
 <img src="{% link assets/Y-Badge_Intro/LED_looping.gif%}" width="400"/>
 
@@ -130,22 +135,22 @@ Replace the previous code with this example code under the `loops_exploration` f
 ### Functions
 The function to determine if a button is pressed is:
 
-`buttons_get(<button_number>);`
+`Yboard.get_button(<button_number>);`
 
 And the function to determine if a switch is ON is:
 
-`switches_get(<switch_number>);`
+`Yboard.get_switch(<switch_number>);`
 
 Each of these functions returns `true` if the button/switch is pressed or ON, and `false` otherwise. `<button_number>` or `<switch_number>` should be the number of the button or switch whose position you want to check as an `int` (eg. 1, 2, or 3).
 
 ### What are Conditionals?
-You don't need to upload this code, so when you feel like you understand conditionals, continue to the next section and upload the example code.
+___You don't need to upload this code, so when you feel like you understand conditionals, continue to the next section and upload the example code.___
 
 We use **if statements** to evaluate **conditionals** that are `true` or `false`:
 
 ```
-if (buttons_get(1)) {
-    leds_set_color(1, 255, 0, 0);
+if (Yboard.get_button(1)) {
+    Yboard.set_led_color(1, 255, 0, 0);
 }
 ```
 - If Button1 is pressed, `buttons_get()` will return a `true`. 
@@ -154,12 +159,12 @@ if (buttons_get(1)) {
 Additionally, we can chain conditionals together using `&&` or `||`. The `&&` symbol is called a “logical AND”, and the `||` symbol is called “logical OR”. Here’s an example of using each:
 
 ```
-if(buttons_get(1) && buttons_get(2)) {
-    leds_set_color(1, 255, 0, 0);
+if(Yboard.get_button(1) && Yboard.get_button(2)) {
+    Yboard.set_led_color(1, 255, 0, 0);
 }
 
-if(switches_get(1) || switches_get(2)) {
-    leds_set_color(1, 0, 0, 255);
+if(Yboard.get_switch(1) || Yboard.get_switch(2)) {
+    Yboard.set_led_color(1, 0, 0, 255);
 }
 ```
 
@@ -167,14 +172,14 @@ if(switches_get(1) || switches_get(2)) {
 ### Examples
 We can use an `else` block to make the board do something else when the `if` block is `false`. The infinite `while(true)` loop here is very important because you want the code to *continuously check* the state of Button1.
 
-Copy this code into the `button_exploration()` function and upload it. Don't forget to change which funtion is commented out under `Y_Badge_Intro()`. Also feel free to change the buttons or LED colors. 
+Copy this code into the `button_exploration()` function and upload it. ___Don't forget to change which funtion is commented out under `Y_Badge_Intro()`.___ Also feel free to change the buttons or LED colors. 
 
 ```
 while(true) {
-    if (buttons_get(1)) {
-        leds_set_color(1, 255, 0, 0);
+    if (Yboard.get_button(1)) {
+        Yboard.set_led_color(1, 255, 0, 0);
     } else {
-        leds_set_color(1, 0, 0, 0);
+        Yboard.set_led_color(1, 0, 0, 0);
     }
 }
 ```
@@ -186,12 +191,12 @@ We can chain as many conditionals together as we want by using `else if` blocks:
 
 ```
 while (true) {
-    if (buttons_get(1) && buttons_get(2)) {
-        leds_set_color(1, 255, 0, 0);
-    } else if (buttons_get(2) && buttons_get(3)) {
-        leds_set_color(1, 255, 255, 0);
+    if (Yboard.get_button(1) && Yboard.get_button(2)) {
+        Yboard.set_led_color(1, 255, 0, 0);
+    } else if (Yboard.get_button(1) || Yboard.get_button(2)) {
+        Yboard.set_led_color(1, 255, 255, 0);
     } else {
-        leds_set_color(1, 0, 0, 0);
+        Yboard.set_led_color(1, 0, 0, 0);
     }
 }
 ```
@@ -200,13 +205,13 @@ Replace the previous example with this code and upload it.
 Let’s try one final example using a switch instead of a button:
 ```
 while (true) {
-    if(switches_get(2)) {
-        while(switches_get(2)) {
-            leds_set_color(1, 255, 0, 0);
+    if(Yboard.get_switch(1)) {
+        while(Yboard.get_switch(1)) {
+            Yboard.set_led_color(1, 255, 0, 0);
         }
     } else {
-        while(switches_get(2) == false) {
-            leds_set_color(1, 0, 0, 0);
+        while(Yboard.get_switch(1) == false) {
+            Yboard.set_led_color(1, 0, 0, 0);
         }
     }
 }
@@ -217,9 +222,9 @@ Once more, replace the previous example with this code and upload it, and change
 
 ### Challenge 3
 - Use multiple buttons and/or switches and their combinations to turn on different LEDs. Turn on at least 3 LEDs. Show a neighbor what you chose to do.
-    - Hint: use 3 separate if/else statements
+    - Hint: you will have to set or reset all three LEDs within every if/else if/else statement. 
 
-add picture here
+<img src="{% link assets/Y-Badge_Intro/buttons+switches.gif %}" width="400"/>
 
 ## Extra: Potentiometers
 <img src="{% link assets/Y-Badge_Intro/potentiometer2.jpg %}" width="200"/>
@@ -232,25 +237,30 @@ Potentiometers are a variable resistor that changes the amount of resistance in 
 ### Functions
 The function to get the position of the wiper looks like this:
 
-`knob_get()`
-- The value returned is between 0 and 100, representing the position of the knob (0 is fully clockwise, 100 is fully counter-clockwise).
+`Yboard.get_knob()`
+- The value returned is between 0 and 100, representing the position of the knob. The value is 0 when the wiper is at GND, and 100 when the wiper is at Vcc (input voltage value, meaning no resistance).
 
 ### Example
 We can set this value to a variable to be used in other places
 
-`int value = knob_get()`
+`int value = Yboard.get_knob()`
 
 This value can be used in several other places to change the brightness, color, timing, or even within conditionals and loops. For example:
 
-- `leds_set_brightness(value * 2);`
-- `leds_set_color(1, value * 2, 0, 0);`
+- `Yboard.set_led_brightness(255*value/100);`
+- `Yboard.set_led_color(1, 255*value/100, 0, 0);`
 - `delay(value)`
 - `if (value >= 50){<do something>} else {<do something else>}`
 
-Multiplying the value by 2 is not necessary, but it will make the max value be 200 instead of 100, which is good when the max brightness or color is 255.
+Multiplying the value by 255/100 is not necessary, but it will make the max value be 255 instead of 100 so that the max brightness or color can go up to 255.
 
-
-
+Try out this example under `potentiometer_exploration()`, and don't forget to uncomment this function under the main function.
+```
+while(true){
+    int value = Yboard.get_knob() * 255/100;
+    Yboard.set_all_leds_color(value, 255-value, 0);
+  }
+```
 
 ## Part 4 - Your Own Challenge
 Come up with your own challenge to combine the use of LEDs and at least two more of the following:
@@ -259,7 +269,7 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 - `for` loops
 - potentiometer. 
 
-<!-- Report your idea in your lab submission. -->
+<!-- Report your idea in your lab submission?? -->
 
 Here are some examples: 
 - Use a switch to change which direction the LED circles the board.
