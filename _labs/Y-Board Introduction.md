@@ -9,6 +9,8 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 
 <img src="{% link /assets/Y-Badge_Intro/Y-Board.jpg %}" width="300"/>
 
+<img src="../assets/Y-Badge_Intro/Y-Board.jpg" width="300"/>
+
 ## Background/Preparation
 - You should have finished the previous lab for a software, github, and coding intro.
 - You should have the student code cloned from github open in VS Code (found here: [student code](https://github.com/byu-cpe/ecen192_student)). You may want to make a fork of the repository.
@@ -22,10 +24,13 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 Go to the main.cpp file to uncomment the function labeled `Y_Badge_Intro()` and comment out any other lines. **As you go through this lab, copy the example code into the respective section on VS Code Y_Board_Intro.cpp file to explore how each part works.** Don't forget to uncomment the correct function under the `Y_Badge_Intro()` section near the top.
 
 ## Part 1 - LED Exploration
-- Each LED, labeled LED 1 to LED 20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
+- Each LED, labeled L1 to L20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
 
 <img src="{% link /assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg %}" width="300"/>
 <img src="{% link /assets/Y-Badge_Intro/rgb_led.png %}" width="400"/>
+
+<img src="../assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg" width="300"/>
+<img src="../assets/Y-Badge_Intro/rgb_led.png" width="400"/>
 
 
 ### Functions
@@ -45,11 +50,11 @@ You can also turn on all LEDs the same color with this line:
 
 ### Examples
 #### Turn on an LED
-1. To make LED3 display bright red, you should use this statement in your code (don’t forget to add the semicolon):
+1. To make L3 display bright red, you should use this statement in your code (don’t forget to add the semicolon):
 
     `Yboard.set_led_color(3, 255, 0, 0);`
 
-2. To make LED15 display bright yellow, you should turn on the red and green pixels to max brightness:
+2. To make L15 display bright yellow, you should turn on the red and green pixels to max brightness:
 
     `Yboard.set_led_color(15, 255, 255, 0);`
 
@@ -72,6 +77,9 @@ Copy these two lines of code into the `led_exploration()` function in VS Code. D
 
 <img src="{% link /assets/Y-Badge_Intro/led_challenge1.jpg %}" width="400"/>
 <img src="{% link /assets/Y-Badge_Intro/led_challenge2.jpg %}" width="400"/>
+
+<img src="../assets/Y-Badge_Intro/led_challenge1.jpg" width="400"/>
+<img src="../assets/Y-Badge_Intro/led_challenge2.jpg" width="400"/>
 
 
 ## Part 2 - Loops
@@ -121,15 +129,16 @@ while(true){
     delay(500);
 }
 ```
-- Note that you can also nest `for` loops inside of `while` loops.
 
 Replace the previous code with this example code under the `loops_exploration` function to test it out. Feel free to change the delay time, brightness, or colors of the LEDs as you wish.
 
 ### Challenge 2
 - Make a single LED circle the board continueously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
-    - Hint: use the code from the For Loops section as a base and make it loop forever
+    - Hint: use the code from the For Loops section as a base, change the number of LEDs, and make it loop forever (using `while(true)`).
 
 <img src="{% link assets/Y-Badge_Intro/LED_looping.gif%}" width="400"/>
+
+<img src="..assets/Y-Badge_Intro/LED_looping.gif" width="400"/>
 
 ## Part 3 - Buttons and Switches
 ### Functions
@@ -185,8 +194,6 @@ while(true) {
 ```
 - This code says that the LED will only be on when the button is being pressed. Otherwise, it will turn off.
 
-
-
 We can chain as many conditionals together as we want by using `else if` blocks:
 
 ```
@@ -221,18 +228,24 @@ while (true) {
 Once more, replace the previous example with this code and upload it, and change the switch number or LED colors as you wish. 
 
 ### Challenge 3
-- Use multiple buttons and/or switches and their combinations to turn on different LEDs. Turn on at least 3 LEDs. Show a neighbor what you chose to do.
-    - Hint: you will have to set or reset all three LEDs within every if/else if/else statement. 
+- Use multiple buttons and/or switches and their combinations to turn on an LED (or all LEDs) with different colors. Use at least 4 combinations. Show a neighbor what you chose to do.
+    - Hint: you will have three `else if` statements
 
 <img src="{% link assets/Y-Badge_Intro/buttons+switches.gif %}" width="400"/>
 
+<img src="..assets/Y-Badge_Intro/buttons+switches.gif" width="400"/>
+
 ## Extra: Potentiometers
 <img src="{% link assets/Y-Badge_Intro/potentiometer2.jpg %}" width="200"/>
+
+<img src="..assets/Y-Badge_Intro/potentiometer2.jpg" width="200"/>
 
 ### How they work
 Potentiometers are a variable resistor that changes the amount of resistance in a circuit depending on the position of the wiper.
 
 <img src="{% link assets/Y-Badge_Intro/Potentiometer.webp %}" width="500"/>
+
+<img src="..assets/Y-Badge_Intro/Potentiometer.webp" width="500"/>
 
 ### Functions
 The function to get the position of the wiper looks like this:
@@ -267,16 +280,14 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 - buttons
 - switches
 - `for` loops
-- potentiometer. 
+- potentiometer
 
 <!-- Report your idea in your lab submission?? -->
 
 Here are some examples: 
 - Use a switch to change which direction the LED circles the board.
 - Use a button to increment the color of all LEDs little by little from pure red to pure blue
-- Use the potentiometer to make the LEDs rotate through the colors
 - Any other combination you can think of
-
 
 
 ## Post-Lab Work
