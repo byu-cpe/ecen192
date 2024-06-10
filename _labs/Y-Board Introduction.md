@@ -9,7 +9,7 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 
 <img src="{% link /assets/Y-Badge_Intro/Y-Board.jpg %}" width="300"/>
 
-<img src="../assets/Y-Badge_Intro/Y-Board.jpg" width="300"/>
+<!-- <img src="../assets/Y-Badge_Intro/Y-Board.jpg" width="300"/> -->
 
 ## Background/Preparation
 - You should have finished the previous lab for a software, github, and coding intro.
@@ -21,16 +21,16 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 - USB-C cord
 
 # Procedure
-Go to the main.cpp file to uncomment the function labeled `Y_Badge_Intro()` and comment out any other lines. **As you go through this lab, copy the example code into the respective section on VS Code Y_Board_Intro.cpp file to explore how each part works.** Don't forget to uncomment the correct function under the `Y_Badge_Intro()` section near the top.
+Go to the main.cpp file to uncomment the function labeled `Y_Badge_Intro()` and make sure any other function is commented out. **As you go through this lab, copy the example code into the respective section on VS Code Y_Board_Intro.cpp file to explore how each part works.** Don't forget to uncomment the corresponding function under the `Y_Badge_Intro()` section near the top.
 
 ## Part 1 - LED Exploration
 - Each LED, labeled L1 to L20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
 
-<img src="{% link /assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg %}" width="300"/>
-<img src="{% link /assets/Y-Badge_Intro/rgb_led.png %}" width="400"/>
+<img src="{% link /assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg %}" width="200"/>
+<img src="{% link /assets/Y-Badge_Intro/rgb_led.png %}" width="300"/>
 
-<img src="../assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg" width="300"/>
-<img src="../assets/Y-Badge_Intro/rgb_led.png" width="400"/>
+<!-- <img src="../assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg" width="300"/> -->
+<!-- <img src="../assets/Y-Badge_Intro/rgb_led.png" width="400"/> -->
 
 
 ### Functions
@@ -50,24 +50,31 @@ You can also turn on all LEDs the same color with this line:
 
 ### Examples
 #### Turn on an LED
-1. To make L3 display bright red, you should use this statement in your code (don’t forget to add the semicolon):
+- To make L3 display bright red, you should use this statement in your code (don’t forget to add the semicolon):
 
     `Yboard.set_led_color(3, 255, 0, 0);`
 
-2. To make L15 display bright yellow, you should turn on the red and green pixels to max brightness:
+- To make L15 display bright yellow, you should turn on the red and green pixels to max brightness:
 
     `Yboard.set_led_color(15, 255, 255, 0);`
 
-Copy these two lines of code into the `led_exploration()` function in VS Code. Don’t forget to click “upload” in the top right corner dropdown to program your board with new code!
+Copy these two lines of code inside the brackets under the `void led_exploration()` function in VS Code (line 23). Don’t forget to click the “upload” arrow in the top right corner or bottom edge to program your board with new code!
 
+<details>
+<summary>Where is the Upload Button?</summary>
+<br>
+<img src="{% link /assets/Y-Badge_Intro/upload_button.png %}" width="250"/>
+<img src="{% link /assets/Y-Badge_Intro/upload_button2.png %}" width="600"/>
+</details>
+<br>
 
-3. Try putting this line of code before setting the LED colors and see what happens:
+- Try putting this line of code before setting the LED colors and see what happens:
 
     `Yboard.set_led_brightness(10);`
 
-4. If you want to turn on all LEDs white, try this line of code:
+- If you want to turn on all LEDs white, try this line of code:
 
-    `Yboard.set_all_leds_color(255, 255, 255)`
+    `Yboard.set_all_leds_color(255, 255, 255);`
 
 
 
@@ -75,11 +82,11 @@ Copy these two lines of code into the `led_exploration()` function in VS Code. D
 - Turn on at least 5 LEDs with different colors. Feel free to play around with the brightness value. Show a neighbor your LEDs.
     - Hint: make sure `Yboard.set_led_brightness()` is before `Yboard.set_led_color()`.
 
-<img src="{% link /assets/Y-Badge_Intro/led_challenge1.jpg %}" width="400"/>
-<img src="{% link /assets/Y-Badge_Intro/led_challenge2.jpg %}" width="400"/>
+<img src="{% link /assets/Y-Badge_Intro/led_challenge1.jpg %}" width="300"/>
+<img src="{% link /assets/Y-Badge_Intro/led_challenge2.jpg %}" width="300"/>
 
-<img src="../assets/Y-Badge_Intro/led_challenge1.jpg" width="400"/>
-<img src="../assets/Y-Badge_Intro/led_challenge2.jpg" width="400"/>
+<!-- <img src="../assets/Y-Badge_Intro/led_challenge1.jpg" width="400"/> -->
+<!-- <img src="../assets/Y-Badge_Intro/led_challenge2.jpg" width="400"/> -->
 
 
 ## Part 2 - Loops
@@ -96,10 +103,19 @@ while(currentLed <= 10) {
     currentLed++;
 }
 ```
-- This loop has a loop condition that isn’t always true, because we increment the value of currentLed every time it runs using currentLed++;. We want it to run as long as currentLed <= 10 is true. Once currentLed is 11 or larger, the loop won’t run again.
-- The `delay(250)` means it will wait for 250 ms, or a quarter of a second, before turning the next LED on.
+
+<details open>
+<summary>More Details</summary>
+<ul>
+<li> This loop has a loop condition that isn’t always true, because we increment the value of currentLed every time it runs using currentLed++;. We want it to run as long as currentLed <= 10 is true. Once currentLed is 11 or larger, the loop won’t run again. </li>
+<li> The <code>delay(250)</code> means it will wait for 250 ms, or a quarter of a second, before turning the next LED on. </li>
+</ul>
+</details>
 
 Copy this code into the `loops_exploration()` function, and ___don't forget to change which funtion is commented out under `Y_Badge_Intro()`.___ Also feel free to change the number of LED or the colors. 
+
+___Be careful with the number of brackets when replacing code.___ If you have extra brackets, the code will not run.
+
 
 ### For Loops
 A `for` loop to do the same thing as above looks like the following:
@@ -110,13 +126,19 @@ for(int currentLed = 1; currentLed <= 10; currentLed++) {
     Yboard.set_led_color(currentLed, 0, 0, 0);
 }
 ```
-- Our code to make the first 10 leds blink using a `while` loop is a little clunky. Did you notice that we had to declare a variable outside of our loop called `currentLed` to keep track of our condition? And then we had to increment it inside of our loop. That’s a little confusing.
 
-- `for` loops and `while` loops can do the same things, but `for` loops are better for running code a certain number of times and `while` loops are better for running code until a certain condition is met in our program.
+<details open>
+<summary>More Details</summary>
+<ul>
+<li> Our code to make the first 10 leds blink using a "while" loop is a little clunky. Did you notice that we had to declare a variable outside of our loop called <code>currentLed</code> to keep track of our condition? And then we had to increment it inside of our loop. That’s a little confusing.</li>
 
-- Notice the similarities between a `for` loop and a `while` loop. We still declare a variable called `currentLed`, we still have a **loop condition** that keeps track of whether the loop should run again, and we still increment `currentLed` every time the loop runs. But in the `for` loop, we do all of that on a single line inside the parenthesis. This is a nice way to organize our code and keep track of our variable in one spot.
+<li> "for" loops and "while" loops can do the same things, but "for" loops are better for running code a certain number of times and "while" loops are better for running code until a certain condition is met in our program.</li>
 
-Replace the `while` loop with the `for` loop and upload the code. You should notice that it does the same thing.
+<li> Notice the similarities between a "for" loop and a "while" loop. We still declare a variable called <code>currentLed</code>, we still have a <b>loop condition</b> that keeps track of whether the loop should run again, and we still increment <code>currentLed</code> every time the loop runs. But in the "for" loop, we do all of that on a single line inside the parenthesis. This is a nice way to organize our code and keep track of our variable in one spot. </li>
+</ul>
+</details>
+
+Replace the `while` loop code with the `for` loop code and upload it. You should notice that it does the same thing.
 
 ### Examples
 
@@ -130,7 +152,7 @@ while(true){
 }
 ```
 
-Replace the previous code with this example code under the `loops_exploration` function to test it out. Feel free to change the delay time, brightness, or colors of the LEDs as you wish.
+Replace the previous code with this example code under the `loop_exploration()` function to test it out. Feel free to change the delay time, brightness, or colors of the LEDs as you wish.
 
 ### Challenge 2
 - Make a single LED circle the board continueously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
@@ -138,7 +160,7 @@ Replace the previous code with this example code under the `loops_exploration` f
 
 <img src="{% link assets/Y-Badge_Intro/LED_looping.gif%}" width="400"/>
 
-<img src="..assets/Y-Badge_Intro/LED_looping.gif" width="400"/>
+<!-- <img src="..assets/Y-Badge_Intro/LED_looping.gif" width="400"/> -->
 
 ## Part 3 - Buttons and Switches
 ### Functions
@@ -150,22 +172,27 @@ And the function to determine if a switch is ON is:
 
 `Yboard.get_switch(<switch_number>);`
 
-Each of these functions returns `true` if the button/switch is pressed or ON, and `false` otherwise. `<button_number>` or `<switch_number>` should be the number of the button or switch whose position you want to check as an `int` (eg. 1, 2, or 3).
+Each of these functions returns `true` if the button/switch is pressed or ON, and `false` otherwise. `<button_number>` or `<switch_number>` should be the number of the button or switch whose position you want to check as an `int` (eg. 1, or 2).
 
 ### What are Conditionals?
 ___You don't need to upload this code, so when you feel like you understand conditionals, continue to the next section and upload the example code.___
 
-We use **if statements** to evaluate **conditionals** that are `true` or `false`:
+We use <b>if statements</b> to evaluate <b>conditionals</b> that are `true` or `false`:
 
 ```
 if (Yboard.get_button(1)) {
     Yboard.set_led_color(1, 255, 0, 0);
 }
 ```
-- If Button1 is pressed, `buttons_get()` will return a `true`. 
-- This **if statement** can also be written as `if (buttons_get(1)==true)`, but the `true` is implied in the **if statement** above.
+<details open>
+<summary>More Details</summary>
+<ul>
+<li> If Button1 is pressed, <code>buttons_get()</code> will return a <code>true</code>. </li>
+<li> This <b>if statement</b> can also be written as <code>if (buttons_get(1)==true)</code>, but the <code>true</code> is implied in the <b>if statement</b> above.</li>
+</ul>
+</details>
 
-Additionally, we can chain conditionals together using `&&` or `||`. The `&&` symbol is called a “logical AND”, and the `||` symbol is called “logical OR”. Here’s an example of using each:
+Additionally, we can chain conditionals together using `&&` or `||`. The `&&` symbol is called a “logical AND”, and the `||` symbol is called “logical OR”. In this context, "logical" just means a computer could understand it. Here’s an example of using each:
 
 ```
 if(Yboard.get_button(1) && Yboard.get_button(2)) {
@@ -207,7 +234,7 @@ while (true) {
     }
 }
 ```
-Replace the previous example with this code and upload it. 
+Replace the previous example with this code and upload it. Remember to be careful with the number of brackets.
 
 Let’s try one final example using a switch instead of a button:
 ```
@@ -229,23 +256,23 @@ Once more, replace the previous example with this code and upload it, and change
 
 ### Challenge 3
 - Use multiple buttons and/or switches and their combinations to turn on an LED (or all LEDs) with different colors. Use at least 4 combinations. Show a neighbor what you chose to do.
-    - Hint: you will have three `else if` statements
+    - Hint: You will have three `else if` statements, and in your final `else` statement, set all LEDs off
 
-<img src="{% link assets/Y-Badge_Intro/buttons+switches.gif %}" width="400"/>
+<img src="{% link assets/Y-Badge_Intro/buttons+switches.gif %}" width="300"/>
 
-<img src="..assets/Y-Badge_Intro/buttons+switches.gif" width="400"/>
+<!-- <img src="..assets/Y-Badge_Intro/buttons+switches.gif" width="400"/> -->
 
-## Extra: Potentiometers
+## Optional: Potentiometers
 <img src="{% link assets/Y-Badge_Intro/potentiometer2.jpg %}" width="200"/>
 
-<img src="..assets/Y-Badge_Intro/potentiometer2.jpg" width="200"/>
+<!-- <img src="..assets/Y-Badge_Intro/potentiometer2.jpg" width="200"/> -->
 
 ### How they work
 Potentiometers are a variable resistor that changes the amount of resistance in a circuit depending on the position of the wiper.
 
-<img src="{% link assets/Y-Badge_Intro/Potentiometer.webp %}" width="500"/>
+<img src="{% link assets/Y-Badge_Intro/Potentiometer.webp %}" width="400"/>
 
-<img src="..assets/Y-Badge_Intro/Potentiometer.webp" width="500"/>
+<!-- <img src="..assets/Y-Badge_Intro/Potentiometer.webp" width="500"/> -->
 
 ### Functions
 The function to get the position of the wiper looks like this:
@@ -253,7 +280,7 @@ The function to get the position of the wiper looks like this:
 `Yboard.get_knob()`
 - The value returned is between 0 and 100, representing the position of the knob. The value is 0 when the wiper is at GND, and 100 when the wiper is at Vcc (input voltage value, meaning no resistance).
 
-### Example
+### Examples
 We can set this value to a variable to be used in other places
 
 `int value = Yboard.get_knob()`
@@ -265,8 +292,7 @@ This value can be used in several other places to change the brightness, color, 
 - `delay(value)`
 - `if (value >= 50){<do something>} else {<do something else>}`
 
-Multiplying the value by 255/100 is not necessary, but it will make the max value be 255 instead of 100 so that the max brightness or color can go up to 255.
-
+<br>
 Try out this example under `potentiometer_exploration()`, and don't forget to uncomment this function under the main function.
 ```
 while(true){
@@ -274,6 +300,7 @@ while(true){
     Yboard.set_all_leds_color(value, 255-value, 0);
   }
 ```
+- Multiplying the value by 255/100 is not necessary, but it will make the max value be 255 instead of 100 so that the max brightness or color can go up to 255.
 
 ## Part 4 - Your Own Challenge
 Come up with your own challenge to combine the use of LEDs and at least two more of the following:
@@ -282,13 +309,14 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 - `for` loops
 - potentiometer
 
-<!-- Report your idea in your lab submission?? -->
-
-Here are some examples: 
-- Use a switch to change which direction the LED circles the board.
-- Use a button to increment the color of all LEDs little by little from pure red to pure blue
-- Any other combination you can think of
-
+<details>
+<summary>Here are some examples:</summary>
+<ul>
+<li> Use a switch to change which direction the LED circles the board </li>
+<li> Use a button to increment the color of all LEDs little by little from pure red to pure blue </li>
+<li> Any other combination you can think of </li>
+</ul>
+</details>
 
 ## Post-Lab Work
 Show your friend or roommate your project and quickly explain to them how it works. Answer any questions they have to the best of your ability, and be prepared to report in class.
