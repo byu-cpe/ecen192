@@ -76,7 +76,7 @@ If you want even more commands at a glance, check out [this cheat sheet](https:/
 - [Add WiFi credentials after installation](https://howchoo.com/g/ndy1zte2yjn/how-to-set-up-wifi-on-your-raspberry-pi-without-ethernet)
 - [Install ZSH and Oh My ZSH with Powerlevel10k Theme](https://dev.to/abdfnx/oh-my-zsh-powerlevel10k-cool-terminal-1no0)
 
-    - [Meslo LGS NF Font with Icons](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf)
+    <!-- - [Meslo LGS NF Font with Icons](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf) -->
     - [Change terminal font](https://help.gnome.org/users/gnome-terminal/stable/app-fonts.html.en#:~:text=Custom%20font.-,Set%20a%20custom%20font,-To%20set%20a) to the font above.
 
 - [GitHub Markdown Examples](https://gist.github.com/ww9/44f08d44327a40d2ab309a349bebec57)
