@@ -26,12 +26,13 @@ Go to the main.cpp file to uncomment the function labeled `Y_Badge_Intro()` and 
 ## Part 1 - LED Exploration
 - Each LED, labeled L1 to L20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
 
-<img src="{% link /assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg %}" width="200"/>
-<img src="{% link /assets/Y-Badge_Intro/rgb_led.png %}" width="300"/>
-
-<!-- <img src="../assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg" width="300"/> -->
-<!-- <img src="../assets/Y-Badge_Intro/rgb_led.png" width="400"/> -->
-
+<p align="center">
+<img src="{% link /assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg %}" width="300"/>
+<img src="{% link /assets/Y-Badge_Intro/rgb_led.png %}" width="400"/>
+<!-- 
+<img src="../assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg" width="200"/>
+<img src="../assets/Y-Badge_Intro/rgb_led.png" width="300"/> -->
+</p>
 
 ### Functions
 The function to set an LED looks like this:
@@ -82,12 +83,13 @@ Copy these two lines of code inside the brackets under the `void led_exploration
 - Turn on at least 5 LEDs with different colors. Feel free to play around with the brightness value. Show a neighbor your LEDs.
     - Hint: make sure `Yboard.set_led_brightness()` is before `Yboard.set_led_color()`.
 
+<p align="center">
 <img src="{% link /assets/Y-Badge_Intro/led_challenge1.jpg %}" width="300"/>
 <img src="{% link /assets/Y-Badge_Intro/led_challenge2.jpg %}" width="300"/>
 
 <!-- <img src="../assets/Y-Badge_Intro/led_challenge1.jpg" width="400"/> -->
 <!-- <img src="../assets/Y-Badge_Intro/led_challenge2.jpg" width="400"/> -->
-
+</p>
 
 ## Part 2 - Loops
 ### While Loops
@@ -112,9 +114,9 @@ while(currentLed <= 10) {
 </ul>
 </details>
 
-Copy this code into the `loops_exploration()` function, and ___don't forget to change which funtion is commented out under `Y_Badge_Intro()`.___ Also feel free to change the number of LED or the colors. 
+Copy this code into the ` void loops_exploration()` function, and ___don't forget to change which funtion is commented out under `Y_Badge_Intro()`.___ Also feel free to change the number of LED or the colors. 
 
-___Be careful with the number of brackets when replacing code.___ If you have extra brackets, the code will not run.
+
 
 
 ### For Loops
@@ -140,6 +142,8 @@ for(int currentLed = 1; currentLed <= 10; currentLed++) {
 
 Replace the `while` loop code with the `for` loop code and upload it. You should notice that it does the same thing.
 
+___Be careful with the number of brackets when replacing code.___ If you have extra brackets, the code will not run.
+
 ### Examples
 
 Make all the LEDs blink. On for 500ms then off for 500ms, repeated forever.
@@ -158,9 +162,11 @@ Replace the previous code with this example code under the `loop_exploration()` 
 - Make a single LED circle the board continueously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
     - Hint: use the code from the For Loops section as a base, change the number of LEDs, and make it loop forever (using `while(true)`).
 
-<img src="{% link assets/Y-Badge_Intro/LED_looping.gif%}" width="400"/>
+<p align="center">
+<img src="{% link assets/Y-Badge_Intro/LED_looping.gif%}" width="300"/>
 
-<!-- <img src="..assets/Y-Badge_Intro/LED_looping.gif" width="400"/> -->
+<!-- <img src="..assets/Y-Badge_Intro/LED_looping.gif" width="300"/> -->
+</p>
 
 ## Part 3 - Buttons and Switches
 ### Functions
@@ -208,7 +214,7 @@ if(Yboard.get_switch(1) || Yboard.get_switch(2)) {
 ### Examples
 We can use an `else` block to make the board do something else when the `if` block is `false`. The infinite `while(true)` loop here is very important because you want the code to *continuously check* the state of Button1.
 
-Copy this code into the `button_exploration()` function and upload it. ___Don't forget to change which funtion is commented out under `Y_Badge_Intro()`.___ Also feel free to change the buttons or LED colors. 
+Copy this code into the `void button_exploration()` function and upload it. ___Don't forget to change which funtion is commented out under `Y_Badge_Intro()`.___ Also feel free to change the buttons or LED colors. 
 
 ```
 while(true) {
@@ -255,12 +261,13 @@ while (true) {
 Once more, replace the previous example with this code and upload it, and change the switch number or LED colors as you wish. 
 
 ### Challenge 3
-- Use multiple buttons and/or switches and their combinations to turn on an LED (or all LEDs) with different colors. Use at least 4 combinations. Show a neighbor what you chose to do.
-    - Hint: You will have three `else if` statements, and in your final `else` statement, set all LEDs off
+- Use multiple buttons and/or switches and their combinations to turn on an LED (or all LEDs) with different colors. Use at least 4 combinations. Show a neighbor what you chose to do.    - Hint: You will have three `else if` statements, and your final `else` statement should turn all LEDs off.
 
+<p align="center">
 <img src="{% link assets/Y-Badge_Intro/buttons+switches.gif %}" width="300"/>
 
 <!-- <img src="..assets/Y-Badge_Intro/buttons+switches.gif" width="400"/> -->
+</p>
 
 ## Optional: Potentiometers
 <img src="{% link assets/Y-Badge_Intro/potentiometer2.jpg %}" width="200"/>
@@ -293,7 +300,9 @@ This value can be used in several other places to change the brightness, color, 
 - `if (value >= 50){<do something>} else {<do something else>}`
 
 <br>
-Try out this example under `potentiometer_exploration()`, and don't forget to uncomment this function under the main function.
+
+Try out this example under `void potentiometer_exploration()`, and don't forget to uncomment this function under the main function.
+
 ```
 while(true){
     int value = Yboard.get_knob() * 255/100;
