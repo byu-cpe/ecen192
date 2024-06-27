@@ -13,6 +13,7 @@ In his lab you’ll be setting up your coding environment, and learning the basi
 
 **ATTENTION: Begin with step 1 and continue through step 2 until directed to circle back to the background section**
 
+### 💻 Microcontrollers
 A microcontroller is a compact computer on a chip. They’re used in things that need some level of intelligence to perform a function but don't require a whole computer. At the heart of a microcontroller is a central processing unit, or CPU. It’s much simpler than the CPU in your laptop or desktop but is optimized to perform tasks efficiently with limited resources. Microcontrollers come with their own memory to store the program (instructions) and to store data temporarily while it's running. They have built-in input/output interfaces, which means they can read signals from and send signals to other devices. For example, a microcontroller in a vending machine reads inputs from the buttons you press, and controls outputs like returning change or vending a snack.
 
 Applications include, electric toothbrushes, wireless earbuds, microwaves, pacemakers, printers, anti-lock brakes, and many more.
@@ -25,8 +26,10 @@ The microcontroller we’ll be using for this class is an ESP32-S3 mini. This mi
 
 For the rest of the labs in this course, we’ll be learning how to control different components on the y-badge with our microcontroller. To do this, we need to be able to give it instructions by writing and uploading a program. We’ll use visual studio code and an extension (platform io) to help us with this.
 
+### 🌐 Github
 During step 1, we clone a repository from github. Github is an online platform where developers store, share, and collaborate on code. When you "clone a repository," you're making a copy of someone else's project (which is stored on GitHub) onto your own computer. This lets you work on the project locally.
 
+### 👽 PlatformIO
 In step 2, we installed the PlatformIO extension. This will get the code we write, ready to be sent to the microcontroller. In every project going forward we’ll have a platformio.ini file. Let’s take a look at what’s inside of this one.
 
 <p align = "center">
@@ -41,7 +44,7 @@ Line 24: This line specifies a library that is needed for the board to function.
 
 Line 25: This also specifies a necessary library. Notice that it is a link to a github repository. When this link is included, it goes to github and uses the repo, just like when we cloned the initial repository.
 
-### Equipment and Materials:
+### 🔧 Equipment and Materials:
 
 - Y badge board
 - Usb c to usb cable
@@ -51,7 +54,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
 ## Procedure:
 
-### Step 1- Getting the starter code:
+### 📂 Step 1- Getting the starter code:
 
 1. Open vs code
 2. Click the “Source Control” button on the left toolbar
@@ -64,7 +67,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
 6. A window will open and ask you to select the destination folder. Choose where to put it.
 
-### Step 2-Setting up the environment:
+### 👽 Step 2-Setting up the environment:
 
 1. Click on the extensions sidebar
 
@@ -88,7 +91,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
 **While you’re waiting, go back and read the background for the lab. You can also continue ahead to read step 3 if you finish reading the background.**
 
-### Step 3- Programming:
+### 💻 Step 3- Programming:
 
 1. We’ll be coding in c++ for these labs so remember to end every line of code with a semicolon. You can make one-line comments with two slashes 
 
@@ -139,7 +142,7 @@ In our `loop()` we run code to flash the leds and change colors when buttons or 
 <img src="{% link /assets/Microcontrollers/UploadTop.png %}" width="250"/>
 </p>
 
-### Step 4- Hardware Test
+### 🛠️ Step 4- Hardware Test
 
 The hardware test will make sure that nothing is wrong with your board (this really helps with debugging future labs. If we know the board is working, then we know the problem lies in the code. Test the following to make sure your board and all its parts are working!
 
@@ -187,7 +190,7 @@ A photo reference for which led corresponds to which component:
 <img src="{% link /assets/Microcontrollers/hardwareTestReference.png %}" width="250"/>
 </p>
 
-## Troubleshooting
+## 🔎 Troubleshooting
 
 <p align = "center">
 <img src="{% link /assets/Microcontrollers/troubleshootingSucess.png %}" width="250"/>
