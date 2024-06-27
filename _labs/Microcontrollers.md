@@ -217,7 +217,7 @@ Power off the badge. Then while holding the boot button, switch it back on and u
 Remember to turn the board on and plug it into the computer you’re using before trying to upload code.
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/troubleshootingPortNoExist.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/troubleshootingPortNotExist.png %}" width="250"/>
 </p>
 
 Try a different usb port, cord, or restart vscode, or restart the computer.
