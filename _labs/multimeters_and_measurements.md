@@ -37,7 +37,10 @@ Now that we know the basic components, let’s take a little tour. The resistanc
 Ohm’s Law is a fundamental concept in electricity and electronics. 🤓
 
 **Definition:** It states that the current flowing through a conductor (anthing that allows electricity to flow through it) between two points is directly proportional to the voltage across the two points, and inversely proportional to the resistance between them. Written as: <br>
-<p align = "center"> $$ I = \frac{V}{R} $$ </p>
+
+$$
+    I = \frac{V}{R} 
+$$ 
 
 
 Think of it like a water slide: the voltage is like the height of the slide (more height means more speed), the current is like the amount of water flowing down the slide, and the resistance is like the width of the slide (a narrower slide lets less water through). So, if you increase the voltage (speed), more current (water) will flow. If you increase the resistance (make the pipe smaller), less current (water) will flow. 
@@ -68,11 +71,11 @@ Image Credit:  <a href = "https://www.sciencebuddies.org/image-credit?id=4803" t
 
 It seems like a lot to keep track of, so here is a table to summarize everything:
 
-| Variable  |  Unit       |    Symbol     | Connecting Measurement Tools |
-| :----:    |    :----:   |    :----:     |    :----:                    | 
-| Current   | Ampere      |    **A**      |    In Series                 |
-|Voltage    | Volts       |    **V**      |    In Prallel                |
-|Resistance | Ohms        |    **Ω**      |  Directy to component        |
+|  Variable  |  Unit  | Symbol | Connecting Measurement Tools |
+| :--------: | :----: | :----: | :--------------------------: |
+|  Current   | Ampere | **A**  |          In Series           |
+|  Voltage   | Volts  | **V**  |          In Prallel          |
+| Resistance |  Ohms  | **Ω**  |     Directy to component     |
 
 Now that we have all the required information. 
 Let’s see if we can measure these quantities discussed in Ohm’s Law.  
