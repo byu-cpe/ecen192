@@ -1,6 +1,6 @@
 ---
 title: Multimeters & Measurements
-number: 2
+number: 1
 layout: lab
 ---
 

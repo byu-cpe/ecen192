@@ -1,6 +1,6 @@
 ---
-title: Component Exploration
-number: 2
+title: Y-Board Cybersecurity
+number: 10
 layout: lab
 ---
 

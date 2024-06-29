@@ -1,6 +1,6 @@
 ---
 title: Microcontrollers
-number: 5
+number: 4
 layout: lab
 ---
 # Lab 05- Microcontrollers
@@ -164,18 +164,18 @@ As labeled on the oled display:
 <img src="{% link /assets/Microcontrollers/oled.png %}" width="250"/>
 </p>
 
-| Action                                                 | Result                                                                        |
-|--------------------------------------------------------|-------------------------------------------------------------------------------|
-| Screen                                                 | Displays "GPIO Test"                                                    |
-| Speaker                                                | Plays part of the fight song when you first upload the code and when you push the reset button |
-| Turn the knob                                          | Led 5 changes brightness                                                      |
-| Flip switch 1 (left)                                   | Led 1 turns on                                                                |
-| Flip switch 2 (right)                                  | Led 2 turns on                                                                |
-| Push button 1 (left)                                   | Led 3 turns on                                                                |
-| Push button 2 (right)                                  | Led 4 turns on                                                                |
-| Blow warm/cold air into the temperature sensor         | Led 9 changes color. Cold is blue, warm is yellow                       |
-| Breathe warm air onto the humidity sensor or wave it around to get dryer air | Led 10 changes colors. Not humid is blue, humid is yellow              |
-| Tilt and move the y-board                              | Led 6, 7, 8 turns on and off. Sometimes this is hard to see               |
+| Action                                                                       | Result                                                                                         |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Screen                                                                       | Displays "GPIO Test"                                                                           |
+| Speaker                                                                      | Plays part of the fight song when you first upload the code and when you push the reset button |
+| Turn the knob                                                                | Led 5 changes brightness                                                                       |
+| Flip switch 1 (left)                                                         | Led 1 turns on                                                                                 |
+| Flip switch 2 (right)                                                        | Led 2 turns on                                                                                 |
+| Push button 1 (left)                                                         | Led 3 turns on                                                                                 |
+| Push button 2 (right)                                                        | Led 4 turns on                                                                                 |
+| Blow warm/cold air into the temperature sensor                               | Led 9 changes color. Cold is blue, warm is yellow                                              |
+| Breathe warm air onto the humidity sensor or wave it around to get dryer air | Led 10 changes colors. Not humid is blue, humid is yellow                                      |
+| Tilt and move the y-board                                                    | Led 6, 7, 8 turns on and off. Sometimes this is hard to see                                    |
 
 
 

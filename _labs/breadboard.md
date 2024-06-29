@@ -1,6 +1,6 @@
 ---
 title: Breadboard
-number: 4
+number: 3
 layout: lab
 ---
 

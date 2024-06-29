@@ -1,6 +1,6 @@
 ---
-title: Component Exploration
-number: 2
+title: Y-Board Networking
+number: 9
 layout: lab
 ---
 
