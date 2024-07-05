@@ -12,8 +12,8 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 <!-- <img src="../assets/buttons_and_switches/Y-Board.jpg" width="300"/> -->
 
 ## Background/Preparation
-- You should have finished the previous lab for a software, github, and coding intro.
-- You should download the .zip file from github, extract it, and open it in VS Code (found here: [student code](https://github.com/byu-ecen-192/y-board-buttons-switches)). Make sure PlatformIO is working properly.
+- You should have finished the previous lab for a software, github, and PlatformIO intro.
+- You should have the student code downloaded as a .zip file from github. Extract it and open it in VS Code (found here: [student code](https://github.com/byu-ecen-192/y-board-buttons-switches)). Make sure PlatformIO is working properly.
 
 
 ## Equipment and Materials
@@ -21,7 +21,7 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 - USB-C cord
 
 # Procedure
-**As you go through this lab, copy the example code into the appropriate function in the Y_Board_Intro.cpp file.** Don't forget to uncomment the corresponding function under the `int main()` function near the top.
+**As you go through this lab, copy the example code into the respective section on VS Code main.cpp file to explore how each part works.** Don't forget to uncomment the corresponding function under the `int main()` section near the top.
 
 ## Part 1 - LED Exploration (5-10 minutes)
 - Each LED, labeled L1 to L20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
@@ -33,6 +33,7 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 <img src="../assets/buttons_and_switches/Zoomed-in_LEDs.jpg" width="200"/>
 <img src="../assets/buttons_and_switches/rgb_led.png" width="300"/> -->
 </p>
+
 
 ### Functions
 The function to set an LED looks like this:
@@ -82,16 +83,15 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
     ```
 
 
-
 ### Activity 1
 - Turn on at least one more LED with a different color. Feel free to play around with the brightness value or try turning on all LEDs the same color. Show a neighbor your LEDs. Try not to spend more than a couple minutes on this.
-
 
 <p align="center">
 <img src="{% link /assets/buttons_and_switches/led_challenge2.jpg %}" width="300"/>
 
 <!-- <img src="../assets/buttons_and_switches/led_challenge2.jpg" width="400"/> -->
 </p>
+
 
 ## Part 2 - Loops (15 minutes)
 ### While Loops
@@ -117,8 +117,7 @@ while(currentLed <= 10) {
 </ul>
 </details>
 
-Copy this code inside the brackets of the `void loops_exploration()` function, and __don't forget to change which funtion is commented out under `int main()`.__ Also feel free to change the number of LED or the color. 
-
+Paste this code inside the brackets of the `void loops_exploration()` function, and ___don't forget to change which funtion is commented out under `int main()`.___ Also feel free to change the number of LEDs or the color. 
 
 
 ### For Loops
@@ -135,7 +134,6 @@ for(int currentLed = 1; currentLed <= 10; currentLed++) {
 <details open>
 <summary>More Details</summary>
 <ul>
-
 <li> "for" loops and "while" loops can do the same things, but "for" loops are better for running code a certain number of times and "while" loops are better for running code until a certain condition is met in our program.</li>
 
 <li> Notice the similarities between a "for" loop and a "while" loop. We still declare a variable called <code>currentLed</code>, we still have a <b>loop condition</b> that keeps track of whether the loop should run again, and we still increment <code>currentLed</code> every time the loop runs. But in the "for" loop, we do all of that on a single line inside the parenthesis. This is a nice way to organize our code and keep track of our variable in one spot. </li>
@@ -216,7 +214,8 @@ if(Yboard.get_switch(1) || Yboard.get_switch(2)) {
 ### Examples
 We can use an `else` block to make the board do something else when the `if` block is `false`. 
 
-Copy this code into the `void button_exploration()` function and upload it. ___Don't forget to change which funtion is commented out under___ `int main()`.
+Copy and paste this code into the `void button_exploration()` function and upload it. ___Don't forget to change which funtion is commented out under `int main()`.___ 
+
 ```
 while(true) {
     if (Yboard.get_button(1)) {
@@ -244,7 +243,7 @@ while (true) {
 ```
 - Notice that this example uses switches instead of buttons.
 
-Replace the previous example with this code and upload it. __Remember to be careful with the number of brackets.__ Change the LED colors as you wish.
+Replace the previous example with this code and upload it. **Remember to be careful with the number of brackets.** Also feel free to change the LED colors. 
 
 
 ### Activity 3
@@ -257,7 +256,8 @@ Replace the previous example with this code and upload it. __Remember to be care
 <!-- <img src="..assets/buttons_and_switches/buttons+switches.gif" width="400"/> -->
 </p>
 
-## Optional: Potentiometers 
+
+## Optional: Potentiometers
 <img src="{% link assets/buttons_and_switches/potentiometer2.jpg %}" width="200"/>
 
 <!-- <img src="..assets/buttons_and_switches/potentiometer2.jpg" width="200"/> -->
@@ -290,7 +290,6 @@ This value can be used in several other places to change the brightness, color, 
 <br>
 
 Try out this example under `void potentiometer_exploration()`, and don't forget to uncomment this function under the main function.
-
 ```
 while(true){
     int value = Yboard.get_knob() * 255/100;
@@ -312,7 +311,7 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 <li> Use a switch to change which direction the LED circles the board </li>
 <li> Use a button to increment the color of all LEDs little by little from pure red to pure blue </li>
 <li> Use the potentiometer example and add the use of switches to change which range of colors the LEDs are changing between </li>
-<li> Add on to any example given </li>
+<li> Add on to any other example given </li>
 <li> Any other combination you can think of </li>
 </ul>
 </details>
