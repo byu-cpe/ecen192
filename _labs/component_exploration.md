@@ -1,6 +1,6 @@
 ---
-title: Motors & Actuators
-number: 5
+title: Component Exploration
+number: 2
 layout: lab
 ---
 

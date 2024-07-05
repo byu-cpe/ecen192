@@ -1,6 +1,6 @@
 ---
-title: Introduction to Electronics
-number: 1
+title: Y-Board Networking
+number: 9
 layout: lab
 ---
 

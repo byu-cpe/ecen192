@@ -1,6 +1,6 @@
 ---
-title: Multimeters & Measurements
-number: 2
+title: Motors & Actuators
+number: 4
 layout: lab
 ---
 

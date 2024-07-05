@@ -1,5 +1,5 @@
 ---
-title: Component Exploration
+title: Breadboard
 number: 3
 layout: lab
 ---

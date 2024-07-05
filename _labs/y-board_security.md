@@ -1,6 +1,6 @@
 ---
-title: Breadboard
-number: 4
+title: Y-Board Cybersecurity
+number: 10
 layout: lab
 ---
 
