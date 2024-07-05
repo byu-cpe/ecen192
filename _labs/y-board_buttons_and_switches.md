@@ -7,13 +7,13 @@ layout: lab
 ## Overview
 This lab will introduce you to the Y-badge and how to code it. We will begin with learning how to code LEDs and buttons and upload it to the Y-badge. 
 
-<img src="{% link /assets/Y-Badge_Intro/Y-Board.jpg %}" width="300"/>
+<img src="{% link /assets/buttons_and_switches/Y-Board.jpg %}" width="300"/>
 
-<!-- <img src="../assets/Y-Badge_Intro/Y-Board.jpg" width="300"/> -->
+<!-- <img src="../assets/buttons_and_switches/Y-Board.jpg" width="300"/> -->
 
 ## Background/Preparation
 - You should have finished the previous lab for a software, github, and coding intro.
-- You should have the student code cloned from github open in VS Code (found here: [student code](https://github.com/byu-cpe/ecen192_student)). You may want to make a fork of the repository.
+- You should download the .zip file from github, extract it, and open it in VS Code (found here: [student code](https://github.com/byu-ecen-192/y-board-buttons-switches)). Make sure PlatformIO is working properly.
 
 
 ## Equipment and Materials
@@ -27,11 +27,11 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 - Each LED, labeled L1 to L20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
 
 <p align="center">
-<img src="{% link /assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg %}" width="250"/>
-<img src="{% link /assets/Y-Badge_Intro/rgb_led.png %}" width="300"/>
+<img src="{% link /assets/buttons_and_switches/Zoomed-in_LEDs.jpg %}" width="250"/>
+<img src="{% link /assets/buttons_and_switches/rgb_led.png %}" width="300"/>
 <!-- 
-<img src="../assets/Y-Badge_Intro/Zoomed-in_LEDs.jpg" width="200"/>
-<img src="../assets/Y-Badge_Intro/rgb_led.png" width="300"/> -->
+<img src="../assets/buttons_and_switches/Zoomed-in_LEDs.jpg" width="200"/>
+<img src="../assets/buttons_and_switches/rgb_led.png" width="300"/> -->
 </p>
 
 ### Functions
@@ -66,8 +66,8 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 <details>
 <summary>Where is the Upload Button?</summary>
 <br>
-<img src="{% link /assets/Y-Badge_Intro/upload_button.png %}" width="250"/>
-<img src="{% link /assets/Y-Badge_Intro/upload_button2.png %}" width="600"/>
+<img src="{% link /assets/buttons_and_switches/upload_button.png %}" width="250"/>
+<img src="{% link /assets/buttons_and_switches/upload_button2.png %}" width="600"/>
 </details>
 <br>
 
@@ -85,12 +85,12 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 
 ### Activity 1
 - Turn on at least one more LED with a different color. Feel free to play around with the brightness value or try turning on all LEDs the same color. Show a neighbor your LEDs. Try not to spend more than a couple minutes on this.
-    - Hint: make sure `Yboard.set_led_brightness()` is before `Yboard.set_led_color()`.
+
 
 <p align="center">
-<img src="{% link /assets/Y-Badge_Intro/led_challenge2.jpg %}" width="300"/>
+<img src="{% link /assets/buttons_and_switches/led_challenge2.jpg %}" width="300"/>
 
-<!-- <img src="../assets/Y-Badge_Intro/led_challenge2.jpg" width="400"/> -->
+<!-- <img src="../assets/buttons_and_switches/led_challenge2.jpg" width="400"/> -->
 </p>
 
 ## Part 2 - Loops (15 minutes)
@@ -117,7 +117,7 @@ while(currentLed <= 10) {
 </ul>
 </details>
 
-Copy this code inside the brackets of the `void loops_exploration()` function, and __don't forget to change which funtion is commented out under `int main()`.__ Also feel free to change the number of LED or the colors. 
+Copy this code inside the brackets of the `void loops_exploration()` function, and __don't forget to change which funtion is commented out under `int main()`.__ Also feel free to change the number of LED or the color. 
 
 
 
@@ -158,16 +158,16 @@ while(true){
 }
 ```
 
-Replace the previous code with this example code under the `loop_exploration()` function to test it out. Feel free to change the delay time, brightness, or colors of the LEDs as you wish. Try not to spend more than a minute or two on this.
+Replace the previous code with this example code under the `void loop_exploration()` function to test it out. Feel free to change the delay time, brightness, or colors of the LEDs as you wish. Try not to spend more than a minute or two on this.
 
 ### Activity 2
 - Make a single LED circle the board continueously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
     - Hint: use the code from the For Loops section as a base, change the number of LEDs, and make it loop forever (putting everything inside a `while(true)` loop, like in the example above).
 
 <p align="center">
-<img src="{% link assets/Y-Badge_Intro/LED_looping.gif%}" width="300"/>
+<img src="{% link assets/buttons_and_switches/LED_looping.gif%}" width="300"/>
 
-<!-- <img src="..assets/Y-Badge_Intro/LED_looping.gif" width="300"/> -->
+<!-- <img src="..assets/buttons_and_switches/LED_looping.gif" width="300"/> -->
 </p>
 
 ## Part 3 - Buttons and Switches (15 minutes)
@@ -185,7 +185,7 @@ Each of these functions returns `true` if the button/switch is pressed or ON, an
 ### What are Conditionals?
 ___You don't need to upload this code, so when you feel like you understand conditionals, continue to the next section and upload the "Examples" code.___
 
-We use <b>if statements</b> to evaluate <b>conditionals</b> that are `true` or `false`:
+We use **if statements** to evaluate **conditionals** that are `true` or `false`:
 
 ```
 if (Yboard.get_button(1)) {
@@ -252,22 +252,22 @@ Replace the previous example with this code and upload it. __Remember to be care
     - Hint: You will have three `else if` statements, and your final `else` statement should turn all LEDs off.
 
 <p align="center">
-<img src="{% link assets/Y-Badge_Intro/buttons+switches.gif %}" width="300"/>
+<img src="{% link assets/buttons_and_switches/buttons+switches.gif %}" width="300"/>
 
-<!-- <img src="..assets/Y-Badge_Intro/buttons+switches.gif" width="400"/> -->
+<!-- <img src="..assets/buttons_and_switches/buttons+switches.gif" width="400"/> -->
 </p>
 
 ## Optional: Potentiometers 
-<img src="{% link assets/Y-Badge_Intro/potentiometer2.jpg %}" width="200"/>
+<img src="{% link assets/buttons_and_switches/potentiometer2.jpg %}" width="200"/>
 
-<!-- <img src="..assets/Y-Badge_Intro/potentiometer2.jpg" width="200"/> -->
+<!-- <img src="..assets/buttons_and_switches/potentiometer2.jpg" width="200"/> -->
 
 ### How they work
 Potentiometers are a variable resistor that changes the amount of resistance in a circuit depending on the position of the wiper.
 
-<img src="{% link assets/Y-Badge_Intro/Potentiometer.webp %}" width="400"/>
+<img src="{% link assets/buttons_and_switches/Potentiometer.webp %}" width="400"/>
 
-<!-- <img src="..assets/Y-Badge_Intro/Potentiometer.webp" width="500"/> -->
+<!-- <img src="..assets/buttons_and_switches/Potentiometer.webp" width="500"/> -->
 
 ### Functions
 The function to get the position of the wiper looks like this:
