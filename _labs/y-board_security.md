@@ -1,6 +1,6 @@
 ---
-title: Microcontrollers
-number: 5
+title: Y-Board Cybersecurity
+number: 10
 layout: lab
 ---
 

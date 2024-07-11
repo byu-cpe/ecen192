@@ -1,6 +1,6 @@
 ---
 title: Motors & Actuators
-number: 5
+number: 4
 layout: lab
 ---
 

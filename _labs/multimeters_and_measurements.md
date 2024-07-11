@@ -1,6 +1,6 @@
 ---
 title: Multimeters & Measurements
-number: 2
+number: 1
 layout: lab
 ---
 
@@ -84,7 +84,6 @@ Here are some things to keep in mind when you work with the multi-meter:
 30. We can turn the knob to measure the quatity of your choice like : Resistance, DC voltage, DC current, and AC voltage. 
 
 Now that we know the basic components, let’s take a little tour. The resistance side of the multi-meter has multiple settings we can measure from 200Ω to 2MΩ, the same applies for all other settings. So, you need to be careful when you want to measure something, you might not be getting the right measurements because you are not in the right setting.
-
 
 Now that we have all the required information. 
 Let’s see if we can measure these quantities discussed in Ohm’s Law.  
