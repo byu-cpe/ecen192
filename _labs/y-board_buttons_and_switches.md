@@ -9,8 +9,6 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 
 <img src="{% link /assets/buttons_and_switches/Y-Board.jpg %}" width="300"/>
 
-<!-- <img src="../assets/buttons_and_switches/Y-Board.jpg" width="300"/> -->
-
 ## Background/Preparation
 - You should have finished the previous lab for a software, github, and PlatformIO intro.
 - You should have the [student code](https://github.com/byu-ecen-192/y-board-buttons-switches)(click here) downloaded as a .zip file from github. Right click on the file to extract it and then go to VS Code to open it. Make sure PlatformIO is working properly. 
@@ -29,9 +27,6 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 <p align="center">
 <img src="{% link /assets/buttons_and_switches/Zoomed-in_LEDs.jpg %}" width="250"/>
 <img src="{% link /assets/buttons_and_switches/rgb_led.png %}" width="300"/>
-<!-- 
-<img src="../assets/buttons_and_switches/Zoomed-in_LEDs.jpg" width="200"/>
-<img src="../assets/buttons_and_switches/rgb_led.png" width="300"/> -->
 </p>
 
 
@@ -97,10 +92,7 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 
 <p align="center">
 <img src="{% link /assets/buttons_and_switches/led_challenge2.jpg %}" width="300"/>
-
-<!-- <img src="../assets/buttons_and_switches/led_challenge2.jpg" width="400"/> -->
 </p>
-
 
 ## Part 2 - Loops (15 minutes)
 ### While Loops
@@ -173,8 +165,6 @@ Replace the previous code with this example code under the `void loop_exploratio
 
 <p align="center">
 <img src="{% link assets/buttons_and_switches/LED_looping.gif%}" width="300"/>
-
-<!-- <img src="..assets/buttons_and_switches/LED_looping.gif" width="300"/> -->
 </p>
 
 ## Part 3 - Buttons and Switches (15 minutes)
@@ -261,22 +251,17 @@ Replace the previous example with this code and upload it. **Remember to be care
 
 <p align="center">
 <img src="{% link assets/buttons_and_switches/buttons+switches.gif %}" width="300"/>
-
-<!-- <img src="..assets/buttons_and_switches/buttons+switches.gif" width="400"/> -->
 </p>
 
 
 ## Optional: Potentiometers
 <img src="{% link assets/buttons_and_switches/potentiometer2.jpg %}" width="200"/>
 
-<!-- <img src="..assets/buttons_and_switches/potentiometer2.jpg" width="200"/> -->
 
 ### How they work
 Potentiometers are a variable resistor that changes the amount of resistance in a circuit depending on the position of the wiper.
 
 <img src="{% link assets/buttons_and_switches/Potentiometer.webp %}" width="400"/>
-
-<!-- <img src="..assets/buttons_and_switches/Potentiometer.webp" width="500"/> -->
 
 ### Functions
 The function to get the position of the wiper looks like this:
@@ -325,5 +310,4 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 </ul>
 </details>
 
-## Post-Lab Work
-Show your friend or roommate your project and quickly explain to them how it works. Answer any questions they have to the best of your ability, and be prepared to report in class.
+<!-- ## Post-Lab Work -->
