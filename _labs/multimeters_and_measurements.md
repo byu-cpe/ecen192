@@ -5,7 +5,7 @@ layout: lab
 ---
 
 ## Overview
-In this lab we will be using the tools we know and measure DC voltage, DC current, and resistance. You will learn how to operate circuits using breadboards and how to use multi-meters.  
+In this lab we will be using the tools we know and measure DC voltage, DC current, and resistance. You will learn how to operate circuits using breadboards and how to use multimeters.  
 
 ## Background/Preparation <br>
 
@@ -39,6 +39,8 @@ Image credit: <a href="https://www.grc.nasa.gov/www/k-12/airplane/ohms.html" tar
 <!-- <a href="#voltage">Voltage</a>  -->
 <!-- <a href="#-current">Current</a>   -->
 
+
+
 It seems like a lot to keep track of, so here is a table to summarize everything:
 
 | Variable  |  Unit       |    Symbol     | 
@@ -48,27 +50,20 @@ It seems like a lot to keep track of, so here is a table to summarize everything
 |Resistance | Ohms        |    **Ω**      |  
 
 
-###  🎛️ Introduction to Multi-meters: 
-To measure current, we'd need an Ammeter; to measure voltage we'd need voltmeter and to measure resistance we would need an ohmmeter. Imagine so many different machines to measure so many properties in a circuit. It would be such great chaos, but came multi-meters to our rescue! A multi-meter is a great tool to measure various electrical properties and it can all be done with one machine! It saves us so much time and energy! 
+###  🎛️ Introduction to Multimeters: 
+To measure current, we'd need an Ammeter; to measure voltage we'd need voltmeter and to measure resistance we would need an ohmmeter. Imagine so many different machines to measure so many properties in a circuit. It would be such great chaos, but came multimeters to our rescue! A multimeter is a great tool to measure various electrical properties and it can all be done with one machine! It saves us so much time and energy! 
 
-A lot of the multi-meters can measure DC voltage, AC voltage, DC current, Resistance, Diode tests and battery resistance. They have certain components that we need to know about first: 
+A lot of the multimeters can measure DC voltage, AC voltage, DC current, Resistance, Diode tests and battery resistance. They have certain components that we need to know about first: 
 
 <p align = "center">
 <img src="{% link /assets/multimeters_and_measurements/multimeter.png %}" width="250"/>
 </p>
 
 <p align = "center">
-Figure 2. This image shows you the symbols and the quantity they measure and some important ports for measurement.
+Figure 2. This image shows you the symbols and the quantity they measure and some important ports for measurement. <br>
 Image credit: Neoteck User Manual
 </p>
-<p align = "center">
-<img src="{% link assets/multimeters_and_measurements/multimeter_symbols.png %}" width="500"/>
-</p>
-<p align = "center">
-Figure 3. These are thy symbols you will see on a multi-meter and what they mean.
-Image credit: Neoteck User Manual
-</p>
-These are important parts of the multi-meter:
+These are labeled parts of the multimeter:
 1. LCD display
 2. “FUNC” Push button
 3. “BACK LIGHT” push button and ‘HOLD” push button
@@ -77,19 +72,27 @@ These are important parts of the multi-meter:
 6. “COM” input terminal
 7. “10A” input terminal
 
-Here are some things to keep in mind when you work with the multi-meter:
+<p align = "center">
+<img src="{% link assets/multimeters_and_measurements/multimeter_symbols.png %}" width="500"/>
+</p>
+<p align = "center">
+Figure 3. It's a table depectiong the meaning of the symbols of the multimeter. <br>
+Image credit: Neoteck User Manual
+</p>
+
+Here are some things to keep in mind when you work with the multimeter:
 
 1. The **COM** pin is always connected to the ground, is a common reference point in circuits, often considered zero voltage(black wire). 
 2. The **VΩmA** port is connected to the positive, it is also refered to as a point of high voltage (red wire) of your source.  
 30. We can turn the knob to measure the quatity of your choice like : Resistance, DC voltage, DC current, and AC voltage. 
 
-Now that we know the basic components, let’s take a little tour. The resistance side of the multi-meter has multiple settings we can measure from 200Ω to 2MΩ, the same applies for all other settings. So, you need to be careful when you want to measure something, you might not be getting the right measurements because you are not in the right setting.
+Now that we know the basic components, let’s take a little tour. The resistance side of the multimeter has multiple settings we can measure from 200Ω to 2MΩ, the same applies for all other settings. So, you need to be careful when you want to measure something, you might not be getting the right measurements because you are not in the right setting.
 
 Now that we have all the required information. 
 Let’s see if we can measure these quantities discussed in Ohm’s Law.  
 
 ## Equipment and Materials
-- Multi-meter
+- Multimeter
 
 - Led  (5) (0.02A) (R, B, G, Purple, Orange, Yellow)
 
@@ -115,7 +118,7 @@ Let’s see if we can measure these quantities discussed in Ohm’s Law.
 
 ### 🛠 Resistance: 
 
-**Note:** Make sure you have the multi-meter to measure resistance (Ω symbol)
+**Note:** Make sure you have the multimeter to measure resistance (Ω symbol)
 
 **a) Read and Calculate Resistance:** 
 <!-- <ins>Step 1:</ins> to underline -->
@@ -125,7 +128,7 @@ Step 1: **Calculate the resistance and tolerance:** Choose a few resistors from 
 
 
 
-Step 2: **Measure the resistance:** Set the multi-meter to measure resistance (Ω symbol). Use the alligator clips to connect to one end of the resistor, connect **Ground** (COM, black wire) to one end of the resistor and **Positive** (VΩ mA, red wire) to the other end of the resistor.
+Step 2: **Measure the resistance:** Set the multimeter to measure resistance (Ω symbol). Use the alligator clips to connect to one end of the resistor, connect **Ground** (COM, black wire) to one end of the resistor and **Positive** (VΩ mA, red wire) to the other end of the resistor.
 
 <p align = "center" >
 <img src="{% link assets/multimeters_and_measurements/resistance_reader_chart.png %}" width="500" alt = "Image = 1"/>
@@ -151,7 +154,7 @@ Image Credit:<a href = "https://www.elexp.com/products/18sts200pot-cermet-w-shaf
 </p>
 As you move the wiper (or knob) around the resistance changes. When you go left to right there is an increase in the resistance. Now onto measuring resistance with the potentiometer!
 
-Step 1: **Make connections:** begin with taking a potentiometer and put it on a bread board as shown in the video. Now stick two wires to the outher two pins of the poterntiometer, then go on to clip the alligator clips (red and black) from the milti-meter to the outer wires that were previously connected to the two pins. Observe the multi-meter reading, now turn your wiper (knob) around, does your resistance change? 
+Step 1: **Make connections:** begin with taking a potentiometer and put it on a bread board as shown in the video. Now stick two wires to the outher two pins of the poterntiometer, then go on to clip the alligator clips (red and black) from the milti-meter to the outer wires that were previously connected to the two pins. Observe the multimeter reading, now turn your wiper (knob) around, does your resistance change? 
 
 
 Step 2: **Adjust connections:** Move the red wire from the outer pin to the middle of the potentiometer. Now, turn the wiper (knob). Does your resistance change? 
@@ -160,7 +163,7 @@ Have you ever adjusted the volume on a radio? By turning the knob, you control h
  
 ### 🔋Voltage: 
 
-**Note:** Make sure you have set the multi-meter in the right setting to measusre DC voltage (V symbol).
+**Note:** Make sure you have set the multimeter in the right setting to measusre DC voltage (V symbol).
 
 **a) Calculate Voltage:** 
 
@@ -195,7 +198,7 @@ Step 1: **Make connections:** Follow the schematic [Figure 7] or you can follow 
 
 Step 2: **Measure the voltage:** Begin by measuring the voltage of the thermistor at room temperature. Then, pinch the thermistor with your fingers and observe the change in voltage.
 
-**Note:** Connect your multi-meter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all schematics.
+**Note:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all schematics.
 
 
 <p align = "center" >
@@ -213,20 +216,15 @@ You notice voltage increases as you hands are hotter. This is because the resist
 
 ### ⚡ Current: 
 
-**Note:** Make sure you have set the multi-meter in the right setting to measusre DC current (A symbol). Connect your multi-meter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all the following schematics.
+**Note:** Make sure you have set the multimeter in the right setting to measusre DC current (A symbol). Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all the following schematics.
 
 **a) Calculate Current:** 
-<span style="color: red;"> <b> Under making </b>
-
-<!-- 💡 **Explore Activity:** You can mesure the current of the 9V battery. Is it what you expect it to be? -->
-
-**b) Calculate Varying Current:** 
 
 <p align = "center" >
 <img src="{% link assets/multimeters_and_measurements/potentiometer_led_circuit_schematic.png %}" width="550"/>
 </p>
 <p align = "center" >
-Figure 9. This is a schematic we will be making to caluculate varying current in a cicuit using a potentiometer to vary current.  <br>
+Figure 8. This is a schematic we will be making to caluculate varying current in a cicuit using a potentiometer to vary current.  <br>
 </p> 
 
 Step 1: **Make connections:**  Follow the schematic [Figure 9] or you can follow to video to make conenctions shown in the schematic.
