@@ -9,11 +9,9 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 
 <img src="{% link /assets/buttons_and_switches/Y-Board.jpg %}" width="300"/>
 
-<!-- <img src="../assets/buttons_and_switches/Y-Board.jpg" width="300"/> -->
-
 ## Background/Preparation
 - You should have finished the previous lab for a software, github, and PlatformIO intro.
-- You should have the student code downloaded as a .zip file from github. Extract it and open it in VS Code (found here: [student code](https://github.com/byu-ecen-192/y-board-buttons-switches)). Make sure PlatformIO is working properly.
+- You should have the [student code](https://github.com/byu-ecen-192/y-board-buttons-switches)(click here) downloaded as a .zip file from github. Right click on the file to extract it and then go to VS Code to open it. Make sure PlatformIO is working properly. 
 
 
 ## Equipment and Materials
@@ -29,9 +27,6 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 <p align="center">
 <img src="{% link /assets/buttons_and_switches/Zoomed-in_LEDs.jpg %}" width="250"/>
 <img src="{% link /assets/buttons_and_switches/rgb_led.png %}" width="300"/>
-<!-- 
-<img src="../assets/buttons_and_switches/Zoomed-in_LEDs.jpg" width="200"/>
-<img src="../assets/buttons_and_switches/rgb_led.png" width="300"/> -->
 </p>
 
 
@@ -52,7 +47,7 @@ You can also turn on all LEDs the same color with this line:
 
 ### Examples
 #### Turn on an LED
-- To make L3 display bright red, you should use this statement in your code (don’t forget to add the semicolon):
+- To make L3 display bright red, you should use this statement in your code (feel free to click the copy button on the far right):
     ```
     Yboard.set_led_color(3, 255, 0, 0);
     ```
@@ -69,6 +64,15 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 <br>
 <img src="{% link /assets/buttons_and_switches/upload_button.png %}" width="250"/>
 <img src="{% link /assets/buttons_and_switches/upload_button2.png %}" width="600"/>
+</details>
+
+- **Note:** If the code will build, but not upload, you may need to put the board into "booting mode". To do this, hold the "BOOT" button while you press on the "RESET" button. The board is now in booting mode, and you can try uploading the code again.
+- Once the code is uploaded, you will have to press the reset button to run the code.
+
+<details>
+<summary>Where are the Boot and Reset buttons?</summary>
+<br>
+<img src="{% link /assets/buttons_and_switches/boot_and_reset.jpg %}" width="400"/>
 </details>
 <br>
 
@@ -88,17 +92,13 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 
 <p align="center">
 <img src="{% link /assets/buttons_and_switches/led_challenge2.jpg %}" width="300"/>
-
-<!-- <img src="../assets/buttons_and_switches/led_challenge2.jpg" width="400"/> -->
 </p>
-
 
 ## Part 2 - Loops (15 minutes)
 ### While Loops
-While loops are loops that run the code inside them until a certain condition is met. We can also use while loops to make our code run forever.
+While loops are loops that run the code inside them until a certain condition is met. We can also use while loops to make our code run forever. What if we wanted to use a while loop to make the first 10 leds blink one time each, in sequence? We could do something like the following:
 
-What if we wanted to use a while loop to make the first 10 leds blink one time each, in sequence? We could do something like the following:
-
+Paste this code inside the brackets of the `void loops_exploration()` function, and ___don't forget to change which funtion is commented out under___ `int main()`. Also feel free to change the number of LEDs or the color. 
 ```
 int currentLed = 1;
 while(currentLed <= 10) {
@@ -108,6 +108,8 @@ while(currentLed <= 10) {
     currentLed++;
 }
 ```
+- **Reminder:** If the upload fails, you may need to put the board in "booting mode" by holding the "BOOT" button and pressing the "RESET" button. 
+
 
 <details open>
 <summary>More Details</summary>
@@ -117,7 +119,6 @@ while(currentLed <= 10) {
 </ul>
 </details>
 
-Paste this code inside the brackets of the `void loops_exploration()` function, and ___don't forget to change which funtion is commented out under `int main()`.___ Also feel free to change the number of LEDs or the color. 
 
 
 ### For Loops
@@ -164,8 +165,6 @@ Replace the previous code with this example code under the `void loop_exploratio
 
 <p align="center">
 <img src="{% link assets/buttons_and_switches/LED_looping.gif%}" width="300"/>
-
-<!-- <img src="..assets/buttons_and_switches/LED_looping.gif" width="300"/> -->
 </p>
 
 ## Part 3 - Buttons and Switches (15 minutes)
@@ -252,22 +251,17 @@ Replace the previous example with this code and upload it. **Remember to be care
 
 <p align="center">
 <img src="{% link assets/buttons_and_switches/buttons+switches.gif %}" width="300"/>
-
-<!-- <img src="..assets/buttons_and_switches/buttons+switches.gif" width="400"/> -->
 </p>
 
 
 ## Optional: Potentiometers
 <img src="{% link assets/buttons_and_switches/potentiometer2.jpg %}" width="200"/>
 
-<!-- <img src="..assets/buttons_and_switches/potentiometer2.jpg" width="200"/> -->
 
 ### How they work
 Potentiometers are a variable resistor that changes the amount of resistance in a circuit depending on the position of the wiper.
 
 <img src="{% link assets/buttons_and_switches/Potentiometer.webp %}" width="400"/>
-
-<!-- <img src="..assets/buttons_and_switches/Potentiometer.webp" width="500"/> -->
 
 ### Functions
 The function to get the position of the wiper looks like this:
@@ -316,5 +310,4 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 </ul>
 </details>
 
-## Post-Lab Work
-Show your friend or roommate your project and quickly explain to them how it works. Answer any questions they have to the best of your ability, and be prepared to report in class.
+<!-- ## Post-Lab Work -->
