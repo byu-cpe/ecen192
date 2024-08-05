@@ -220,7 +220,7 @@ Now that we have explored these cool features if a potentiometer, we'll be using
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"> <img src= "{% link assets/multimeters_and_measurements/current__circuit_schematic.png %}" width=" 350" alt="Schematic"></td>
+<td style="text-align: center"> <img src= "{% link assets/multimeters_and_measurements/current_circuit_schematic.png %}" width=" 350" alt="Schematic"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/measure_voltage_circuit.jpg%}" width="250" alt="Breadboard connections"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/measure_voltage_circuit_alligatorclips.jpg %}" width="250" alt="Alligator clips connection"></td>
 </tr>
@@ -237,7 +237,7 @@ Step 2: **Measure the current:** You will be connecting your two alligator clips
 
 **b) Measure Varying Voltage:** 
 
-We will be using an analog temperature sensors for this lab; an analog temperature sensors is a resistor that changes its resistance with temperature. This change in resistance is due to Ohms law; a change in the resistance causes a change in the resistance. 
+We will be using an analog temperature sensors for this lab; an analog temperature sensors is a resistor that changes its resistance with temperature. We can then use Ohm's Law to calculate the temperature based on the measured resistance.
 Refer to the image [Figure 9] of the pinout for the Analog Temperature Sensors to make sure you're making the connections to the right pins on the breadboard.
 
 <table style="margin: 0 auto;">
@@ -253,7 +253,7 @@ Refer to the image [Figure 9] of the pinout for the Analog Temperature Sensors t
 <tbody>
 <tr>
 <td style="text-align: center"> <img src="{% link /assets/multimeters_and_measurements/thermistor_pionut.png %}" width="350" alt="Pinout"></td>
-<td style="text-align: center"> <img src="{% link assets/multimeters_and_measurements/thermistor_circuit_schematic.png %}" width="400" alt="Schematic"></td>
+<td style="text-align: center"> <img src="{% link assets/multimeters_and_measurements/thermistor__circuit__schematic.png %}" width="400" alt="Schematic"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/thermistor_circuit.jpg%}" width="310" height = "275" alt="Breadboard connections"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/thermistor_circuit_alligator_clips.jpg %}" width="300" height = "275" alt="Alligator clips connection"></td>
 </tr>
@@ -276,7 +276,7 @@ Step 2: **Measure the voltage:** Begin by measuring the voltage of the analog te
 
 You notice voltage increases as you hands are hotter. This is because the resistance of the analog temperature sensors increased causing an increase in the voltage.  According to Ohms Law: $$ 𝑉 = I𝑅 $$ [this is a rearrangement of the Ohm's Law] an increase in the resistance causes an increase in the voltage. 
 
-💡 **Explore Activity:** You can use the voltage you measured to find the temperature. You can use this formula: Temp = 33.37 x Vout – 6.88, the measured temperature is in Fahrenheit. 
+💡 **Explore Activity:** You can use the voltage you measured to find the temperature. You can use this formula: Temp = 33.37 x Vout – 6.88, the measured temperature is in Fahrenheit. [Note: it might not always be normal.]
 
 ### ⚡ Current: 
 
@@ -294,7 +294,7 @@ You notice voltage increases as you hands are hotter. This is because the resist
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"> <img src="{% link assets/multimeters_and_measurements/potentiometer_led_circuit_schematic.png %}" width="400" alt="Schematic"></td>
+<td style="text-align: center"> <img src="{% link assets/multimeters_and_measurements/potentiometer_led_circuit__schematic.png %}" width="400" alt="Schematic"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/potentimater_circuit.jpg%}" width="300" alt="Breadboard connections"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/potentimater_circuit_aliigator_clip.jpg %}" width="300" alt="Alligator clips connection"></td>
 </tr>
@@ -320,5 +320,5 @@ Step 3: **Make calculations:** Keep the potentiometer in its highest resistance 
 
 In our little circuit, you used the potentiometer to change the resistance. We know that more resistance causes less current to flow. This is due to the way current and resistance are related in the equation. The voltage across the LED remains constant; therefore, this change in LED’s brightness is always due to current.  
 
-💡 **Explore Activity:** Try calculating the current when you increase the resistance of the resistor?
+💡 **Explore Activity:** Try calculating the current when you increase the resistance of the potentiometer?
 
