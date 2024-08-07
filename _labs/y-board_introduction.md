@@ -22,6 +22,15 @@ In his lab you’ll be setting up your coding environment, and learning the basi
 2. Click the green "Code" button and select "Download ZIP"
 3. When it finishes downloading open the file explorer and locate the zip file
 4. Right click the file and select or "unzip"
+
+<p align = "center">
+<img src="{% link /assets/Microcontrollers/Zip.png %}" width="500"/>
+</p>
+
+<p align = "center">
+<img src="{% link /assets/Microcontrollers/extractZip.png %}" width="500"/>
+</p>
+
 <details>
   <summary>🌐 Github</summary>
   we get a repository from github. Github is an online platform where developers store, share, and collaborate on code. When you "clone a repository," or download the ZIP you're making a copy of someone else's project (which is stored on GitHub) onto your own computer. This lets you work on the project locally.
@@ -33,19 +42,19 @@ In his lab you’ll be setting up your coding environment, and learning the basi
 1. Click on the extensions sidebar
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/Extensions.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/Extensions.png %}" width="500"/>
 </p>
 
 2. Search for platformio and install the first one
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/platformIO.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/platformIO.png %}" width="500"/>
 </p>
 
 3. Once it's done installing, click on the platformio icon on the left. Click “open folder” and choose the folder you just unzipped step 1.
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/openProject.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/openProject.png %}" width="500"/>
 </p>
 
 4. A message should pop up on the bottom right saying platformio is configuring your project. The first time you run this, it will take up to 10 minutes.
@@ -91,7 +100,7 @@ The configuration file for the project. (More details in the next drop-down)
   The PlatformIO extension will get the code we write, ready to be sent to the microcontroller. In every project going forward we’ll have a platformio.ini file. Let’s take a look at what’s inside of this one.
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/iniFile.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/iniFile.png %}" width="500"/>
 </p>
 
 Lines 11-14: These specify what kind of microcontroller we are uploading to and the format of code we are using.
@@ -111,10 +120,10 @@ A microcontroller is a compact computer on a chip. They’re used in things that
 
 Applications include, electric toothbrushes, wireless earbuds, microwaves, pacemakers, printers, anti-lock brakes, and many more.
 
-The microcontroller we’ll be using for this class is an ESP32-S3 mini. This microcontroller has a dual-core microprocessor which means it can handle more complex tasks compared to single-core microcontrollers. It runs at a clock speed of up to 240 MHz, which is faster than other microcontrollers, allowing it to process data quickly. One neat feature that we’ll explore in future labs is its built-in support for Wi-Fi and Bluetooth. You can find the microcontroller located on the top left of your y-badge. The esp32 is connected to the various components (buttons, switches, leds etc) by through traces (which are like wires embedded into the printed circuit board). One is highlighted in red in this image:
+The microcontroller we’ll be using for this class is an ESP32-S3 mini. This microcontroller has a dual-core microprocessor which means it can handle more complex tasks compared to single-core microcontrollers. It runs at a clock speed of up to 240 MHz, which is faster than other microcontrollers, allowing it to process data quickly. One neat feature that we’ll explore in future labs is its built-in support for Wi-Fi and Bluetooth. You can find the microcontroller located on the top left of your y-badge. The esp32 is connected to the various components (buttons, switches, leds etc) by through traces (which are like wires embedded into the printed circuit board). They are the light lines coming out of the esp32.
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/Traces.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/Y-board_front.jpg %}" width="250"/>
 </p>
 
 For the rest of the labs in this course, we’ll be learning how to control different components on the y-badge with our microcontroller. To do this, we need to be able to give it instructions by writing and uploading a program. We’ll use visual studio code and an extension (platform io) to help us with this.
@@ -137,7 +146,7 @@ A function is a block of code designed to do one task. Functions are usually use
 Functions are in this format:
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/functions.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/functions.png %}" width="500"/>
 </p>
 
 The return type and return are used for functions that do something like a calculation. When their function is called from somewhere, it is run and whatever was calculated will be returned to the called. For example:
@@ -164,41 +173,41 @@ In our `loop()` we run code to flash the leds and change colors when buttons or 
 2. Let's run the code! First, plug the board into the computer. Next, push the upload button at the bottom left or top right of the vs code screen to send it to the esp32.
    
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/uploadBottom.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/uploadBottom.png %}" width="500"/>
 </p>
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/UploadTop.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/UploadTop.png %}" width="500"/>
 </p>
 
 <details>
   <summary>🔎 Troubleshooting</summary>
   <p align = "center">
-<img src="{% link /assets/Microcontrollers/troubleshootingSucess.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/troubleshootingSucess.png %}" width="800"/>
 </p>
 
 Sometimes the code will appear to upload properly, but nothing will happen on the board. First, make sure the board has batteries. Then, if it still doesn’t do anything, press the reset button and it should start working.
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/troubleshootingSerialException.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/troubleshootingSerialException.png %}" width="800"/>
 </p>
 
 or
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/troubleshootingNoSerialData.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/troubleshootingNoSerialData.png %}" width="800"/>
 </p>
 
 Power off the badge. Then while holding the boot button, switch it back on and upload the code. When the code starts uploading, you can let go of the boot button. If this doesn’t work, try it once more. It almost always works by the second time.
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/troubleshootingSpecifyPort.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/troubleshootingSpecifyPort.png %}" width="800"/>
 </p>
 
 Remember to turn the board on and plug it into the computer you’re using before trying to upload code.
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/troubleshootingPortNotExist.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/troubleshootingPortNotExist.png %}" width="800"/>
 </p>
 
 Try a different usb port, cord, or restart vscode, or restart the computer.
@@ -217,13 +226,13 @@ Each feature corresponds to an led. The number is printed next to the led. In th
 If the screen isn’t already set up. Plug in the corresponding jumpers:
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/gpio.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/i2c_connection.jpg %}" width="250"/>
 </p>
 
 As labeled on the oled display:
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/oled.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/oled_i2c.jpg %}" width="250"/>
 </p>
 
 | Action                                                                       | Result                                                                                         |
@@ -243,13 +252,13 @@ As labeled on the oled display:
 
 The humidity and temperature sensor are in this chip:
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/tempSensor.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/new_humidity.jpg %}" width="250"/>
 </p>
 
 A photo reference for which led corresponds to which component:
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/hardwareTestReference.png %}" width="250"/>
+<img src="{% link /assets/Microcontrollers/new_labeled.png %}" width="250"/>
 </p>
 
 
