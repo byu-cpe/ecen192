@@ -24,7 +24,7 @@ In his lab you’ll be setting up your coding environment, and learning the basi
 4. Right click the file and select or "unzip"
 
 <p align = "center">
-<img src="{% link /assets/Microcontrollers/Zip.png %}" width="500"/>
+<img src="{% link /assets/Microcontrollers/zip.png %}" width="500"/>
 </p>
 
 <p align = "center">
