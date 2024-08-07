@@ -23,7 +23,7 @@ Ohm’s Law is a fundamental concept in electricity and electronics. 🤓
 
 Where $ I $ is current, $ V $ is voltage and $ R $ is resistance.
 
-Think of it like a water pipe: current is the water flowing, voltage is the water pressure, and resistance is the pipe width. So if we increase the voltage (water pressure in the pipe) then the current (water flow) through the circuit will increase. Similarly, if we increase the resistance (width of the pipe) the amount of current flow (water flow) will reduce making it harder for water to flow easily. (Amperage here means current)
+Think of it like a water pipe: current is the water flowing, voltage is the water pressure, and resistance is the pipe width. So if we increase the voltage (water pressure in the pipe) then the current (water flow) through the circuit will increase. Similarly, if we increase the resistance (narrow the pipe) the current (water flow) will decrease. (Amperage here means current)
 <p align = "center" >
 <img src="{% link assets/multimeters_and_measurements/water-analogy.png %}" width="500"/>
 <br>
@@ -33,7 +33,7 @@ Image credit: <a href="https://learn.sparkfun.com/tutorials/transistors/extendin
 </span>
 </p>
 
-The circuit depicted below can be used to understand Ohm's Law. In each circuit, a voltage source controls the current flow, while a resistor prevents excessive current that could damage the LED or other components. Understanding the relationship between resistance and voltage is crucial for controlling current.
+The circuit below demonstrates Ohm's Law. A voltage source, such as a battery, controls current flow. A resistor limits this current to protect components like LEDs.  The current here is not a current source but a component that allows current to flow through it. Understanding the relationship between resistance and voltage is crucial for controlling current.
 <p align = "center" >
 <img src="{% link /assets/multimeters_and_measurements/Ohms_Law.png %}" width="500"/>
 </p>
@@ -44,11 +44,6 @@ Figure 2. This image is a circuit depicting Ohms Law. <br>
 (Image credit: <a href="https://www.grc.nasa.gov/www/k-12/airplane/ohms.html" target="_blank">Glenn Research Center, NASA)</a> 
 </span>
 </p>
-
-<!-- ><a href="#-resistance">Resistance</a>  -->
-<!-- <a href="#voltage">Voltage</a>  -->
-<!-- <a href="#-current">Current</a>   -->
-
 
 
 It seems like a lot to keep track of, so here is a table to summarize everything:
@@ -104,7 +99,7 @@ These are labeled parts of the multimeter in Figure 3:
 7. “10A” input terminal
 
 <p align = "center">
-<img src="{% link assets/multimeters_and_measurements/multimeter_symbols.png %}" width="500"/>
+<img src="{% link assets/multimeters_and_measurements/multimeter_symbols.png %}" width="500" id="figure4"/>
 <br>
 Figure 4. It's a table depicting the meaning of the symbols of the multimeter. <br>
 <span style="font-size: 10px;">
@@ -114,8 +109,8 @@ Image credit: Neoteck User Manual
 
 Here are some things to keep in mind when you work with the multimeter:
 
-1. The **COM** pin is always connected to the ground, it is a common reference point in circuits, often considered zero voltage(black wire). 
-2. The **VΩmA** port is connected to the positive, it is also referred to as a point of high voltage (red wire) of your source.  
+1. The **"COM" input terminal** pin is always connected to the ground, it is a common reference point in circuits, often considered zero voltage(black wire). 
+2. The **“V/Ω/HZ/uA/mA” Input terminal** port is connected to the positive, it is also referred to as a point of high voltage (red wire) of your source.  
 30. We can turn the knob to measure the quantity of your choice like : Resistance, DC voltage, DC current, and AC voltage. 
 
 Now that we know the basic components and have all the required information. 
@@ -148,11 +143,9 @@ Let’s see if we can measure these quantities discussed in Ohm’s Law.
 
 ### 🛠️ Resistance: 
 
-**Note:** Make sure you have the multimeter to measure resistance (Ω symbol)
+ <span style="color:rgb(255, 165, 0);"> <u> <b> Note: </b> </u> </span> Make sure you have the multimeter to measure resistance (Ω symbol Ref <a href="#figure4">Figure 4</a>)
 
 **a) Read and Measure Resistance:** 
-<!-- <ins>Step 1:</ins> to underline -->
-<!-- <a href="https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code" target="_blank">Try it yourself!</a> -->
 
 Step 1: **Measure the resistance and tolerance:** Choose a few resistors from your collection. We will be using the color code chart and this <a href="https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code" target="_blank">Resistance Calculator</a> to measure the resistance and the tolerance of each resistor you choose. Pay attention to the number of colored bands on each resistor to determine if it uses a 4-band or 5-band color code system. You can click the link to access the resistance calculator. Simply input the resistor's color bands to determine its resistance.
 
@@ -160,7 +153,7 @@ Step 1: **Measure the resistance and tolerance:** Choose a few resistors from yo
 
 Step 2: **Measure the resistance:** Set the multimeter to measure resistance (Ω symbol). Use the alligator clips to connect to one end of the resistor, connect **Ground** (COM, black wire) to one end of the resistor and **Positive** (VΩmA, red wire) to the other end of the resistor.
 
-You can also use this chart to manually measure the resistance on a resistor. You notice that there two options to choose from, your resistor can be 4-band or 5-band, in some rare cases it can be 6-bands. If we use the 4-band-color resistor given in image, the first band is green, so the number will be 5, the next one is blue, so the number will be 6, and then we have yellow which will be the multiplier, so it's 10k and the last band is the tolerance, which would be 5% above and below the resistance. The resistance of this resistor will be 56 kΩ with a tolerance of 5%.
+You can also use this chart to manually measure the resistance on a resistor. You that your resistor can be 4-band or 5-band, in some rare cases it can be 6-bands. If we use the 4-band-color resistor given in image, the first band is green, so the number will be 5, the next one is blue, so the number will be 6, and then we have yellow which will be the multiplier, which is 10k and the last band is the tolerance, which would be 5% above and below the resistance. The resistance of this resistor in the image will be 56 kΩ with a tolerance of 5%.
 <p align = "center" >
 <img src="{% link assets/multimeters_and_measurements/resistance_reader_chart.png %}" width="500" alt = "Image = 1"/>
 <br>
@@ -182,9 +175,9 @@ Figure 6. A potentiometer and an overview of the pinout of a potentiometer.  <br
 <span style="font-size: 10px;">
 Image Credit:<a href = "https://www.elexp.com/products/18sts200pot-cermet-w-shaft-200" target = "_blank">Electronix Express.</a> (potentiometer) and <a href = "https://makeabilitylab.github.io/physcomp/arduino/potentiometers.html#how-does-a-potentiometer-work" target = "_blank">Physical Computing and Craft Technologies, University of Washington.</a> (potentiometer pinout)
 </span></p>
-Have you ever adjusted the volume on a radio? By turning the knob, you control how loud the music plays. Potentiometers work similarly for electrical circuits!  They are like adjustable resistors that allow you to control the amount of resistance between two points in a circuit. Imagine a water pipe with a valve, as you open the valve wider (like turning the knob), more water flows (similar to more current flowing in a circuit with lower resistance). By moving a wiper inside the potentiometer, we can change the resistance between its terminals. Moving the wiper(knob) towards ground (black wire) reduced the resistance and moving to positive (red wire) increases the resistance thus, affecting the current flow in the circuit.
+Have you ever adjusted the volume on a radio? By turning the knob, you control how loud the music plays. Potentiometers work similarly for electrical circuits!  They are like adjustable resistors that allow you to control the amount of resistance between two points in a circuit. Imagine a water pipe with a valve, as you open the valve wider (like turning the knob), more water flows (similar to more current flowing in a circuit with lower resistance). By moving a wiper inside the potentiometer, we can change the resistance between its terminals. Moving the wiper (knob) towards ground (black wire) reduces the resistance and moving to positive (red wire) increases the resistance thus, affecting the current flow in the circuit.
 
-Step 1: **Make connections:** begin with taking a potentiometer and put it on a bread board as shown in Fig 7. Now connect the alligator clips (red and black) from the multimeter to the outer wires to the that were previously connected to the two pins. Observe the multimeter reading, now turn your wiper (knob) around, does your resistance change? 
+Step 1: **Make connections:** begin with taking a potentiometer and put it on a bread board as shown in Fig 7. Now connect the alligator clips (red and black) from the multimeter to the outer jumper wires that were previously connected to the two outer pins. Observe the multimeter reading, now turn your wiper (knob) around, does your resistance change? 
 
 <table style="margin: 0 auto;">
 <tbody>
@@ -206,7 +199,7 @@ Now that we have explored these cool features if a potentiometer, we'll be using
  
 ### 🔋Voltage: 
 
-**Note:** Make sure you have set the multimeter in the right setting to measure DC voltage (V symbol).
+ <span style="color: rgb(255, 165, 0);"> <u> <b> Note: </b> </u> </span> Make sure you have set the multimeter in the right setting to measure DC voltage (V<b>⎓</b> symbol Ref <a href="#figure4">Figure 4</a>) When trying to determine the resistors to use try using the previously acquired skills to measure resistance to find the resistor you need. Once done with a circuit, you need to remove the components you might not need to the next circuit as you move onto the next circuit.  
 
 **a) Measure Voltage:** 
 
@@ -220,7 +213,7 @@ Now that we have explored these cool features if a potentiometer, we'll be using
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"> <img src= "{% link assets/multimeters_and_measurements/current_circuit_schematic.png %}" width=" 350" alt="Schematic"></td>
+<td style="text-align: center"> <img src= "{% link assets/multimeters_and_measurements/voltage_circuit_schematic.png %}" width=" 350" alt="Schematic"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/measure_voltage_circuit.jpg%}" width="250" alt="Breadboard connections"></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/measure_voltage_circuit_alligatorclips.jpg %}" width="250" alt="Alligator clips connection"></td>
 </tr>
@@ -230,9 +223,9 @@ Now that we have explored these cool features if a potentiometer, we'll be using
 Figure 8. These are the connections for the circuit to measure voltage.   <br>
 </p> 
 
-Step 1: **Make connections:** Follow the schematic [Figure 8] or you can follow to picture to make connections shown in the schematic.
+Step 1: **Make connections:** Follow the schematic [Figure 8] or you can follow to picture to make connections shown in the schematic. <u> Note </u> that the longer leg of the LED is the anode (-) and that the shorter leg is the cathode(+). 
 
-Step 2: **Measure the current:** You will be connecting your two alligator clips to the points  <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) of the schematic to measure current. If you're following the breadboard pictures from Fig 8, you will connect the black alligator clip to the black jumper wire and the red alligator clip to the red jumper wire.
+Step 2: **Measure the voltage:** You will be connecting your two alligator clips to the points  <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) of the schematic to measure voltage. If you're following the breadboard pictures from Fig 8, you will connect the black alligator clip to the black jumper wire and the red alligator clip to the red jumper wire.
 
 
 **b) Measure Varying Voltage:** 
@@ -244,7 +237,7 @@ Refer to the image [Figure 9] of the pinout for the Analog Temperature Sensors t
 <thead>
 <tr>
 
-<th style="text-align: center">Analog Temperature Sensors Pinout <br> <span style="font-size: 8px;"> Image Credit: Texas Instruments.</span> </th>
+<th style="text-align: center">Analog Temperature Sensors Pinout <br> </th>
 <th style="text-align: center">Schematic</th>
 <th style="text-align: center">Breadboard connections</th>
 <th style="text-align: center">Alligator clips connection</th>
@@ -252,15 +245,10 @@ Refer to the image [Figure 9] of the pinout for the Analog Temperature Sensors t
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"> <img src="{% link /assets/multimeters_and_measurements/thermistor_pionut.png %}" width="350" alt="Pinout"></td>
+<td style="text-align: center"> <img src="{% link /assets/multimeters_and_measurements/thermistor_pionut.png %}" width="350" alt="Pinout"> <span style="font-size: 8px;"> Image Credit: Texas Instruments.</span></td>
 <td style="text-align: center"> <img src="{% link assets/multimeters_and_measurements/thermistor__circuit__schematic.png %}" width="400" alt="Schematic"></td>
-<td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/thermistor_circuit.jpg%}" width="310" height = "275" alt="Breadboard connections"></td>
-<td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/thermistor_circuit_alligator_clips.jpg %}" width="300" height = "275" alt="Alligator clips connection"></td>
-</tr>
-<tr> 
-<!-- <td style="text-align: center">Breadboard</td> 
-<td style="text-align: center">Arduino Uno, Leonardo, or similar</td> 
-<td style="text-align: center">Red LED</td>  </tr> -->
+<td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/thermistor__circuit.jpg%}" width="310" height = "275" alt="Breadboard connections" ></td>
+<td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/thermistor_circuit_alligator__clips.jpg %}" width="300" height = "275" alt="Alligator clips connection"></td>
 </tr>
 </tbody>
 </table>
@@ -276,11 +264,10 @@ Step 2: **Measure the voltage:** Begin by measuring the voltage of the analog te
 
 You notice voltage increases as you hands are hotter. This is because the resistance of the analog temperature sensors increased causing an increase in the voltage.  According to Ohms Law: $$ 𝑉 = I𝑅 $$ [this is a rearrangement of the Ohm's Law] an increase in the resistance causes an increase in the voltage. 
 
-💡 **Explore Activity:** You can use the voltage you measured to find the temperature. You can use this formula: Temp = 33.37 x Vout – 6.88, the measured temperature is in Fahrenheit. [Note: it might not always be normal.]
-
+💡 **Explore Activity:** You can use the voltage you measured to find the temperature. You can use this formula: Temp = 33.37 x Vout – 6.88, the measured temperature is in Fahrenheit.
 ### ⚡ Current: 
 
-**Note:** Measuring current is a little risky, we need to be very cautious when measuring current. For today's lab we will be calculating current using the other properties in Ohm's Law. Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all the following schematics.
+ <span style="color: rgb(255, 165, 0);"> <u> <b> Note: </b> </u> </span>Measuring current is a little risky, we need to be very cautious when measuring current. For today's lab we will be calculating current using the other properties in Ohm's Law. Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all the following schematics. Once done with a circuit, you need to remove the components. 
 
 **a) Calculate Current:** 
 
@@ -294,8 +281,8 @@ You notice voltage increases as you hands are hotter. This is because the resist
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"> <img src="{% link assets/multimeters_and_measurements/potentiometer_led_circuit__schematic.png %}" width="400" alt="Schematic"></td>
-<td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/potentimater_circuit.jpg%}" width="300" alt="Breadboard connections"></td>
+<td style="text-align: center"> <img src="{% link assets/multimeters_and_measurements/potentiometer__led_circuit__schematic.png %}" width="400" alt="Schematic"></td>
+<td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/potentimater_circuit.jpg%}" width="300" alt="Breadboard connections" ></td>
 <td style="text-align: center"><img src= "{% link assets/multimeters_and_measurements/potentimater_circuit_aliigator_clip.jpg %}" width="300" alt="Alligator clips connection"></td>
 </tr>
 <tr> 
@@ -311,11 +298,11 @@ Figure 10. These are the connections for the circuit to calculate current.   <br
 
 Step 1: **Make connections:** Follow the schematic [Figure 10] or you can follow to picture to make connections shown in the schematic. Once you have completed the connections, you are free to turn the wiper (knob) around to see if the LED's brightness changes. 
 
-Remember this expression: $$ I = \frac{V}{R} $$?<br> This equation suggests that as long as we know voltage ($V$) and Resistance ($R$) we can find current ($I$). Let's see if that's true!
+Remember this equation: $$ I = \frac{V}{R} $$?<br> This equation suggests that as long as we know voltage ($V$) and Resistance ($R$) we can find current ($I$). Let's see if that's true!
  
-Step 2: **Measure:** We know the resistance of the resistor and potentiometer from our previous activities. Let's measure the voltage on the circuit, connect your alligator clips to the circuit as shown on the circuit. Make sure the multimeter in the right setting to measure voltage. Take note of the voltage reading. You will connect the black alligator clip to the black jumper wire and the red alligator clip to the red jumper wire, if you're following the breadboard pictures from Fig 10.
+Step 2: **Measure:** We know the resistance of the resistor and potentiometer from our previous activities. Let's measure the voltage on the circuit, connect your alligator clips to the circuit as shown on the figure. Make sure the multimeter in the right setting to measure voltage. Take note of the voltage reading. If you're following the breadboard pictures from Fig 10, you will connect the black alligator clip to the black jumper wire and the red alligator clip to the red jumper wire.
 
-Step 3: **Make calculations:** Keep the potentiometer in its highest resistance setting (when the LED is the brightest). Now since we have a normal resistor and a potentiometer (which is varying resistance) we will need to add them to get one resistance value. Use the equation to find current!
+Step 3: **Make calculations:** Keep the potentiometer in its lowest resistance setting (when the LED is the brightest). Now since we have a normal resistor and a potentiometer (which is varying resistance) we will need to add them to get one resistance value. Use the equation to find current!
 
 
 In our little circuit, you used the potentiometer to change the resistance. We know that more resistance causes less current to flow. This is due to the way current and resistance are related in the equation. The voltage across the LED remains constant; therefore, this change in LED’s brightness is always due to current.  
