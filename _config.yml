@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "ECEn 192: ???"
+title: "ECEn 192: It's Not 224!"
 class_name: ???
 class_number: ECEn 192
 email: lundrigan@byu.edu
@@ -37,13 +37,13 @@ suggest_edits:
 
 # Set the color theme of the page
 colors:
-  text_color: "#111"
-  frame_color: "rgb(248, 249, 250)"
-  background_color: "#fdfdfd"
-  brand_color: "#66cce8"
-  secondary_color: "#cb8ebe"
-  text_selection_color: "#cce3a7"
-  sidebar_hover_color: "#ef8eb1"
+  text_color: "#fff"
+  frame_color: "#333"
+  background_color: "#222"
+  brand_color: "#60B3BE"
+  secondary_color: "#52439B"
+  text_selection_color: "#FEF081"
+  sidebar_hover_color: "#7D5FA9"
 
   # text_color: "#fff"
 
