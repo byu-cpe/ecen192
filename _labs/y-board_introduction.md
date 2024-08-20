@@ -53,43 +53,43 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
 ### 📂 Step 1- Getting the starter code:
 
-1. Open Visual Studio Code
-2. Click the “Source Control” button on the left toolbar
-3. Click “Clone Repository”
+- Open Visual Studio Code
+- Click the “Source Control” button on the left toolbar
+- Click “Clone Repository”
 
 <p align = "center">
 <img src="{% link /assets/Microcontrollers/cloneRepo.png %}" width="250"/>
 </p>
 
-5. Enter the url: https://github.com/byu-ecen-192/y-board-introduction.git and hit Enter
+- Enter the url: https://github.com/byu-ecen-192/y-board-introduction.git and hit Enter
 
-6. A window will open and ask you to select the destination folder. Choose where to put it.
+- A window will open and ask you to select the destination folder. Choose where to put it.
 
 ### 👽 Step 2-Setting up the environment:
 
-1. Click on the extensions sidebar
+- Click on the extensions sidebar
 
 <p align = "center">
 <img src="{% link /assets/Microcontrollers/Extensions.png %}" width="250"/>
 </p>
 
-2. Search for platformio and install the first one
+- Search for platformio and install the first one
 
 <p align = "center">
 <img src="{% link /assets/Microcontrollers/platformIO.png %}" width="250"/>
 </p>
 
-3. Once it's done installing, click on the platformio icon on the left. Click “open folder” and choose the folder you just cloned in step 1.
+- Once it's done installing, click on the platformio icon on the left. Click “open folder” and choose the folder you just cloned in step 1. If you do not see an option to open a folder, your machine may have automatically found your project and opened it for you. If not, navigate to the "PlatformIO Home" tab, and from there you should be able to open an existing project.
 
 <p align = "center">
 <img src="{% link /assets/Microcontrollers/openProject.png %}" width="250"/>
 </p>
 
-4. A message should pop up on the bottom right saying platformio is configuring your project. The first time you run this, it will take up to 10 minutes.
+- A message should pop up on the bottom right saying platformio is configuring your project. The first time you run this, it will take up to 10 minutes.
 
 ### 💻 Step 3- Programming:
 
-1. We’ll be coding in c++ for these labs so remember to end every line of code with a semicolon. You can make one-line comments with two slashes 
+We’ll be coding in c++ for these labs so remember to end every line of code with a semicolon. You can make one-line comments with two slashes 
 
 `// like this`
 
@@ -128,11 +128,11 @@ In our `setup()` loop, we initialize all the necessary parts of the board by cal
 
 In our `loop()` we run code to flash the LEDs and change colors when buttons or switches are flipped.
 
-2. Let's run the code! To prepare the board for upload, plug in your board to the computer you're using through the USB cable. 
+1. Let's run the code! To prepare the board for upload, plug in your board to the computer you're using through the USB cable. 
 
-3. On the Y-board: while holding down the "Boot" button, press the "reset" button. The imporant thing is that the "Boot" button is held down while the board is powering on. This puts the board in a state where it is expecting  to receive compiled code.
+2. On the Y-board: while holding down the "Boot" button, press the "reset" button. The imporant thing is that the "Boot" button is held down while the board is powering on. This puts the board in a state where it is expecting  to receive compiled code.
 
-4. Back in VS Code: push the upload button at the bottom left or top right of the VS Code screen to send it to the ESP32.
+3. Back in VS Code: push the upload button at the bottom left or top right of the VS Code screen to send it to the ESP32.
    
 <p align = "center">
 <img src="{% link /assets/Microcontrollers/uploadBottom.png %}" width="250"/>
