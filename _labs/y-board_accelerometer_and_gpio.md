@@ -31,11 +31,11 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 </p>
 
 ## Equipment and Materials
-•	(1) Y-board
-•	(1) OLED display
-•	(4) Jumper wires
-•	(1) Breadboard (if you prefer)
-•	(1) USB data cable
+- (1) Y-board
+- (1) OLED display
+- (4) Jumper wires
+- (1) Breadboard (if you prefer)
+- (1) USB data cable
 
 ## Procedure
 ### Step 1: Hardware Setup
@@ -57,16 +57,18 @@ If you used the same colors as I did in (FILL IN THE BLANK), you should have the
 </p>
 
 ### Step 2: Software Setup
-1. Click on the "Source Control" button on the lefthand bar of VSCode (hotkey: Ctrl+Shift+G)
-2. Enter this URL: https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git
-3. Choose a destination to save the lab files at
-4. Once you've opened the platformio project, build the project (hotkey: Ctrl+Alt+B)
-5. Upload the build to the Y-Board (hotkey: Ctrl+Alt+U)
+1. Open VS Code
+2. Open a new VS Code window that doesn't already have a project open (hotkey: Ctrl+Shift+N)
+3. Click on the "Source Control" button on the lefthand bar of VSCode (hotkey: Ctrl+Shift+G)
+4. Enter this URL: https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git
+5. Choose a destination to save the lab files at
+6. Once you've opened the platformio project, build the project (hotkey: Ctrl+Alt+B)
+7. Upload the build to the Y-Board (hotkey: Ctrl+Alt+U)
  
 ### Step 3: Tinker
 Try out something cool yourself! I’ll list a few ideas below.
 1.	Change the text at the top of the OLED (easy)
-2.	Draw new shapes on the OLED (medium)
+2.	Draw new shapes on the OLED (easy)
 3.	Use the accelerometer data to tune the brightness of an LED (medium)
 4.	Use each of the 3 axes of data to scale the brightness of red, green, and blue independently on an LED (medium)
 5.	Connect the potentiometer to control the rotation of the 3D axis (hard)
