@@ -132,7 +132,7 @@ In our `loop()` we run code to flash the LEDs and change colors when buttons or 
 
 2. On the Y-board: while holding down the "Boot" button, press the "reset" button. The imporant thing is that the "Boot" button is held down while the board is powering on. This puts the board in a state where it is expecting  to receive compiled code.
 
-3. Back in VS Code: push the upload button at the bottom left or top right of the VS Code screen to send it to the ESP32.
+3. Back in VS Code: push the upload button at the bottom left or top right of the VS Code screen to send it to the ESP32 (hotkey: Ctrl+Alt+U).
    
 <p align = "center">
 <img src="{% link /assets/Microcontrollers/uploadBottom.png %}" width="250"/>
