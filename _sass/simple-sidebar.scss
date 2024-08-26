@@ -4,42 +4,42 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .sticky-top {
-  background-color: $frame-color;
+    background-color: $frame-color;
 }
 
 .sidebar-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: calc(100vh);
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding-bottom: 50px;
-  background-color: $frame-color;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: calc(100vh);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 50px;
+    background-color: $frame-color;
 }
 
 .sidebar-sticky::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 #sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -16rem;
-  -webkit-transition: margin 0.25s ease-out;
-  -moz-transition: margin 0.25s ease-out;
-  -o-transition: margin 0.25s ease-out;
-  transition: margin 0.25s ease-out;
+    min-height: 100vh;
+    margin-left: -16rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
 }
 
 #sidebar-wrapper .sidebar-heading-big {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.5rem;
-  font-family: $header-font-family;
+    padding: 0.875rem 1.25rem;
+    font-size: 1.5rem;
+    font-family: $header-font-family;
 }
 
 .sidebar-heading-big img {
@@ -47,57 +47,57 @@ body {
 }
 
 .sidebar-heading-big a {
-  color: $text-color;
+    color: $text-color;
 }
 
 .sidebar-heading-big a:hover {
-  text-decoration: none;
-  color: $text-color;
+    text-decoration: none;
+    color: $text-color;
 }
 
 a.sidebar-item:focus,
 a.sidebar-item:hover {
-  background-color: rgba($sidebar-hover-color, 0.7) !important;
-  color: $text-color;
+    background-color: rgba($sidebar-hover-color, 0.7) !important;
+    color: $text-color;
 }
 
 .sidebar-item {
-  background-color: $frame-color;
-  color: $text-color;
+    background-color: $frame-color;
+    color: $text-color;
 }
 
 #sidebar-wrapper .sidebar-heading {
-  padding: 2rem 1.25rem 0.3rem 1.25rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: $frame-color;
-  color: $brand-color;
-  font-family: $header-font-family;
+    padding: 2rem 1.25rem 0.3rem 1.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: $frame-color;
+    color: $brand-color;
+    font-family: $header-font-family;
 }
 
 #sidebar-wrapper .list-group {
-  width: 19rem;
+    width: 19rem;
 }
 
 #page-content-wrapper {
-  min-width: 100vw;
+    min-width: 100vw;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 @media (min-width: 768px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
 
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
 
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -19rem;
-  }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -19rem;
+    }
 }
