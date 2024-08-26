@@ -1,6 +1,6 @@
 ---
 title: Component Exploration
-number: 2
+number: 1
 layout: lab
 ---
 
