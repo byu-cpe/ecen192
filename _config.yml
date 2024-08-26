@@ -40,9 +40,9 @@ colors:
   text_color: "#111"
   frame_color: "rgb(248, 249, 250)"
   background_color: "#fdfdfd"
-  brand_color: "#E92390"
-  secondary_color: "#F37062"
-  text_selection_color: "#F6BB4D"
+  brand_color: "#F37062"
+  secondary_color: "#F6BB4D"
+  text_selection_color: "#F5A2BC"
   sidebar_hover_color: "#F19C41"
 
   # text_color: "#fff"
