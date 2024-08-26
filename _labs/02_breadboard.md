@@ -4,13 +4,26 @@ number: 2
 layout: lab
 ---
 
+<!-- 
+NOTICE: THIS PAGE USES DYNAMIC FIGURE NUMBERS.
+all your images should following this format:
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% raw %}{% link /assets/labname/imagename.jpg %}{% endraw %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> INSERT A CAPTION</figcaption>
+</figure>
+
+NOTES:
+  - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+-->
 
 ## Overview
 Breadboards are tools to implement circuits in various contexts, and are especially useful in prototyping and development contexts. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand how they function.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/front_breadboard.jpg %}">
-  <figcaption style="text-align: center;">Picture of a breadboard.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> Picture of a breadboard.</figcaption>
 </figure>
 
 
@@ -21,7 +34,7 @@ These busses are notable as they support connections without manually attaching 
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/back_breadboard.jpg %}">
-  <figcaption style="text-align: center;">Picture of the inside and back of a breadboard</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> Picture of the inside and back of a breadboard</figcaption>
 </figure>
 
 What we will be doing today is utilizing these principles to create various circuits.
@@ -45,7 +58,7 @@ Once that is done, you will be able to set up the first circuit. Do this by conn
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit1.jpg %}">
-  <figcaption style="text-align: center;">First circuit picture with one blue led.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> First circuit picture with one blue led.</figcaption>
 </figure>
 
 Next, we will build a circuit like a traffic light. To do this, we will utilize a dipswitch placed over the DIP Support. While not always legible, the dipswitch should have an arrow labeled "ON" that, while not necessary in orienting the component, will help with turning on and off the lights as desired. Do be sure that, when you desire to have the DIP switch set to on, it is all the way on. DIP switches can be quite fickle and look on, but be halfway between on and off (or the same but with an intended 'off' state).
@@ -54,7 +67,7 @@ Repeating the process from the one LED, place three other LEDs (ideally red, yel
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit2.jpg %}">
-  <figcaption style="text-align: center;">Second circuit picture.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> Second circuit picture.</figcaption>
 </figure>
 
 The third circuit is optional, but involves a button and a buzzer. A buzzer is a diode that produces sound and a button is like an on/off switch, but is only on while being held down. A note about the buzzer: while these are diodes, like LEDs, these are some of the more fickle variety like were mentioned. If you setup the buzzer going in the wrong direction, the buzzer could break. To avoid this, ensure that it is going in the right direction, with the cathode (the side indicated as "positive" on the top of the component) going to the positive side of the circuit. That said, even if the buzzer breaks, it will still allow for the flow of electricity, so you should still be able to get the circuit to work.
@@ -62,14 +75,14 @@ For this reason, as well as the involvement of the button, it will likely be mor
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit3off.jpg %}">
-  <figcaption style="text-align: center;">circuit in different states - off </figcaption>
+  <figcaption style="text-align: center;"><strong></strong> circuit in different states - off </figcaption>
 </figure>
 
 When the button is pressed, it should look like this and play a sound.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit3on.jpg %}">
-  <figcaption style="text-align: center;">circuit in different states - on </figcaption>
+  <figcaption style="text-align: center;"><strong></strong> circuit in different states - on </figcaption>
 </figure>
 
 Lastly, make a new circuit according to your own design! This could involve different color LEDs, new layouts, and a different number of LEDs, as well as buttons, switches, or even a buzzer; so long as it is according to your own design!
@@ -77,3 +90,17 @@ Lastly, make a new circuit according to your own design! This could involve diff
 
 ## Optional Out-of-Class Activities
 Recall how the square LED was much easier to see, and much nicer to look at than the other LEDs. This is because of the way it diffuses light. For the post-lab, find an object at home that will work well as a light diffuser to put over one of your other LEDs. (Hint: Try to find something translucent. If it is too solid, the light won't be able to get through, but if it is too clear, the light won't disperse as desired).
+
+<!-- Dynamic figure numbering script -->
+<script>
+  // Select all figures on the page
+  const figures = document.querySelectorAll('figure');
+
+  // Loop through each figure and update the caption with dynamic numbering
+  figures.forEach((figure, index) => {
+    const figcaption = figure.querySelector('figcaption strong');
+    if (figcaption) {
+      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
+    }
+  });
+</script>

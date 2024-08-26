@@ -4,31 +4,47 @@ number: 8
 layout: lab
 ---
 
+<!-- 
+NOTICE: THIS PAGE USES DYNAMIC FIGURE NUMBERS.
+all your images should following this format:
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% raw %}{% link /assets/labname/imagename.jpg %}{% endraw %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> INSERT A CAPTION</figcaption>
+</figure>
+
+NOTES:
+  - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+-->
 
 ## Overview
 This lab is about reading data off an accelerometer and sending that information to an off-board device using the GPIO pins. In this case, we are sending the data to a small OLED screen that displays how much acceleration the board is experiencing in real time in 3 dimensional space.
 
 <!-- Put "oled_accel.jpg" here -->
-<p align = "center">
-<img src="{% link /assets/08_yb_accel_gpio/oled_accel.jpg %}" width="250"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/08_yb_accel_gpio/oled_accel.jpg %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> A picture of the OLED screen we will be using.</figcaption>
+</figure>
 
 ## Background/Preparation
 An accelerometer (“acceler-“ and “-meter”) is a circuit chip that measures the acceleration that chip experiences (from the inside). The gist of how one works is that there is a very small, delicate spring inside of the chip that also acts as part of a circuit. As that spring compresses or relaxes, the properties of the circuit change in a way that can be revealed by measuring the voltage in the circuit.
 
 <!-- Put "accel_mems.png" alongside "accel_chip.png" here -->
-<p align = "center">
-<img src="{% link /assets/08_yb_accel_gpio/accel_mems.png %}" width="250"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/08_yb_accel_gpio/accel_mems.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> A diagram of how an accelerometer chip works.</figcaption>
+</figure>
 
 “GPIO” stands for general purpose input & output. From an engineer’s perspective, GPIO pins are pins that the engineer can program to do pretty much whatever he/she wants. They’re pins that don’t have a predetermined purpose, allowing the engineer flexibility to incorporate and interface with new components to meet his/her project-specific needs.
 
 The GPIO pins on your Y-board are found on the back. While there are six pins, only three of them are actually GPIO. This is because three of them are reserved as 5V, 3.3V, and GND. Two of the GPIO pins can additionally support a communication named I2C. We rely on those pins’ support of that protocol in order to send data from the accelerometer to the off-board OLED display.
 
 <!-- Put "gpio.png" here -->
-<p align = "center">
-<img src="{% link /assets/08_yb_accel_gpio/gpio.png %}" width="250"/>
-</p>
+<!-- <figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/08_yb_accel_gpio/gpio.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> A picture of the back of the Y-Board showing where the GPIO pins are.</figcaption>
+</figure> -->
 
 ## Equipment and Materials
 •	(1) Y-board
@@ -41,20 +57,24 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 ### Step 1: Hardware Setup
 1.	Plug your 4 jumper wires into the OLED screen
 <!-- Put "oled.jpg" and "oled_i2c.jpg" here -->
-<p align = "center">
-<img src="{% link /assets/08_yb_accel_gpio/oled_i2c.jpg %}" width="250"/>
-</p>
- 
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/08_yb_accel_gpio/oled_i2c.jpg %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> The OLED screen with the jumper wires plugged in.</figcaption>
+</figure>
+
 2.	Plug other side of those jumpers into the proper GPIO Pins (see key below)
 <!-- Put "i2c_label.png" here -->
-<p align = "center">
-<img src="{% link /assets/08_yb_accel_gpio/i2c_label.png %}" width="250"/>
-</p>
-If you used the same colors as I did in (FILL IN THE BLANK), you should have the following:
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/08_yb_accel_gpio/i2c_label.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> A diagram of the GPIO pins and where to plug them in.</figcaption>
+</figure>
+
+If you used the same colors as I did, it should look like the following:
 <!-- Put "i2c_connection.jpg" here -->
-<p align = "center">
-<img src="{% link /assets/08_yb_accel_gpio/i2c_connection.jpg %}" width="250"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/08_yb_accel_gpio/i2c_connection.jpg %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> The OLED screen with the jumper wires plugged in.</figcaption>
+</figure>
 
 ### Step 2: Software Setup
 1. Click on the "Source Control" button on the lefthand bar of VSCode (hotkey: Ctrl+Shift+G)
@@ -78,3 +98,17 @@ If you have a pair, slap some sunglasses on your face a take an epic selfie with
 
 ## Rubric/Submission
 Go to LearningSuite and submit your attendance and feedback for this lab
+
+<!-- Dynamic figure numbering script -->
+<script>
+  // Select all figures on the page
+  const figures = document.querySelectorAll('figure');
+
+  // Loop through each figure and update the caption with dynamic numbering
+  figures.forEach((figure, index) => {
+    const figcaption = figure.querySelector('figcaption strong');
+    if (figcaption) {
+      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
+    }
+  });
+</script>

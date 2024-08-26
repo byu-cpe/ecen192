@@ -4,10 +4,27 @@ number: 6
 layout: lab
 ---
 
+<!-- 
+NOTICE: THIS PAGE USES DYNAMIC FIGURE NUMBERS.
+all your images should following this format:
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% raw %}{% link /assets/labname/imagename.jpg %}{% endraw %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> INSERT A CAPTION</figcaption>
+</figure>
+
+NOTES:
+  - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+-->
+
 ## Overview
 This lab will introduce you to the Y-badge and how to code it. We will begin with learning how to code LEDs and buttons and upload it to the Y-badge. 
 
-<img src="{% link /assets/06_yb_buttons_switches/Y-Board.jpg %}" width="320"/>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/06_yb_buttons_switches/Y-Board.jpg %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 
 ## Background/Preparation
 - You should have finished the previous lab for a software, github, and PlatformIO intro.
@@ -18,19 +35,19 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 - Y-Badge
 - USB-C cord
 
-# Procedure
+## Procedure
 **As you go through this lab, copy the example code into the respective section on VS Code main.cpp file to explore how each part works.** Don't forget to uncomment the corresponding function under the `int main()` section near the top.
 
-## Part 1 - LED Exploration (5-10 minutes)
+### Part 1 - LED Exploration (5-10 minutes)
 - Each LED, labeled L1 to L20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
 
-<p align="center">
-<img src="{% link /assets/06_yb_buttons_switches/Zoomed-in_LEDs.jpg %}" width="250"/>
-<img src="{% link /assets/06_yb_buttons_switches/rgb_led.png %}" width="300"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/06_yb_buttons_switches/Zoomed-in_LEDs.jpg %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/06_yb_buttons_switches/rgb_led.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 
-
-### Functions
+#### Functions
 The function to set an LED looks like this:
 
 `Yboard.set_led_color(<LED number>, <red>, <green>, <blue>);` 
@@ -45,8 +62,8 @@ You can also turn on all LEDs the same color with this line:
 
 `Yboard.set_all_leds_color(<red>, <green>, <blue>)`
 
-### Examples
-#### Turn on an LED
+#### Examples
+##### Turn on an LED
 - To make L3 display bright red, you should use this statement in your code (feel free to click the copy button on the far right):
     ```
     Yboard.set_led_color(3, 255, 0, 0);
@@ -60,19 +77,26 @@ You can also turn on all LEDs the same color with this line:
 Copy and paste these two lines of code inside the brackets under the `void led_exploration()` function in VS Code (line 23). Don’t forget to click the “upload” arrow in the top right corner or bottom edge to program your board with new code!
 
 <details>
-<summary>Where is the Upload Button?</summary>
+<summary><i>Help: Where is the Upload Button?</i></summary>
 <br>
-<img src="{% link /assets/06_yb_buttons_switches/upload_button.png %}" width="250"/>
-<img src="{% link /assets/06_yb_buttons_switches/upload_button2.png %}" width="600"/>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/06_yb_buttons_switches/upload_button.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/06_yb_buttons_switches/upload_button2.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 </details>
+
 
 - **Note:** If the code will build, but not upload, you may need to put the board into "booting mode". To do this, hold the "BOOT" button while you press on the "RESET" button. The board is now in booting mode, and you can try uploading the code again.
 - Once the code is uploaded, you will have to press the reset button to run the code.
 
 <details>
-<summary>Where are the Boot and Reset buttons?</summary>
+<summary><i>Help: Where are the Boot and Reset buttons?</i></summary>
 <br>
-<img src="{% link /assets/06_yb_buttons_switches/boot_and_reset.jpg %}" width="400"/>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/06_yb_buttons_switches/boot_and_reset.jpg %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 </details>
 <br>
 
@@ -87,15 +111,16 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
     ```
 
 
-### Activity 1
+#### Activity 1
 - Turn on at least one more LED with a different color. Feel free to play around with the brightness value or try turning on all LEDs the same color. Show a neighbor your LEDs. Try not to spend more than a couple minutes on this.
 
-<p align="center">
-<img src="{% link /assets/06_yb_buttons_switches/led_challenge.jpg %}" width="350"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/06_yb_buttons_switches/led_challenge.jpg %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 
-## Part 2 - Loops (15 minutes)
-### While Loops
+### Part 2 - Loops (15 minutes)
+#### While Loops
 While loops are loops that run the code inside them until a certain condition is met. We can also use while loops to make our code run forever. What if we wanted to use a while loop to make the first 10 leds blink one time each, in sequence? We could do something like the following:
 
 Paste this code inside the brackets of the `void loops_exploration()` function, and ___don't forget to change which funtion is commented out under___ `int main()`. Also feel free to change the number of LEDs or the color. 
@@ -112,7 +137,7 @@ while(currentLed <= 10) {
 
 
 <details open>
-<summary>More Details</summary>
+<summary><i>More Details</i></summary>
 <ul>
 <li> This loop has a loop condition that isn’t always true, because we increment the value of currentLed every time it runs using currentLed++;. We want it to run as long as currentLed <= 10 is true. Once currentLed is 11 or larger, the loop won’t run again. </li>
 <li> The <code>delay(250)</code> means it will wait for 250 ms, or a quarter of a second, before turning the next LED on. </li>
@@ -121,7 +146,7 @@ while(currentLed <= 10) {
 
 
 
-### For Loops
+#### For Loops
 A `for` loop to do the same thing as above looks like the following:
 
 ```
@@ -133,7 +158,7 @@ for(int currentLed = 1; currentLed <= 10; currentLed++) {
 ```
 
 <details open>
-<summary>More Details</summary>
+<summary><i>More Details</i></summary>
 <ul>
 <li> "for" loops and "while" loops can do the same things, but "for" loops are better for running code a certain number of times and "while" loops are better for running code until a certain condition is met in our program.</li>
 
@@ -145,7 +170,7 @@ Replace the `while` loop code with the `for` loop code and upload it. You should
 
 ___Be careful with the number of brackets when replacing code.___ If you have extra brackets, the code will not run.
 
-### Examples
+#### Examples
 
 Make all the LEDs blink. On for 500ms then off for 500ms, repeated forever.
 ```
@@ -159,16 +184,17 @@ while(true){
 
 Replace the previous code with this example code under the `void loop_exploration()` function to test it out. Feel free to change the delay time, brightness, or colors of the LEDs as you wish. Try not to spend more than a minute or two on this.
 
-### Activity 2
+#### Activity 2
 - Make a single LED circle the board continueously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
     - Hint: use the code from the For Loops section as a base, change the number of LEDs, and make it loop forever (putting everything inside a `while(true)` loop, like in the example above).
 
-<p align="center">
-<img src="{% link assets/06_yb_buttons_switches/LED_looping.gif%}" width="350"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/06_yb_buttons_switches/LED_looping.gif%}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 
-## Part 3 - Buttons and Switches (15 minutes)
-### Functions
+### Part 3 - Buttons and Switches (15 minutes)
+#### Functions
 The function to determine if a button is pressed is:
 
 `Yboard.get_button(<button_number>);`
@@ -179,7 +205,7 @@ And the function to determine if a switch is ON is:
 
 Each of these functions returns `true` if the button/switch is pressed or ON, and `false` otherwise. `<button_number>` or `<switch_number>` should be the number of the button or switch whose position you want to check as an `int` (eg. 1, or 2).
 
-### What are Conditionals?
+#### What are Conditionals?
 ___You don't need to upload this code, so when you feel like you understand conditionals, continue to the next section and upload the "Examples" code.___
 
 We use **if statements** to evaluate **conditionals** that are `true` or `false`:
@@ -190,7 +216,7 @@ if (Yboard.get_button(1)) {
 }
 ```
 <details open>
-<summary>More Details</summary>
+<summary><i>More Details</i></summary>
 <ul>
 <li> If Button1 is pressed, <code>buttons_get()</code> will return a <code>true</code>. </li>
 <li> This <b>if statement</b> can also be written as <code>if (buttons_get(1)==true)</code>, but the <code>true</code> is implied in the <b>if statement</b> above.</li>
@@ -210,7 +236,7 @@ if(Yboard.get_switch(1) || Yboard.get_switch(2)) {
 ```
 
 
-### Examples
+#### Examples
 We can use an `else` block to make the board do something else when the `if` block is `false`. 
 
 Copy and paste this code into the `void button_exploration()` function and upload it. ___Don't forget to change which funtion is commented out under `int main()`.___ 
@@ -245,29 +271,33 @@ while (true) {
 Replace the previous example with this code and upload it. **Remember to be careful with the number of brackets.** Also feel free to change the LED colors. 
 
 
-### Activity 3
+#### Activity 3
 - Use multiple buttons and/or switches and their combinations to turn on an LED (or all LEDs) with different colors. Use at least 4 combinations. Show a neighbor what you chose to do.
     - Hint: You will have three `else if` statements, and your final `else` statement should turn all LEDs off.
 
-<p align="center">
-<img src="{% link assets/06_yb_buttons_switches/buttons+switches.gif %}" width="400"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/06_yb_buttons_switches/buttons+switches.gif %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 
 
-## Optional: Potentiometers
-### How they work
+### Optional: Potentiometers
+#### How they work
 Potentiometers are a variable resistor that changes the amount of resistance in a circuit depending on the position of the wiper.
 
-<img src="{% link assets/06_yb_buttons_switches/potentiometer2.jpg %}" width="200"/>
-<img src="{% link assets/06_yb_buttons_switches/Potentiometer.webp %}" width="400"/>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/06_yb_buttons_switches/potentiometer2.jpg %}" style="display: block; margin: auto;">
+  <img src="{% link assets/06_yb_buttons_switches/Potentiometer.webp %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong></figcaption>
+</figure>
 
-### Functions
+#### Functions
 The function to get the position of the wiper looks like this:
 
 `Yboard.get_knob()`
 - The value returned is between 0 and 100, representing the position of the knob. The value is 0 when the wiper is at GND, and 100 when the wiper is at Vcc (input voltage value, meaning no resistance).
 
-### Examples
+#### Examples
 We can set this value to a variable to be used in other places
 
 `int value = Yboard.get_knob()`
@@ -290,7 +320,7 @@ while(true){
 ```
 - Multiplying the value by 255/100 is not necessary, but it will make the max value be 255 instead of 100 so that the max brightness or color can go up to 255.
 
-## Part 4 - Your Own Challenge (take home if necessary)
+### Part 4 - Your Own Challenge (take home if necessary)
 Come up with your own challenge to combine the use of LEDs and at least two more of the following:
 - buttons
 - switches
@@ -298,7 +328,7 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 - potentiometer
 
 <details>
-<summary>Here are some examples:</summary>
+<summary><i>Here are some examples:</i></summary>
 <ul>
 <li> Use a switch to change which direction the LED circles the board </li>
 <li> Use a button to increment the color of all LEDs little by little from pure red to pure blue </li>
@@ -309,3 +339,18 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 </details>
 
 <!-- ## Post-Lab Work -->
+
+
+<!-- Dynamic figure numbering script -->
+<script>
+  // Select all figures on the page
+  const figures = document.querySelectorAll('figure');
+
+  // Loop through each figure and update the caption with dynamic numbering
+  figures.forEach((figure, index) => {
+    const figcaption = figure.querySelector('figcaption strong');
+    if (figcaption) {
+      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
+    }
+  });
+</script>
