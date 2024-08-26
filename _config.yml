@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "ECEn 192: ???"
-class_name: ???
+title: "ECEn 192: Freshman Project"
+class_name: Freshman Project
 class_number: ECEn 192
 email: lundrigan@byu.edu
 description:
@@ -40,10 +40,10 @@ colors:
   text_color: "#111"
   frame_color: "rgb(248, 249, 250)"
   background_color: "#fdfdfd"
-  brand_color: "#66cce8"
-  secondary_color: "#cb8ebe"
-  text_selection_color: "#cce3a7"
-  sidebar_hover_color: "#ef8eb1"
+  brand_color: "#F37062"
+  secondary_color: "#F6BB4D"
+  text_selection_color: "#F5A2BC"
+  sidebar_hover_color: "#F19C41"
 
   # text_color: "#fff"
 
@@ -55,8 +55,8 @@ colors:
 
 # Set the fonts
 fonts:
-  base: "'arboria', sans-serif"
-  header: "'arboria', sans-serif"
+  base: "futura-pt, sans-serif"
+  header: "futura-pt, sans-serif"
 
 collections:
   labs:

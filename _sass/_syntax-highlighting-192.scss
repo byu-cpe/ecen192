@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 /**
  * Syntax highlighting styles
  */
@@ -6,7 +8,7 @@
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
-      background: #eef;
+        background: color.adjust(#F6BB4D, $alpha: -0.9);
     }
 
     .c     { color: #998; font-style: italic } // Comment
