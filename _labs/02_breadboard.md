@@ -9,7 +9,7 @@ layout: lab
 Breadboards are tools to implement circuits in various contexts, and are especially useful in prototyping and development contexts. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand how they function.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/breadboard/front_breadboard.jpg %}">
+  <img src="{% link assets/02_breadboard/front_breadboard.jpg %}">
   <figcaption style="text-align: center;">Picture of a breadboard.</figcaption>
 </figure>
 
@@ -20,7 +20,7 @@ Terminal strips are busses that run perpendicular to the power rails. These are 
 These busses are notable as they support connections without manually attaching every component. For example, if two wires or components are plugged into the power rail on one side that is marked with red, they are connected to each other. The same is true of each power rail and each separate terminal strip (again, marked by the numbers and separated by the DIP Support). Another way to picture the way this works is to look at the inside of the breadboard itself:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/breadboard/back_breadboard.jpg %}">
+  <img src="{% link assets/02_breadboard/back_breadboard.jpg %}">
   <figcaption style="text-align: center;">Picture of the inside and back of a breadboard</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Start by inserting the red and black wires into the screw terminals and tighten 
 Once that is done, you will be able to set up the first circuit. Do this by connecting the screw terminals to the power rails, as well as a resistor from one of the power rails, and a wire from the other. The other end of each should be plugged into neighboring terminal strips, along with the blue (square) LED in each of the terminal strips to connect them. If, when everything including the battery is plugged in as described, the LED does not light up, this is likely because of the LED itself. Light-Emitting Diodes, LEDs, like all diodes, are unidirectional. Our LEDs are less sensitive than other diodes, so if plugged in the wrong way, there is less risk of breaking, but the solution, just the same, is to reverse the direction; ensuring that the cathode, or side with the longer leg that happens to be positive, is on the side that goes to the positive end of the circuit, instead of the side of the circuit that goes to the negative end of the battery (where the anode goes). This is what the first circuit should look like.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/breadboard/circuit1.jpg %}">
+  <img src="{% link assets/02_breadboard/circuit1.jpg %}">
   <figcaption style="text-align: center;">First circuit picture with one blue led.</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ If, by now, your components start to become difficult to insert and remove from 
 Repeating the process from the one LED, place three other LEDs (ideally red, yellow and green for the traffic light effect) on the opposite side of the dipswitch to create a circuit that should look something like this:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/breadboard/circuit2.jpg %}">
+  <img src="{% link assets/02_breadboard/circuit2.jpg %}">
   <figcaption style="text-align: center;">Second circuit picture.</figcaption>
 </figure>
 
@@ -61,14 +61,14 @@ The third circuit is optional, but involves a button and a buzzer. A buzzer is a
 For this reason, as well as the involvement of the button, it will likely be more difficult to tell whether it is setup and oriented properly. For this reason, we will reuse the square LED from the first circuit so that we can tell with certainty that it works. Assuming that everything is spaced according to the unique size of each component, the circuit itself should look like this.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/breadboard/circuit3off.jpg %}">
+  <img src="{% link assets/02_breadboard/circuit3off.jpg %}">
   <figcaption style="text-align: center;">circuit in different states - off </figcaption>
 </figure>
 
 When the button is pressed, it should look like this and play a sound.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/breadboard/circuit3on.jpg %}">
+  <img src="{% link assets/02_breadboard/circuit3on.jpg %}">
   <figcaption style="text-align: center;">circuit in different states - on </figcaption>
 </figure>
 

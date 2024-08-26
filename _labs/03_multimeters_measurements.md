@@ -26,14 +26,11 @@ Ohm’s Law is a fundamental concept in electricity and electronics. 🤓
 Think of it like a water slide: the current is like the height of the slide (more height means more speed), the voltage is like the amount of water flowing down the slide (the volume of water), and the resistance is like the width of the slide (a narrower slide lets less water through). So, if you increase the voltage (volume of water), more current (water) will flow. If you increase the resistance (make the slide narrower), less current (water) will flow. 
 
 Here is a simple circuit to depict Ohm’s Law: 
-<p align = "center" >
-<img src="{% link /assets/multimeters_and_measurements/Ohms_Law.png %}" width="500"/>
-</p>
-<p align = "center">
-Figure 1. This image is a circuit depicting Ohms Law. <br>
-Image credit: <a href="https://www.grc.nasa.gov/www/k-12/airplane/ohms.html" target="_blank">Glenn Research Center, NASA</a> 
-
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/03_multimeters_measurements/Ohms_Law.png %}">
+  <figcaption style="text-align: center;">Figure 1. This image is a circuit depicting Ohms Law. <br>
+Image credit: <a href="https://www.grc.nasa.gov/www/k-12/airplane/ohms.html" target="_blank">Glenn Research Center, NASA</a> </figcaption>
+</figure>
 
 <!-- ><a href="#-resistance">Resistance</a>  -->
 <!-- <a href="#voltage">Voltage</a>  -->
@@ -55,14 +52,12 @@ To measure current, we'd need an Ammeter; to measure voltage we'd need voltmeter
 
 A lot of the multimeters can measure DC voltage, AC voltage, DC current, Resistance, Diode tests and battery resistance. They have certain components that we need to know about first: 
 
-<p align = "center">
-<img src="{% link /assets/multimeters_and_measurements/multimeter.png %}" width="250"/>
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/03_multimeters_measurements/multimeter.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 2. This image shows you the symbols and the quantity they measure and some important ports for measurement. <br>
+Image credit: Neoteck User Manual</figcaption>
+</figure>
 
-<p align = "center">
-Figure 2. This image shows you the symbols and the quantity they measure and some important ports for measurement. <br>
-Image credit: Neoteck User Manual
-</p>
 These are labeled parts of the multimeter:
 1. LCD display
 2. “FUNC” Push button
@@ -72,13 +67,10 @@ These are labeled parts of the multimeter:
 6. “COM” input terminal
 7. “10A” input terminal
 
-<p align = "center">
-<img src="{% link assets/multimeters_and_measurements/multimeter_symbols.png %}" width="500"/>
-</p>
-<p align = "center">
-Figure 3. It's a table depectiong the meaning of the symbols of the multimeter. <br>
-Image credit: Neoteck User Manual
-</p>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/03_multimeters_measurements/multimeter_symbols.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 3. It's a table depectiong the meaning of the symbols of the multimeter. <br> Image credit: Neoteck User Manual</figcaption>
+</figure>
 
 Here are some things to keep in mind when you work with the multimeter:
 
@@ -130,28 +122,22 @@ Step 1: **Calculate the resistance and tolerance:** Choose a few resistors from 
 
 Step 2: **Measure the resistance:** Set the multimeter to measure resistance (Ω symbol). Use the alligator clips to connect to one end of the resistor, connect **Ground** (COM, black wire) to one end of the resistor and **Positive** (VΩ mA, red wire) to the other end of the resistor.
 
-<p align = "center" >
-<img src="{% link assets/multimeters_and_measurements/resistance_reader_chart.png %}" width="500" alt = "Image = 1"/>
-</p>
-
-<p align = "center" >
-Figure 4. Resistance reader chart.  <br>
-Image Credit: Digi-Key Electronics 
-<!-- "Conversion Calculator: Resistor Color Code." Digi-Key Electronics, www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code.  -->
-</p>
-
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/03_multimeters_measurements/resistance_reader_chart.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 4. Resistance reader chart.  <br> Image Credit: Digi-Key Electronics </figcaption>
+</figure>
 
 **b) Calculate Varying Resistance:** <br>
 We will be using a potentiometer here to measure varying resistance. Here is simple GIF to show you how they work:
 
-<p align = "center" >
-<img src="{% link assets/multimeters_and_measurements/Potentiometer.png%}" width="170" alt = "Image = 2"/>
-<img src="{% link assets/multimeters_and_measurements/potentiometer_overview.gif %}" width="500" alt = "Image = 1"/>
-</p> 
-<p align = "center">
-Figure 5. A potentiometer and an overview of the pinout of a potntiometer.  <br>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/03_multimeters_measurements/Potentiometer.png%}" width="170" style="display: block; margin: auto;">
+  <img src="{% link assets/03_multimeters_measurements/potentiometer_overview.gif %}" width="500" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 5. A potentiometer and an overview of the pinout of a potntiometer.  <br>
 Image Credit:<a href = "https://www.elexp.com/products/18sts200pot-cermet-w-shaft-200" target = "_blank">Electronix Express.</a> (potentiometer) and <a href = "https://makeabilitylab.github.io/physcomp/arduino/potentiometers.html#how-does-a-potentiometer-work" target = "_blank">Physical Computing and Craft Technologies, University of Washington.</a> (potentiometer pinout)
-</p>
+</figcaption>
+</figure>
+
 As you move the wiper (or knob) around the resistance changes. When you go left to right there is an increase in the resistance. Now onto measuring resistance with the potentiometer!
 
 Step 1: **Make connections:** begin with taking a potentiometer and put it on a bread board as shown in the video. Now stick two wires to the outher two pins of the poterntiometer, then go on to clip the alligator clips (red and black) from the milti-meter to the outer wires that were previously connected to the two pins. Observe the multimeter reading, now turn your wiper (knob) around, does your resistance change? 
@@ -167,12 +153,10 @@ Have you ever adjusted the volume on a radio? By turning the knob, you control h
 
 **a) Calculate Voltage:** 
 
-p align = "center" >
-<img src="{% link assets/multimeters_and_measurements/current__circuit_schematic.png %}" width="550"/>
-</p>
-<p align = "center" >
-Figure 8. This is a schematic we will be making to caluculate current in a cicuit.  <br>
-</p> 
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/03_multimeters_measurements/current__circuit_schematic.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 8. This is a schematic we will be making to caluculate current in a cicuit.</figcaption>
+</figure>
 
 Step 1: **Make connections:**  Follow the schematic [Figure 8] or you can follow to video to make conenctions shown in the schematic.
 
@@ -184,15 +168,11 @@ Step 2: **Measure the current:** You will be connecting your two aligator clips 
 We will be using a thermistor for this lab; a thermistor is a resistor that changes it's resistance with temperature. This change in resistance is due to Ohms law; a change in the resistance causes a change in the resitance. 
 Refer to the image [Figure 6] of the pinout for the Thermistor to make sure you're making the connections to the right pins on the breadboard.
 
-<p align = "center" >
-<img src="{% link /assets/multimeters_and_measurements/thermistor_pionut.png %}" width="350"/>
-</p>
-
-<p align = "center" >
-Figure 6. This is the pinout for a Thermistor.  <br>
-Image Credit: Texas Instruments.
-</p> 
-
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/03_multimeters_measurements/thermistor_pionut.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 6. This is the pinout for a Thermistor.  <br>
+Image Credit: Texas Instruments.</figcaption>
+</figure>
 
 Step 1: **Make connections:** Follow the schematic [Figure 7] or you can follow to video to make conenctions shown in the schematic. 
 
@@ -200,15 +180,10 @@ Step 2: **Measure the voltage:** Begin by measuring the voltage of the thermisto
 
 **Note:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all schematics.
 
-
-<p align = "center" >
-<img src="{% link assets/multimeters_and_measurements/thermistor_circuit_schematic.png %}" width="400"/>
-</p>
-
-<p align = "center" >
-Figure 7. This is a schematic we will be making to caluculate varying voltage. [need to change] <br>
-</p> 
-
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/03_multimeters_measurements/thermistor_circuit_schematic.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 7. This is a schematic we will be making to caluculate varying voltage.</figcaption>
+</figure>
 
 You notice voltage increases as you hands are hotter. This is because the resistance of the thermistor increased causing an increase in the voltage.  According to Ohms Law: $$ 𝑉 = I𝑅 $$ [this is a rearangment of the Ohm's Law] a increase in the resitance causes an increase in the voltage. 
 
@@ -220,12 +195,10 @@ You notice voltage increases as you hands are hotter. This is because the resist
 
 **a) Calculate Current:** 
 
-<p align = "center" >
-<img src="{% link assets/multimeters_and_measurements/potentiometer_led_circuit_schematic.png %}" width="550"/>
-</p>
-<p align = "center" >
-Figure 8. This is a schematic we will be making to caluculate varying current in a cicuit using a potentiometer to vary current.  <br>
-</p> 
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/03_multimeters_measurements/potentiometer_led_circuit_schematic.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;">Figure 8. This is a schematic we will be making to caluculate varying current in a cicuit using a potentiometer to vary current.</figcaption>
+</figure>
 
 Step 1: **Make connections:**  Follow the schematic [Figure 9] or you can follow to video to make conenctions shown in the schematic.
 

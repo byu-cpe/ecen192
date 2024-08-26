@@ -10,7 +10,7 @@ This lab is about reading data off an accelerometer and sending that information
 
 <!-- Put "oled_accel.jpg" here -->
 <p align = "center">
-<img src="{% link /assets/accel_gpio/oled_accel.jpg %}" width="250"/>
+<img src="{% link /assets/08_yb_accel_gpio/oled_accel.jpg %}" width="250"/>
 </p>
 
 ## Background/Preparation
@@ -18,7 +18,7 @@ An accelerometer (“acceler-“ and “-meter”) is a circuit chip that measur
 
 <!-- Put "accel_mems.png" alongside "accel_chip.png" here -->
 <p align = "center">
-<img src="{% link /assets/accel_gpio/accel_mems.png %}" width="250"/>
+<img src="{% link /assets/08_yb_accel_gpio/accel_mems.png %}" width="250"/>
 </p>
 
 “GPIO” stands for general purpose input & output. From an engineer’s perspective, GPIO pins are pins that the engineer can program to do pretty much whatever he/she wants. They’re pins that don’t have a predetermined purpose, allowing the engineer flexibility to incorporate and interface with new components to meet his/her project-specific needs.
@@ -27,7 +27,7 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 
 <!-- Put "gpio.png" here -->
 <p align = "center">
-<img src="{% link /assets/accel_gpio/gpio.png %}" width="250"/>
+<img src="{% link /assets/08_yb_accel_gpio/gpio.png %}" width="250"/>
 </p>
 
 ## Equipment and Materials
@@ -42,18 +42,18 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 1.	Plug your 4 jumper wires into the OLED screen
 <!-- Put "oled.jpg" and "oled_i2c.jpg" here -->
 <p align = "center">
-<img src="{% link /assets/accel_gpio/oled_i2c.jpg %}" width="250"/>
+<img src="{% link /assets/08_yb_accel_gpio/oled_i2c.jpg %}" width="250"/>
 </p>
  
 2.	Plug other side of those jumpers into the proper GPIO Pins (see key below)
 <!-- Put "i2c_label.png" here -->
 <p align = "center">
-<img src="{% link /assets/accel_gpio/i2c_label.png %}" width="250"/>
+<img src="{% link /assets/08_yb_accel_gpio/i2c_label.png %}" width="250"/>
 </p>
 If you used the same colors as I did in (FILL IN THE BLANK), you should have the following:
 <!-- Put "i2c_connection.jpg" here -->
 <p align = "center">
-<img src="{% link /assets/accel_gpio/i2c_connection.jpg %}" width="250"/>
+<img src="{% link /assets/08_yb_accel_gpio/i2c_connection.jpg %}" width="250"/>
 </p>
 
 ### Step 2: Software Setup

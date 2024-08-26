@@ -7,7 +7,7 @@ layout: lab
 ## Overview
 This lab will introduce you to the Y-badge and how to code it. We will begin with learning how to code LEDs and buttons and upload it to the Y-badge. 
 
-<img src="{% link /assets/buttons_and_switches/Y-Board.jpg %}" width="320"/>
+<img src="{% link /assets/06_yb_buttons_switches/Y-Board.jpg %}" width="320"/>
 
 ## Background/Preparation
 - You should have finished the previous lab for a software, github, and PlatformIO intro.
@@ -25,8 +25,8 @@ This lab will introduce you to the Y-badge and how to code it. We will begin wit
 - Each LED, labeled L1 to L20, are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
 
 <p align="center">
-<img src="{% link /assets/buttons_and_switches/Zoomed-in_LEDs.jpg %}" width="250"/>
-<img src="{% link /assets/buttons_and_switches/rgb_led.png %}" width="300"/>
+<img src="{% link /assets/06_yb_buttons_switches/Zoomed-in_LEDs.jpg %}" width="250"/>
+<img src="{% link /assets/06_yb_buttons_switches/rgb_led.png %}" width="300"/>
 </p>
 
 
@@ -62,8 +62,8 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 <details>
 <summary>Where is the Upload Button?</summary>
 <br>
-<img src="{% link /assets/buttons_and_switches/upload_button.png %}" width="250"/>
-<img src="{% link /assets/buttons_and_switches/upload_button2.png %}" width="600"/>
+<img src="{% link /assets/06_yb_buttons_switches/upload_button.png %}" width="250"/>
+<img src="{% link /assets/06_yb_buttons_switches/upload_button2.png %}" width="600"/>
 </details>
 
 - **Note:** If the code will build, but not upload, you may need to put the board into "booting mode". To do this, hold the "BOOT" button while you press on the "RESET" button. The board is now in booting mode, and you can try uploading the code again.
@@ -72,7 +72,7 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 <details>
 <summary>Where are the Boot and Reset buttons?</summary>
 <br>
-<img src="{% link /assets/buttons_and_switches/boot_and_reset.jpg %}" width="400"/>
+<img src="{% link /assets/06_yb_buttons_switches/boot_and_reset.jpg %}" width="400"/>
 </details>
 <br>
 
@@ -91,7 +91,7 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 - Turn on at least one more LED with a different color. Feel free to play around with the brightness value or try turning on all LEDs the same color. Show a neighbor your LEDs. Try not to spend more than a couple minutes on this.
 
 <p align="center">
-<img src="{% link /assets/buttons_and_switches/led_challenge.jpg %}" width="350"/>
+<img src="{% link /assets/06_yb_buttons_switches/led_challenge.jpg %}" width="350"/>
 </p>
 
 ## Part 2 - Loops (15 minutes)
@@ -164,7 +164,7 @@ Replace the previous code with this example code under the `void loop_exploratio
     - Hint: use the code from the For Loops section as a base, change the number of LEDs, and make it loop forever (putting everything inside a `while(true)` loop, like in the example above).
 
 <p align="center">
-<img src="{% link assets/buttons_and_switches/LED_looping.gif%}" width="350"/>
+<img src="{% link assets/06_yb_buttons_switches/LED_looping.gif%}" width="350"/>
 </p>
 
 ## Part 3 - Buttons and Switches (15 minutes)
@@ -250,7 +250,7 @@ Replace the previous example with this code and upload it. **Remember to be care
     - Hint: You will have three `else if` statements, and your final `else` statement should turn all LEDs off.
 
 <p align="center">
-<img src="{% link assets/buttons_and_switches/buttons+switches.gif %}" width="400"/>
+<img src="{% link assets/06_yb_buttons_switches/buttons+switches.gif %}" width="400"/>
 </p>
 
 
@@ -258,8 +258,8 @@ Replace the previous example with this code and upload it. **Remember to be care
 ### How they work
 Potentiometers are a variable resistor that changes the amount of resistance in a circuit depending on the position of the wiper.
 
-<img src="{% link assets/buttons_and_switches/potentiometer2.jpg %}" width="200"/>
-<img src="{% link assets/buttons_and_switches/Potentiometer.webp %}" width="400"/>
+<img src="{% link assets/06_yb_buttons_switches/potentiometer2.jpg %}" width="200"/>
+<img src="{% link assets/06_yb_buttons_switches/Potentiometer.webp %}" width="400"/>
 
 ### Functions
 The function to get the position of the wiper looks like this:
