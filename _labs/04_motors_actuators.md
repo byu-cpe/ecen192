@@ -6,12 +6,10 @@ layout: lab
 
 ## Overview
 
-## Background/Preparation
+In this lab, we will again be referring to a presentation for the bulk of the content. This lab covers motors, sensors, and actuators.
 
-## Equipment and Materials
+### Download the Lab
 
-## Procedure
+#### Read / Review the Presentation
 
-## Post-Lab Work
-
-## Rubric/Submission
+[Download PowerPoint]({% link /assets/04_motors_actuators/presentation_lab_04.pptx %})
