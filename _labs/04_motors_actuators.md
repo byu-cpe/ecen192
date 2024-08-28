@@ -1,5 +1,5 @@
 ---
-title: Motors & Actuators
+title: "Motors & Actuators"
 number: 4
 layout: lab
 ---

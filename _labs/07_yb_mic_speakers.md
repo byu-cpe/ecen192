@@ -1,5 +1,5 @@
 ---
-title: Y-Board Mic & Speakers
+title: "Y-Board Mic & Speakers"
 number: 7
 layout: lab
 ---

@@ -1,5 +1,5 @@
 ---
-title: Y-Board Buttons and Switches
+title: "Y-Board Buttons and Switches"
 number: 6
 layout: lab
 ---

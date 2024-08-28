@@ -1,5 +1,5 @@
 ---
-title: Component Exploration
+title: "Component Exploration"
 number: 1
 layout: lab
 ---

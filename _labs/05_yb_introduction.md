@@ -1,5 +1,5 @@
 ---
-title: Y-Board Introduction
+title: "Y-Board Introduction"
 number: 5
 layout: lab
 ---

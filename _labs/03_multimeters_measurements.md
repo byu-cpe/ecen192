@@ -1,5 +1,5 @@
 ---
-title: Multimeters & Measurements
+title: "Multimeters & Measurements"
 number: 3
 layout: lab
 ---

@@ -1,5 +1,5 @@
 ---
-title: Y-Board Accelerometer & GPIO
+title: "Y-Board Accelerometer & GPIO"
 number: 8
 layout: lab
 ---

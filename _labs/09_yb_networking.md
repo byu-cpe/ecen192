@@ -1,5 +1,5 @@
 ---
-title: Y-Board Networking
+title: "Y-Board Networking"
 number: 9
 layout: lab
 ---

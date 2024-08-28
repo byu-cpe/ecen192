@@ -1,5 +1,5 @@
 ---
-title: Y-Board Cybersecurity
+title: "Y-Board Cybersecurity"
 number: 10
 layout: lab
 ---
