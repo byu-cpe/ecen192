@@ -178,14 +178,15 @@ Each feature corresponds to an led. The number is printed next to the led. In th
 If the screen isn’t already set up. Plug in the corresponding jumpers:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/05_yb_introduction/gpio.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/05_yb_introduction/gpio.jpg %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/05_yb_introduction/oled_connections.jpg %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure> 
 
 As labeled on the oled display:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/05_yb_introduction/oled.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/05_yb_introduction/oled.jpg %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure> 
 
