@@ -110,7 +110,7 @@ Now comment out the play_wav(); line and uncomment the following line that says 
 There are two main kinds of filters in audio processing, called high-pass filters and low-pass filters. A high-pass filter only lets high frequencies through (i.e., they pass through the filter), while a low-pass filter only allows low frequencies. If we want to remove all the high-pitched ringing from a recording, we can use a low-pass filter. But we can do better with our audio file. The tone being played in the recording is 440 Hz or A4. Combining a high-pass filter and a low-pass filter in a clever way can give us a new kind of filter called a notch filter. A notch filter allows all frequencies through except for a small range, removing a notch from the frequency spectrum where we don’t want it. This graph might help. The y-axis is the gain or volume of the sound, and the x-axis represents different frequencies along the spectrum.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/07_mic_speakers/frequency_filter.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/07_mic_speakers/frequency_filter.jpg %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> A graph of frequency vs. gain (strength), which shows visually how a filter mutes specific frequencies. </figcaption>
 </figure>
 
