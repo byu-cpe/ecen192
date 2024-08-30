@@ -40,7 +40,7 @@ Just as there are different radio stations, associated with different radio freq
 Move switch 1 to the up position. This will bring up a menu to set the Wi-Fi channel that you are listening on by pressing the buttons. Flip the switch back to return to regular sniffing mode. Below is an image of the different Wi-Fi channels on the electromagnetic spectrum. While there are 14 channels, in the US, we only use the first 11. You will see that there is a lot of overlap between the channels. This is actually ok and will still work but can cause problems if too many devices are transmitting on adjacent channels. Because of this, the commonly used channels by most devices are spaced out. Can you find the channels with the most traffic? There should be 3.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/09_yb_networking/2-4-ghz_channels.jpg %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/09_yb_networking/2-4-ghz_channels.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> A diagram of the internet "pathway" between your phone and the rest of the internet. </figcaption>
 </figure>
 
