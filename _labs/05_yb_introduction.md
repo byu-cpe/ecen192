@@ -15,7 +15,7 @@ all your images should following this format:
 
 NOTES:
   - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
-  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 -->
 
 ## Overview:
@@ -59,7 +59,7 @@ Line 24: This line specifies a library that is needed for the board to function.
 
 Line 25: This also specifies a necessary library. Notice that it is a link to a github repository. When this link is included, it goes to github and uses the repo, just like when we cloned the initial repository.
 
-### Equipment and Materials:
+## Equipment and Materials:
 
 - Y badge board
 - Usb c to usb cable
@@ -261,7 +261,8 @@ Try a different usb port, cord, or restart vscode, or restart the computer.
 
 Show your friend, coworker, or roommate your cool board and its hardware test. Explain what the hardware test is doing.
 
-<!-- Dynamic figure numbering script -->
+<!--      Dynamic figure numbering script      -->
+<!-- This block is not visible to the students -->
 <script>
   // Select all figures on the page
   const figures = document.querySelectorAll('figure');
