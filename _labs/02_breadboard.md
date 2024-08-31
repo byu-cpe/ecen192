@@ -15,33 +15,35 @@ all your images should following this format:
 
 NOTES:
   - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
-  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 -->
 
 ## Overview
-Breadboards are tools to implement circuits in various contexts, and are especially useful in prototyping and development contexts. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand how they function.
+
+A breadboard, in circuitry, is a tool used primarily for prototyping or simple circuit development. They are especially useful because of their ability to be changed easily and their ability to work with a multitude of components. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand why breadboards are useful and how they function.
+
+## Background/Preparation
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/front_breadboard.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> Picture of a breadboard.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> A picture of a breadboard.</figcaption>
 </figure>
 
+Breadboards function in different rows and columns, commonly referred to as **busses**. All the pinholes on the breadboard that are connected to one another make up a single bus. If two wires or components are plugged into the same bus, they are connected to each other at those points. The busses that run along the long sides, for example, are referred to as the **power rails**. These power busses are marked by red and blue lines, which serve to help keep track of positive and negative polarities when powered elements are used in the circuit. 
 
-## Background/Preparation
-Breadboards function in different rows and columns, commonly referred to as busses. The busses that run along the long sides, for example, are referred to as the power rails. These are marked by the red and blue lines that are meant to help keep track of the positive and negative polarities of power supplied to the circuit.
-Terminal strips are busses that run perpendicular to the power rails. These are marked by numbers on the ends of some of the terminal strips. They are also separated by the DIP (Dual In-line Package) Support, which allows for more complicated circuits and components. Traditionally, the non-power components are plugged into the terminal strips, which are, in turn, connected to the power rails by wires or resistors.
-These busses are notable as they support connections without manually attaching every component. For example, if two wires or components are plugged into the power rail on one side that is marked with red, they are connected to each other. The same is true of each power rail and each separate terminal strip (again, marked by the numbers and separated by the DIP Support). Another way to picture the way this works is to look at the inside of the breadboard itself:
+ *<b>Note</b>: While busses have helpful notation, there are no rules specifically forcing you to plug things in correctly. Always make sure you double check the polarity and pins you choose when plugging in components to avoid damaging parts.*
+
+In contrast to the power rails along the long side, **terminal strips** are busses that run perpendicular to the power rails along the short sides of the breadboard. These are marked by numbers on the ends of some of the terminal strips. There are two sets of terminal strip rows which are separated by the **DIP Support** (Dual In-line Package), a measured gap that allows for more circuit components to fit nicely across multiple terminal strips. Traditionally, components that don't supply power are plugged into the terminal strips, which are, in turn, connected to the power rails by wires or resistors that then receive the power from somewhere off the breadboard. Another way to picture how this works is to look at the inside of the breadboard itself:
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/back_breadboard.jpg %}">
   <figcaption style="text-align: center;"><strong></strong> Picture of the inside and back of a breadboard</figcaption>
 </figure>
 
-What we will be doing today is utilizing these principles to create various circuits.
-
-
+Breadboard busses are notable as they support connections without requiring you to manually attach every component with solder or another permanent method. What we will be doing today is utilizing a breadboard to create various circuits.
 
 ## Equipment and Materials
+
 - breadboard
 - at least four LED lights
 - at least four resistors
@@ -53,16 +55,28 @@ What we will be doing today is utilizing these principles to create various circ
 
 ## Procedure
 
-Start by inserting the red and black wires into the screw terminals and tighten the screws so that you can connect the battery to the breadboard easier.
-Once that is done, you will be able to set up the first circuit. Do this by connecting the screw terminals to the power rails, as well as a resistor from one of the power rails, and a wire from the other. The other end of each should be plugged into neighboring terminal strips, along with the blue (square) LED in each of the terminal strips to connect them. If, when everything including the battery is plugged in as described, the LED does not light up, this is likely because of the LED itself. Light-Emitting Diodes, LEDs, like all diodes, are unidirectional. Our LEDs are less sensitive than other diodes, so if plugged in the wrong way, there is less risk of breaking, but the solution, just the same, is to reverse the direction; ensuring that the cathode, or side with the longer leg that happens to be positive, is on the side that goes to the positive end of the circuit, instead of the side of the circuit that goes to the negative end of the battery (where the anode goes). This is what the first circuit should look like.
+### Simple LED Circuit
+
+Start by inserting the screw terminal into the red and blue power rails *(see the image below)*; then put red and black wires into the screw terminals and tighten the screws so that you can connect the battery to the breadboard easier.
+
+Now we will set up the first circuit. Do this by connecting a resistor from one of the power rails to a terminal strip, and a wire from the other power rail to another terminal strip. Now you must connect the blue (square) LED by placing one end in each of the terminal strips you are using. 
+
+*Before you plug the LED in, notice - Light-Emitting Diodes, are unidirectional, meaning that they only allow current to flow in one direction. Most manufacturers denote which side is which by making the positive node (or cathode) longer than the negative node (or anode). Ensure that your LED is plugged in the right direction!*
+
+Our LEDs are less sensitive than other diodes, so if plugged in the wrong way, there is less risk of breaking, but the solution, but you will notice that the LED won't turn on unless you plug it in right.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit1.jpg %}">
   <figcaption style="text-align: center;"><strong></strong> First circuit picture with one blue led.</figcaption>
 </figure>
 
-Next, we will build a circuit like a traffic light. To do this, we will utilize a dipswitch placed over the DIP Support. While not always legible, the dipswitch should have an arrow labeled "ON" that, while not necessary in orienting the component, will help with turning on and off the lights as desired. Do be sure that, when you desire to have the DIP switch set to on, it is all the way on. DIP switches can be quite fickle and look on, but be halfway between on and off (or the same but with an intended 'off' state).
-If, by now, your components start to become difficult to insert and remove from the breadboard, simply straighten them out by loosely pinching each leg with your fingers and running the length until it becomes easier to work with.
+
+### Traffic Light Circuit
+
+Next, we will build a circuit like a traffic light. To do this, we will utilize a dipswitch (a name for that type of switch) placed over the DIP Support gap. Again, see the image below for help. While not always legible, the dipswitch should have an arrow labeled "ON" that will help with turning on and off the lights as desired. Make sure when you toggle the switch, you fully push it to one side or the other. DIP switches can be quite fickle and can get stuck halfway between on and off if not fully switched in one direction or the other. Also note that the dipswitch creates a physical break in the circuit, so it doesn't matter which direction you place over the DIP support.
+
+Sometimes your components can start to be difficult to insert and remove from the breadboard. To help this, straighten out the pins by loosely pinching each one with your fingers and running them along the length of them until it becomes easier to work with.
+
 Repeating the process from the one LED, place three other LEDs (ideally red, yellow and green for the traffic light effect) on the opposite side of the dipswitch to create a circuit that should look something like this:
 
 <figure class="image mx-auto" style="max-width: 750px">
@@ -70,28 +84,36 @@ Repeating the process from the one LED, place three other LEDs (ideally red, yel
   <figcaption style="text-align: center;"><strong></strong> Second circuit picture.</figcaption>
 </figure>
 
-The third circuit is optional, but involves a button and a buzzer. A buzzer is a diode that produces sound and a button is like an on/off switch, but is only on while being held down. A note about the buzzer: while these are diodes, like LEDs, these are some of the more fickle variety like were mentioned. If you setup the buzzer going in the wrong direction, the buzzer could break. To avoid this, ensure that it is going in the right direction, with the cathode (the side indicated as "positive" on the top of the component) going to the positive side of the circuit. That said, even if the buzzer breaks, it will still allow for the flow of electricity, so you should still be able to get the circuit to work.
-For this reason, as well as the involvement of the button, it will likely be more difficult to tell whether it is setup and oriented properly. For this reason, we will reuse the square LED from the first circuit so that we can tell with certainty that it works. Assuming that everything is spaced according to the unique size of each component, the circuit itself should look like this.
+### Buzzer Circuit
+
+The third circuit involves a button and a buzzer. A **buzzer** is just another type of diode, one that produces sound instead of light. A **button** is like an on/off switch, but is only on while being held down. 
+
+*Notice: while it is a diode like the LEDs, buzzers are more fragile than the LEDS are. If you set up the buzzer's polarity  in the wrong direction, the buzzer could break. To avoid this, ensure that it is going in the right direction by pointing the cathode (the side indicated as "positive" on the top of the component) to the positive side of the circuit. Hopefully though, even if the buzzer breaks, electricity will still flow, so the rest of the circuit should still work.*
+
+Because its harder to see if this circuit has been porperly aligned, we will reuse the square LED from the first circuit so that we can be certain its working. Assuming that your breadboard has everything spaced the same way, the circuit itself should look like this:
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit3off.jpg %}">
   <figcaption style="text-align: center;"><strong></strong> circuit in different states - off </figcaption>
 </figure>
 
-When the button is pressed, it should look like this and play a sound.
+When the button is pressed, it should look like this and play a sound:
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit3on.jpg %}">
   <figcaption style="text-align: center;"><strong></strong> circuit in different states - on </figcaption>
 </figure>
 
-Lastly, make a new circuit according to your own design! This could involve different color LEDs, new layouts, and a different number of LEDs, as well as buttons, switches, or even a buzzer; so long as it is according to your own design!
+## Further Exploration
 
+Using the components that we have given you, make a new circuit according to your own design! You could use different color LEDs, new layouts, as well as buttons, switches, or the buzzer; so long as it is according to your own design! If you want to do this more on your own, you can also visit the ECEn shop to buy any number of other parts. Almost any part you can think of comes in a version that will fit on a breadboard.
 
-## Optional Out-of-Class Activities
-Recall how the square LED was much easier to see, and much nicer to look at than the other LEDs. This is because of the way it diffuses light. For the post-lab, find an object at home that will work well as a light diffuser to put over one of your other LEDs. (Hint: Try to find something translucent. If it is too solid, the light won't be able to get through, but if it is too clear, the light won't disperse as desired).
+## Post-lab Work
 
-<!-- Dynamic figure numbering script -->
+Recall how the square LED was much easier to see, and much nicer to look at than the other LEDs. This is because of how its cover diffuses light. For the post-lab, find an object at home that will work well as a light diffuser to put over one of your other LEDs. *(Hint: Try to find something translucent. If it is too solid, the light won't be able to get through, but if it is too clear, the light won't disperse as desired)*. Make the LED circuit again, and see how you can change the way the LED appears and lights up a space based on the diffuser you use.
+
+<!--      Dynamic figure numbering script      -->
+<!-- This block is not visible to the students -->
 <script>
   // Select all figures on the page
   const figures = document.querySelectorAll('figure');

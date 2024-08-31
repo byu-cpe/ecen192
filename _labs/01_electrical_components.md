@@ -4,18 +4,21 @@ number: 1
 layout: lab
 ---
 
+<!-- There is no dynamic figures script on this page, as there are no elements. If you add elements, please go to another page and copy the notice and script at the top and bottom of the page, to keep the formatting of figures consistent. -->
+
 ## Overview
 
 Welcome to your first lab! In this lab, we will be exploring many of the different components used to create various electronic devices. We will talk about what they do, how they work, and why they are useful to us. Because some students may not have full access to the CAEDM computers yet, the content of this lab is condensed into the powerpoint below. Simply follow along with your professor in class, or download the presentation if you want to see the pictures on your own computer.
 
 Happy exploration!
 
-### Download the Lab
+### View the Presentation
 
-#### Read / Review the Presentation
+#### ...Presentation to be embedded here...
+<!-- INSERT THE PRESENTATION EMBED -->
 
-[Download PowerPoint]({% link /assets/01_electrical_components/presentation_lab_01.pptx %})
+### Download Links:
 
-#### Download the Document
+[Download the PowerPoint]({% link /assets/01_electrical_components/presentation_lab_01.pptx %})
 
-[Download Lab Document]({% link /assets/01_electrical_components/lab_01_student.docx %})
+[Download the lab document]({% link /assets/01_electrical_components/lab_01_student.docx %})

@@ -15,29 +15,32 @@ all your images should following this format:
 
 NOTES:
   - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
-  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 -->
 
 ## Overview
-In this lab we will be using the tools we know and measure DC voltage, DC current, and resistance. You will learn how to operate circuits using breadboards and how to use multimeters.  
+In this lab we will be using some tools you are likely already familiar with to measure DC voltage, DC current, and resistance. Now that you know how to create and operate circuits using breadboards, its time to learn how to use multimeters.  
 
 ## Background/Preparation <br>
 
 ### Introduction to Ohm’s Law: 
 
-Ohm’s Law is a fundamental concept in electricity and electronics.
+Ohm’s Law is one of the most fundamental concepts in the theory of electronics. Ohm's law is states:
 
-**Definition:** It states that the current flowing through a conductor (anthing that allows electricity to flow through it) between two points is directly proportional to the voltage across the two points, and inversely proportional to the resistance between them. Written as: <br>
+The **current** *(amount of electricity)* flowing through a **conductor** *(anthing that allows electricity to flow through it)* at any two points is <ins>directly proportional</ins> to the **voltage** *(energy difference)* across the two points, and <ins>inversely proportional</ins> to the **resistance** *(of current flow)* between them. Ohm's law is written: <br>
 
-<p  align = "center">
+<p align = "center">
 </p>
-<p style="padding: 0px; background-color: white; width: 300px; height: 100px; place-items: center; margin: auto; font-size: 30px;">
-  $$ I = \frac{V}{R} $$
+<p style="padding: 0px; background-color: white; width: 350px; height: 100px; place-items: center; margin: auto; font-size: 30px;">
+  $$ I = \frac{V}{R} ~~ or ~~ V = IR $$
 </p>
 
-Think of it like a water slide: the current is like the height of the slide (more height means more speed), the voltage is like the amount of water flowing down the slide (the volume of water), and the resistance is like the width of the slide (a narrower slide lets less water through). So, if you increase the voltage (volume of water), more current (water) will flow. If you increase the resistance (make the slide narrower), less current (water) will flow. 
+The concepts of Ohm's law are often likened to a water pipe: the _voltage_ is the pressure of the water in the pipe - higher pressure pushes more water down the pipe. The _resistance_ is the size of the pipe - a larger pipe obviously means that its easier for water to flow through the pipe. Finally, the _current_ of the pipe is the actual amount of water flowing through any given cross section of the pipe.
 
-Here is a simple circuit to depict Ohm’s Law: 
+Pause and think - how would changing the height and width of the pipe affect how much water is flowing through it? How would pushing more water through the same pipe affect the pressure of the pipe? How can you relate these terms back to the concept of electricity flowing through wires?
+
+Here is a simple circuit that depicts Ohm’s Law in action:
+
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/03_multimeters_measurements/Ohms_Law.png %}">
   <figcaption style="text-align: center;"><strong></strong> This image is a circuit depicting Ohms Law. <br>
@@ -45,52 +48,48 @@ Here is a simple circuit to depict Ohm’s Law:
   </figcaption>
 </figure>
 
-It seems like a lot to keep track of, so here is a table to summarize everything:
+Here is a table to summarize everything:
 
-| Variable  |  Unit       |    Symbol     | 
-| :----:    |    :----:   |    :----:     |   
-| Current   | Ampere      |    **A**      |    
-|Voltage    | Volts       |    **V**      |   
-|Resistance | Ohms        |    **Ω**      |  
-
+| Variable    | Unit    | Symbol  | 
+| --------    | ----    | ------  |   
+| Current     | Ampere  | **A**   |    
+| Voltage     | Volts   | **V**   |   
+| Resistance  | Ohms    | **Ω**   |  
 
 ### Introduction to Multimeters: 
-To measure current, we'd need an Ammeter; to measure voltage we'd need voltmeter and to measure resistance we would need an ohmmeter. Imagine so many different machines to measure so many properties in a circuit. It would be such great chaos, but came multimeters to our rescue! A multimeter is a great tool to measure various electrical properties and it can all be done with one machine! It saves us so much time and energy! 
 
-A lot of the multimeters can measure DC voltage, AC voltage, DC current, Resistance, Diode tests and battery resistance. They have certain components that we need to know about first: 
+To measure current, we'd need an Ammeter; to measure voltage we'd need voltmeter and to measure resistance we would need an ohmmeter. With so many different machines to measure so many properties it would be chaos in your labs, but luckily we have multimeters to save the day! Most multimeters can measure DC voltage, AC voltage, DC current, resistance, can perform diode tests, and can measure battery resistance. Here's a diagram of the working parts of a multimeter: 
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/03_multimeters_measurements/multimeter.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> This image shows you the symbols and the quantity they measure and some important ports for measurement. <br>
+  <figcaption style="text-align: center;"><strong></strong><br>
+1. LCD display<br>
+2. “FUNC” Push button<br>
+3. “BACK LIGHT” push button and ‘HOLD” push button<br>
+4. Rotary Switch (Knob)<br>
+5. “V/Ω/HZ/uA/mA”Input terminal<br>
+6. “COM” input terminal<br>
+7. “10A” input terminal<br>
 Image credit: Neoteck User Manual</figcaption>
 </figure>
 
-These are labeled parts of the multimeter:
-1. LCD display
-2. “FUNC” Push button
-3. “BACK LIGHT” push button and ‘HOLD” push button
-4. Rotary Switch (Knob)
-5. “V/Ω/HZ/uA/mA”Input terminal
-6. “COM” input terminal
-7. “10A” input terminal
-
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/03_multimeters_measurements/multimeter_symbols.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> It's a table depectiong the meaning of the symbols of the multimeter. <br> Image credit: Neoteck User Manual</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> A table depicting the meaning of some important symbols of the multimeter. <br> Image credit: Neoteck User Manual</figcaption>
 </figure>
 
 Here are some things to keep in mind when you work with the multimeter:
 
-1. The **COM** pin is always connected to the ground, is a common reference point in circuits, often considered zero voltage(black wire). 
-2. The **VΩmA** port is connected to the positive, it is also refered to as a point of high voltage (red wire) of your source.  
-30. We can turn the knob to measure the quatity of your choice like : Resistance, DC voltage, DC current, and AC voltage. 
+1. The **COM** pin, which stands for *COMMON*, is always connected to the ground and acts as a common reference point. It is almost always considered zero voltage, and it is usually represented by a black wire. 
+2. The **VΩmA** port is connected to the positive. It is considered the point of high voltage, and is often represented by a red wire.
+3. By turning the knob, we can measure the quantity of our choice. 
 
-Now that we know the basic components, let’s take a little tour. The resistance side of the multimeter has multiple settings we can measure from 200Ω to 2MΩ, the same applies for all other settings. So, you need to be careful when you want to measure something, you might not be getting the right measurements because you are not in the right setting.
+Notice that while there are only 3 _types_ of measurements, V, A, and Ω, there are also several _quantities_ available for each type of measurement. Becuase there is so much variety in electronic design, difference scales are available depending on the range of V, A, or Ω you expect to encounter.
 
-Now that we have all the required information. 
-Let’s see if we can measure these quantities discussed in Ohm’s Law.  
+**Warning: Before you use a multimeter, you need what values you expect to encounter and select the appropriate scale. Failure to do so can overload the multimeter and may even cause a short circuit, which can be dangerous to you, and permanently damaging to both the circuit and the multimeter.**
 
 ## Equipment and Materials
+
 - Multimeter
 
 - Led  (5) (0.02A) (R, B, G, Purple, Orange, Yellow)
@@ -117,7 +116,7 @@ Let’s see if we can measure these quantities discussed in Ohm’s Law.
 
 ### Resistance: 
 
-**Note:** Make sure you have the multimeter to measure resistance (Ω symbol)
+**Remember:** Make sure you have the multimeter to measure resistance (Ω symbol)
 
 #### Read and Calculate Resistance:
 
@@ -132,7 +131,7 @@ Let’s see if we can measure these quantities discussed in Ohm’s Law.
 
 #### Calculate Varying Resistance:
 
-We will be using a potentiometer here to measure varying resistance. Here is simple GIF to show you how they work:
+We will be using a potentiometer here to create a varying resistance. Here is simple GIF to show you how they work:
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/03_multimeters_measurements/Potentiometer.png%}" width="170" style="display: block; margin: auto;">
@@ -142,14 +141,16 @@ Image Credit:<a href = "https://www.elexp.com/products/18sts200pot-cermet-w-shaf
 </figcaption>
 </figure>
 
-As you move the wiper (or knob) around the resistance changes. When you go left to right there is an increase in the resistance. Now onto measuring resistance with the potentiometer!
 
-**Step 1: Make connections:** begin with taking a potentiometer and put it on a bread board as shown in the video. Now stick two wires to the outher two pins of the poterntiometer, then go on to clip the alligator clips (red and black) from the milti-meter to the outer wires that were previously connected to the two pins. Observe the multimeter reading, now turn your wiper (knob) around, does your resistance change? 
+If you remember our water pipe example, we can say that a potentiometer acts like a valve inside of the pipe - as we open the valve wider we allow more water to flow, and as we close the valve less water can flow. Remember that in our example less water is higher resistance, so closing the valve is equivalent to rotating the wiper to the right.
 
+Summary: As you rotate the wiper (or knob) from left to right, the resistance increases. Let's try it!
 
-**Step 2: Adjust connections:** Move the red wire from the outer pin to the middle of the potentiometer. Now, turn the wiper (knob). Does your resistance change? 
+**Step 1: Make connections:** Put the potentiometer on a breadboard as shown in the video. Connect two wires to the outer two pins of the potentiometer. Then clip the alligator clips (red and black) on the multimeter to those wires. Observe the multimeter reading. As you rotate the wiper around, does your resistance change? 
 
-Have you ever adjusted the volume on a radio? By turning the knob, you control how loud the music plays. Potentiometers work in a similar way for electrical circuits!  They are like adjustable resistors that allow you to control the amount of resistance between two points in a circuit. Imagine a water pipe with a valve, as you open the valve wider (like turning the knob), more water flows (similar to more current flowing in a circuit with lower resistance). By moving a wiper inside the potentiometer, we can change the resistance between its terminals. Moving the wiper(knob) towards grounds reduced the resistance and moving to positive increases the resitance thus, affecting the current flow in the circuit. We'll be using these cool properties of a potentiometer in our lab today!
+**Step 2: Adjust connections:** Move the red wire from the outer pin to the middle of the potentiometer. Now, rotate the wiper (knob). Does the resistance change? 
+
+**Fun Fact**: Have you ever adjusted the volume on a radio? By turning the knob, you control how loud the music plays. This is a potentiometer at work! When you turn the knob on an analog radio, it changes the resistance in the circuit, which in turn changes the *amplitude* of the signal traveling out to the speakers, which we know as the *volume*. 
  
 ### Voltage: 
 
@@ -162,40 +163,40 @@ Have you ever adjusted the volume on a radio? By turning the knob, you control h
   <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to caluculate current in a cicuit.</figcaption>
 </figure>
 
-**Step 1: Make connections:**  Follow the schematic or you can follow to video to make conenctions shown in the schematic.
+**Step 1: Make connections:**  Follow the schematic or the video to make the circuit shown above.
 
 **Step 2: Measure the current:** You will be connecting your two aligator clips to the points  <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) of the schematic to measure current.
 
 
 #### Calculate Varying Voltage:
 
-We will be using a thermistor for this lab; a thermistor is a resistor that changes it's resistance with temperature. This change in resistance is due to Ohms law; a change in the resistance causes a change in the resitance. 
-Refer to the image of the pinout for the Thermistor to make sure you're making the connections to the right pins on the breadboard.
+We will be using a thermistor for this lab; a thermistor is a resistor that changes it's resistance with temperature.
+Refer to the image of the pinout for the thermistor to make sure you're making the connections to the right pins on the breadboard.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/03_multimeters_measurements/thermistor_pionut.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> This is the pinout for a Thermistor.  <br>
+  <figcaption style="text-align: center;"><strong></strong> the pinout for a thermistor.  <br>
 Image Credit: Texas Instruments.</figcaption>
 </figure>
 
-**Step 1: Make connections:** Follow the schematic or you can follow to video to make conenctions shown in the schematic. 
+**Step 1: Make connections:** Follow the schematic or the video to make the conenctions shown below. 
 
-**Step 2: Measure the voltage:** Begin by measuring the voltage of the thermistor at room temperature. Then, pinch the thermistor with your fingers and observe the change in voltage.
+**Step 2: Measure the voltage:** Begin by measuring the voltage of the thermistor at room temperature. Then, pinch the thermistor with your fingers (which will increase temperature) and observe the change in voltage.
 
 **Note:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all schematics.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/03_multimeters_measurements/thermistor_circuit_schematic.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to caluculate varying voltage.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> The schematic we will use to measure varying voltage.</figcaption>
 </figure>
 
-You notice voltage increases as you hands are hotter. This is because the resistance of the thermistor increased causing an increase in the voltage.  According to Ohms Law: $$ 𝑉 = I𝑅 $$ [this is a rearangment of the Ohm's Law] a increase in the resitance causes an increase in the voltage. 
+You'll notice that the voltage increased as the thermister's temperature did. Using your knowledge of Ohms Law: $$ 𝑉 = I𝑅 $$ - did the resistance of the therminster increase, or decrease? What do you think happened? 
 
-**Explore Activity:** You can use the voltage you measured to find the temperature. You can use this formula: Temp = 33.37 x Vout – 6.88, the calucalted thempeature in in Fahrenheit. 
+**Explore Activity:** You can use the voltage you measured to find the temperature. You can use this formula: $$ T = 33.37 * V – 6.88 $$, where T is the calculated temperature in in Fahrenheit, and V is your measured voltage. 
 
 ### Current: 
 
-**Note:** Make sure you have set the multimeter in the right setting to measusre DC current (A symbol). Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all the following schematics.
+**Note:** Make sure you have set the multimeter in the right setting to measusre DC current (A symbol).
 
 #### Calculate Current:
 
@@ -204,18 +205,16 @@ You notice voltage increases as you hands are hotter. This is because the resist
   <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to caluculate varying current in a cicuit using a potentiometer to vary current.</figcaption>
 </figure>
 
-**Step 1: Make connections:**  Follow the schematic or you can follow to video to make conenctions shown in the schematic.
+**Step 1: Make connections:**  Follow the schematic or the video to make the circuit shown in the schematic above.
 
-**Step 2: Adjust the setting:** To adjust the current you can turn the wiper around on the potentiometer. Do you notice any changes?   
+**Step 2: Adjust the setting:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground). As you measure the current, you can adjust it by rotating the potentiometer's wiper. What do you notice changes about the circuit as you do that?   
 
-Remember the Ohm’s law equation: 
-$$ I = \frac{V}{R} $$ 
+Using the Ohm's law $$ I = \frac{V}{R} $$, decide: what is happening to the LED when you change the current? What causes the change in brightness in the LED - voltage, or current? How do you know?
 
-In our little circuit you used the potentiometer to change the resistance and we know that more resistance causes less current due the way current and resistance are related. The voltage across the LED remains constant therefore this change in LED’s brightness is always due to current.  
+**Explore Activity** You can now replace the led with a buzzer. Does the buzzer respond the same way as the LED? What determines the strength of the buzzer?
 
-**Explore Activity** You can now replace the led with a buzzer and see how that changes the buzzer. Is it the same for a buzzer too?
-
-<!-- Dynamic figure numbering script -->
+<!--      Dynamic figure numbering script      -->
+<!-- This block is not visible to the students -->
 <script>
   // Select all figures on the page
   const figures = document.querySelectorAll('figure');
