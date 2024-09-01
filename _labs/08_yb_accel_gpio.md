@@ -14,11 +14,12 @@ all your images should following this format:
 </figure>
 
 NOTES:
-  - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
-  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+  - Notice the <strong> tags are empty in the <figcaption> block. The script uses these to handle the nametags.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 -->
 
 ## Overview
+
 This lab is about reading data off an accelerometer and sending that information to an off-board device using the GPIO pins. In this case, we are sending the data to a small OLED screen that displays how much acceleration the board is experiencing in real time in 3 dimensional space.
 
 <!-- Put "oled_accel.jpg" here -->
@@ -28,6 +29,7 @@ This lab is about reading data off an accelerometer and sending that information
 </figure>
 
 ## Background/Preparation
+
 An accelerometer (“acceler-“ and “-meter”) is a circuit chip that measures the acceleration that chip experiences (from the inside). The gist of how one works is that there is a very small, delicate spring inside of the chip that also acts as part of a circuit. As that spring compresses or relaxes, the properties of the circuit change in a way that can be revealed by measuring the voltage in the circuit.
 
 <!-- Put "accel_mems.png" alongside "accel_chip.png" here -->
@@ -47,6 +49,7 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 </figure> -->
 
 ## Equipment and Materials
+
 •	(1) Y-board
 •	(1) OLED display
 •	(4) Jumper wires
@@ -54,7 +57,9 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 •	(1) USB data cable
 
 ## Procedure
+
 ### Step 1: Hardware Setup
+
 1.	Plug your 4 jumper wires into the OLED screen
 <!-- Put "oled.jpg" and "oled_i2c.jpg" here -->
 <figure class="image mx-auto" style="max-width: 750px">
@@ -77,6 +82,7 @@ If you used the same colors as I did, it should look like the following:
 </figure>
 
 ### Step 2: Software Setup
+
 1. Click on the "Source Control" button on the lefthand bar of VSCode (hotkey: Ctrl+Shift+G)
 2. Enter this URL: https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git
 3. Choose a destination to save the lab files at
@@ -84,6 +90,7 @@ If you used the same colors as I did, it should look like the following:
 5. Upload the build to the Y-Board (hotkey: Ctrl+Alt+U)
  
 ### Step 3: Tinker
+
 Try out something cool yourself! I’ll list a few ideas below.
 1.	Change the text at the top of the OLED (easy)
 2.	Draw new shapes on the OLED (medium)
@@ -94,12 +101,15 @@ Try out something cool yourself! I’ll list a few ideas below.
 7.	Reprogram the magnitude vector to display each component vector (hard)
 
 ## Post-Lab Work (Optional)
+
 If you have a pair, slap some sunglasses on your face a take an epic selfie with your cool lab. Feel free to post on social media or share with your friends. #byuecen
 
 ## Rubric/Submission
+
 Go to LearningSuite and submit your attendance and feedback for this lab
 
-<!-- Dynamic figure numbering script -->
+<!--      Dynamic figure numbering script      -->
+<!-- This block is not visible to the students -->
 <script>
   // Select all figures on the page
   const figures = document.querySelectorAll('figure');

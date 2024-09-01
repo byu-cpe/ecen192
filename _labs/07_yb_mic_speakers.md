@@ -14,8 +14,8 @@ all your images should following this format:
 </figure>
 
 NOTES:
-  - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
-  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} in the <img src> block.
+  - Notice the <strong> tags are empty in the <figcaption> block. The script uses these to handle the nametags.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 --> 
 
 ## Overview:
@@ -138,7 +138,8 @@ Here is a table for the note notation. It should be noted that the number follow
 | Rest | Use the letter `R` followed by the length (same lengths as notes) | `“C4 R8 E4”` |
 | Dotted Rhythm | Place a `.` after a note to hold the note 50% longer | `“C4 D4. C4”`|
 
-<!-- Dynamic figure numbering script -->
+<!--      Dynamic figure numbering script      -->
+<!-- This block is not visible to the students -->
 <script>
   // Select all figures on the page
   const figures = document.querySelectorAll('figure');

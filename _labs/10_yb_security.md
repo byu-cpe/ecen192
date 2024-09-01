@@ -4,6 +4,8 @@ number: 10
 layout: lab
 ---
 
+<!-- There is no dynamic figures script on this page, as there are no elements. If you add elements, please go to another page and copy the notice and script at the top and bottom of the page, to keep the formatting of figures consistent. -->
+
 ### Notice
 
 <span style="color:LightCoral">This cybersecurity lab provides students with hands-on experience in basic hacking within a controlled environment. All activities are confined to designated devices and systems for educational purposes only. Unauthorized hacking into any other systems, networks, or devices is strictly prohibited.

@@ -14,7 +14,7 @@ all your images should following this format:
 </figure>
 
 NOTES:
-  - Notice the <strong> tags are empty in the <figcaption> block. The uses these to handle the nametags.
+  - Notice the <strong> tags are empty in the <figcaption> block. The script uses these to handle the nametags.
   - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 -->
 

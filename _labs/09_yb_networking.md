@@ -4,6 +4,20 @@ number: 9
 layout: lab
 ---
 
+<!-- 
+NOTICE: THIS PAGE USES DYNAMIC FIGURE NUMBERS.
+all your images should following this format:
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% raw %}{% link /assets/labname/imagename.jpg %}{% endraw %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> INSERT A CAPTION</figcaption>
+</figure>
+
+NOTES:
+  - Notice the <strong> tags are empty in the <figcaption> block. The script uses these to handle the nametags.
+  - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
+-->
+
 ## Overview
 
 In this lab, you will learn the basics of computer networking and the structure of Wi-Fi packets. You will then use this to turn your y-board into a Wi-Fi sniffer, that will be able to identify the unique signature of any device communicating a Wi-Fi network. Lastly, you will connect your y-board to the BYU Wi-Fi network and control it from the internet. This lab will transition into next week’s lab where you will explore vulnerabilities in this code and hack each other’s boards.
@@ -55,3 +69,18 @@ Try changing the color of your board remotely from the computer. We will pick up
 ## Further Exploration
 
 Try using the Wi-Fi sniffer in different locations, such as a public place off-campus or your apartment. What kind of devices can you detect there? Can you locate a device by its signal strength? This might be challenging, but in areas with fewer Wi-Fi devices, it is possible.
+
+<!--      Dynamic figure numbering script      -->
+<!-- This block is not visible to the students -->
+<script>
+  // Select all figures on the page
+  const figures = document.querySelectorAll('figure');
+
+  // Loop through each figure and update the caption with dynamic numbering
+  figures.forEach((figure, index) => {
+    const figcaption = figure.querySelector('figcaption strong');
+    if (figcaption) {
+      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
+    }
+  });
+</script>
