@@ -15,6 +15,8 @@ Remember, hacking without permission is illegal and can result in severe legal c
 
 This lab will introduce you to basic de-hashing and the CIA triangle. 
 
+**There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.**
+
 ## Background/Preparation
 
 In the last lab, you should have registered an account on the Y-Badge webpage. Log in to ensure you have this done. Find a partner and remain with them for the duration of the lab. NOTE: This lab must be done on-campus, and devices should be connected to the Wi-Fi called ADD THE NAMES HERE.
@@ -67,3 +69,17 @@ Open this webpage: ADD THE WEBPAGE HERE. Follow along with this video: VIDEO HER
 
 Show your friend or roommate your project and quickly explain to them how it works. Answer any questions they have to the best of your ability and be prepared to report in class.
 The webpage and Y-Badges will be functional across BYU campus. Continue searching for easter eggs using the steps we followed. 
+
+## Help Video
+
+<div style="display: flex; justify-content: center;">
+    <iframe width="1280" 
+            height="720" 
+            src="https://www.youtube.com/embed/4DeRN4ALcRQ?si=i2nqQcMMmTkkkoxv" 
+            title="Cyber lab - Youtube Player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+</div>

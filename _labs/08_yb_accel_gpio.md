@@ -22,6 +22,8 @@ NOTES:
 
 This lab is about reading data off an accelerometer and sending that information to an off-board device using the GPIO pins. In this case, we are sending the data to a small OLED screen that displays how much acceleration the board is experiencing in real time in 3 dimensional space.
 
+**There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.** 
+
 <!-- Put "oled_accel.jpg" here -->
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/08_yb_accel_gpio/oled_accel.jpg %}" style="display: block; margin: auto;">
@@ -107,6 +109,20 @@ If you have a pair, slap some sunglasses on your face a take an epic selfie with
 ## Rubric/Submission
 
 Go to LearningSuite and submit your attendance and feedback for this lab
+
+## Help Video
+
+<div style="display: flex; justify-content: center;">
+    <iframe width="1280" 
+            height="720" 
+            src="https://www.youtube.com/embed/SZpVgEouGyI?si=UafM6q4VYgvhAkKd" 
+            title="Cyber lab - Youtube Player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+</div> 
 
 <!--      Dynamic figure numbering script      -->
 <!-- This block is not visible to the students -->

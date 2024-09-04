@@ -22,6 +22,8 @@ NOTES:
 
 A breadboard, in circuitry, is a tool used primarily for prototyping or simple circuit development. They are especially useful because of their ability to be changed easily and their ability to work with a multitude of components. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand why breadboards are useful and how they function.
 
+**There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.**
+
 ## Background/Preparation
 
 <figure class="image mx-auto" style="max-width: 750px">
@@ -111,6 +113,21 @@ Using the components that we have given you, make a new circuit according to you
 ## Post-lab Work
 
 Recall how the square LED was much easier to see, and much nicer to look at than the other LEDs. This is because of how its cover diffuses light. For the post-lab, find an object at home that will work well as a light diffuser to put over one of your other LEDs. *(Hint: Try to find something translucent. If it is too solid, the light won't be able to get through, but if it is too clear, the light won't disperse as desired)*. Make the LED circuit again, and see how you can change the way the LED appears and lights up a space based on the diffuser you use.
+
+## Additional Help Video
+
+<div style="display: flex; justify-content: center;">
+    <iframe width="1280" 
+            height="720" 
+            src="https://www.youtube.com/embed/y2JopR6cwqk?si=BbLc3-5RrFuNJg5C" 
+            title="Breadboard lab - Youtube Player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+</div>
+
 
 <!--      Dynamic figure numbering script      -->
 <!-- This block is not visible to the students -->
