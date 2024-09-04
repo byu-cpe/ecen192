@@ -1,0 +1,2 @@
+# ignore lock files associated to specific documents when you open the reference docs
+**.~lock*
