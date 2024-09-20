@@ -92,7 +92,7 @@ Notice that while there are only 3 _types_ of measurements, V, A, and Ω, there 
 
 - Multimeter
 
-- Led (5) (0.02A) (Red, Blue, Green, Orange, Yellow)
+- Led (1) (Any color)
 
 - Potentiometer (1) (23 kΩ)
 
