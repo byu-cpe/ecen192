@@ -19,7 +19,7 @@ NOTES:
 -->
 
 ## Overview
-In this lab we will be using some tools you are likely already familiar with to measure DC voltage, DC current, and resistance. Now that you know how to create and operate circuits using breadboards, its time to learn how to use multimeters.  
+In this lab we will be using some tools you are likely already familiar with to measure DC voltage, DC current, and resistance. Now that you know how to create and operate circuits using breadboards, it's time to learn how to use multimeters.  
 
 ## Background/Preparation <br>
 
@@ -35,7 +35,7 @@ The **current** *(amount of electricity)* flowing through a **conductor** *(anth
   $$ I = \frac{V}{R} ~~ or ~~ V = IR $$
 </p>
 
-The concepts of Ohm's law are often likened to a water pipe: the _voltage_ is the pressure of the water in the pipe - higher pressure pushes more water down the pipe. The _resistance_ is the size of the pipe - a larger pipe obviously means that its easier for water to flow through the pipe. Finally, the _current_ of the pipe is the actual amount of water flowing through any given cross section of the pipe.
+The concepts of Ohm's law are often compared to a water pipe: the _voltage_ is the pressure of the water in the pipe - higher pressure pushes more water down the pipe. The _resistance_ is the size of the pipe - a larger pipe allows for easier water flow through the pipe. Finally, the _current_ of the pipe is the actual amount of water flowing through any given cross section of the pipe.
 
 Pause and think - how would changing the height and width of the pipe affect how much water is flowing through it? How would pushing more water through the same pipe affect the pressure of the pipe? How can you relate these terms back to the concept of electricity flowing through wires?
 
@@ -86,17 +86,15 @@ Here are some things to keep in mind when you work with the multimeter:
 
 Notice that while there are only 3 _types_ of measurements, V, A, and Ω, there are also several _quantities_ available for each type of measurement. Becuase there is so much variety in electronic design, difference scales are available depending on the range of V, A, or Ω you expect to encounter.
 
-**Warning: Before you use a multimeter, you need what values you expect to encounter and select the appropriate scale. Failure to do so can overload the multimeter and may even cause a short circuit, which can be dangerous to you, and permanently damaging to both the circuit and the multimeter.**
+**Warning: Before you use a multimeter, you need to know what values you expect to encounter and select the appropriate scale. Failure to do so can overload the multimeter and may even cause a short circuit, which can be dangerous to you, and permanently damaging to both the circuit and the multimeter.**
 
 ## Equipment and Materials
 
 - Multimeter
 
-- Led  (5) (0.02A) (R, B, G, Purple, Orange, Yellow)
+- Led (5) (0.02A) (Red, Blue, Green, Orange, Yellow)
 
 - Potentiometer (1) (23 kΩ)
-
-- Buzzer (1) (R: 600 Ω)
 
 - Resistors: 250 Ω, 360 Ω, 750 Ω, 10 kΩ, 5 kΩ, 68 kΩ,
 
@@ -156,21 +154,21 @@ Summary: As you rotate the wiper (or knob) from left to right, the resistance in
 
 **Note:** Make sure you have set the multimeter in the right setting to measusre DC voltage (V symbol).
 
-#### Calculate Voltage:
+#### Measure Voltage:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/03_multimeters_measurements/current__circuit_schematic.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to caluculate current in a cicuit.</figcaption>
+  <img src="{% link assets/03_multimeters_measurements/voltage__circuit_schematic.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> This is a schematic of the circuit we will be making to measure voltage in a cicuit.</figcaption>
 </figure>
 
-**Step 1: Make connections:**  Follow the schematic or the video to make the circuit shown above.
+**Step 1: Make connections:**  Follow the schematic to make the circuit shown above.
 
-**Step 2: Measure the current:** You will be connecting your two aligator clips to the points  <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) of the schematic to measure current.
+**Step 2: Measure the voltage drop across the LED:** You will be connecting your two aligator clips to the points  <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> of the schematic to measure the voltage drop across the LED.
 
 
-#### Calculate Varying Voltage:
+#### Measure Varying Voltage:
 
-We will be using a thermistor for this lab; a thermistor is a resistor that changes it's resistance with temperature.
+We will be using a thermistor for this lab; a thermistor is a resistor that changes its resistance with temperature.
 Refer to the image of the pinout for the thermistor to make sure you're making the connections to the right pins on the breadboard.
 
 <figure class="image mx-auto" style="max-width: 750px">
@@ -179,7 +177,7 @@ Refer to the image of the pinout for the thermistor to make sure you're making t
 Image Credit: Texas Instruments.</figcaption>
 </figure>
 
-**Step 1: Make connections:** Follow the schematic or the video to make the conenctions shown below. 
+**Step 1: Make connections:** Follow the schematic to make the circuit shown above.
 
 **Step 2: Measure the voltage:** Begin by measuring the voltage of the thermistor at room temperature. Then, pinch the thermistor with your fingers (which will increase temperature) and observe the change in voltage.
 
@@ -202,16 +200,15 @@ You'll notice that the voltage increased as the thermister's temperature did. Us
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/03_multimeters_measurements/potentiometer_led_circuit_schematic.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to caluculate varying current in a cicuit using a potentiometer to vary current.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to caluculate varying current in a cicuit using a potentiometer to control the current current.</figcaption>
 </figure>
 
-**Step 1: Make connections:**  Follow the schematic or the video to make the circuit shown in the schematic above.
+**Step 1: Make connections:**  Follow the schematic to make the circuit shown in the schematic above.
 
-**Step 2: Adjust the setting:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground). As you measure the current, you can adjust it by rotating the potentiometer's wiper. What do you notice changes about the circuit as you do that?   
+**Step 2: Adjust the setting:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (red lead) and  <span style = "color : red"> <b> B </b> </span>(black lead). Note that the multimeter acts as the final connection in the circuit. This is because it requires current to flow through it to measure it. Observe how the current changes while rotating the potentiometer's wiper. How does the LED change when you do that?   
 
 Using the Ohm's law $$ I = \frac{V}{R} $$, decide: what is happening to the LED when you change the current? What causes the change in brightness in the LED - voltage, or current? How do you know?
 
-**Explore Activity** You can now replace the led with a buzzer. Does the buzzer respond the same way as the LED? What determines the strength of the buzzer?
 
 <!--      Dynamic figure numbering script      -->
 <!-- This block is not visible to the students -->
