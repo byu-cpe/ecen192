@@ -79,7 +79,7 @@ Next, add a button inline in the circuit to control the light. You can put it an
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit3.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> First circuit picture with one blue led.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> Second circuit picture with a button.</figcaption>
 </figure>
 
 
@@ -93,7 +93,7 @@ Repeating the process from the one LED, place three other LEDs (ideally red, yel
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit2.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> Second circuit picture.</figcaption>
+  <figcaption style="text-align: center;"><strong></strong> Third circuit picture.</figcaption>
 </figure>
 
 ## Further Exploration
