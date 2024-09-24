@@ -106,7 +106,7 @@ Notice that while there are only 3 _types_ of measurements, V, A, and Ω, there 
 
 - Alligator clips (2)
 
-- Thermistor (1) [TMP36 of LMT85]
+- Temperature Sensor (1)
 
 - Battery Screw Terminal (1)
 
@@ -144,7 +144,7 @@ If you remember our water pipe example, we can say that a potentiometer acts lik
 
 Summary: As you rotate the wiper (or knob) from left to right, the resistance increases. Let's try it!
 
-**Step 1: Make connections:** Put the potentiometer on a breadboard as shown in the video. Connect two wires to the outer two pins of the potentiometer. Then clip the alligator clips (red and black) on the multimeter to those wires. Observe the multimeter reading. As you rotate the wiper around, does your resistance change? 
+**Step 1: Make connections:** Put the potentiometer on a breadboard. Connect two wires to the outer two pins of the potentiometer. Then clip the alligator clips (red and black) on the multimeter to those wires. Observe the multimeter reading. As you rotate the wiper around, does your resistance change? 
 
 **Step 2: Adjust connections:** Move the red wire from the outer pin to the middle of the potentiometer. Now, rotate the wiper (knob). Does the resistance change? 
 
@@ -168,23 +168,23 @@ Summary: As you rotate the wiper (or knob) from left to right, the resistance in
 
 #### Measure Varying Voltage:
 
-We will be using a thermistor for this lab; a thermistor is a resistor that changes its resistance with temperature.
-Refer to the image of the pinout for the thermistor to make sure you're making the connections to the right pins on the breadboard.
+We will be using a temperature sensor for this lab; a temperature sensor contains a resistor that changes its resistance with temperature.
+Refer to the image of the pinout for the temperature sensor to make sure you're making the connections to the right pins on the breadboard.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/03_multimeters_measurements/thermistor_pionut.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> the pinout for a thermistor.  <br>
+  <img src="{% link /assets/03_multimeters_measurements/temperature sensor_pionut.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> the pinout for a temperature sensor.  <br>
 Image Credit: Texas Instruments.</figcaption>
 </figure>
 
 **Step 1: Make connections:** Follow the schematic to make the circuit shown above.
 
-**Step 2: Measure the voltage:** Begin by measuring the voltage of the thermistor at room temperature. Then, pinch the thermistor with your fingers (which will increase temperature) and observe the change in voltage.
+**Step 2: Measure the voltage:** Begin by measuring the voltage of the temperature sensor at room temperature. Then, pinch the temperature sensor with your fingers (which will increase temperature) and observe the change in voltage.
 
 **Note:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all schematics.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/03_multimeters_measurements/thermistor_circuit_schematic.png %}" style="display: block; margin: auto;">
+  <img src="{% link assets/03_multimeters_measurements/temperature sensor_circuit_schematic.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> The schematic we will use to measure varying voltage.</figcaption>
 </figure>
 
