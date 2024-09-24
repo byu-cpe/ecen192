@@ -172,7 +172,7 @@ We will be using a temperature sensor for this lab; a temperature sensor contain
 Refer to the image of the pinout for the temperature sensor to make sure you're making the connections to the right pins on the breadboard.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/03_multimeters_measurements/temperature sensor_pionut.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/03_multimeters_measurements/thermistor_pionut.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> the pinout for a temperature sensor.  <br>
 Image Credit: Texas Instruments.</figcaption>
 </figure>
@@ -184,7 +184,7 @@ Image Credit: Texas Instruments.</figcaption>
 **Note:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> (Ground) on all schematics.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/03_multimeters_measurements/temperature sensor_circuit_schematic.png %}" style="display: block; margin: auto;">
+  <img src="{% link assets/03_multimeters_measurements/thermistor_circuit_schematic.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> The schematic we will use to measure varying voltage.</figcaption>
 </figure>
 
