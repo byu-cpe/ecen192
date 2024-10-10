@@ -99,7 +99,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-3. Once it's done installing, click on the platformio icon on the left. Click “open folder” and choose the folder you just cloned in step 1.
+3. Once it's done installing, click on the platformio icon on the left. Click “open folder” or "open project" and choose the folder you just cloned in step 1.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/05_yb_introduction/openProject.png %}" style="display: block; margin: auto;">
@@ -199,7 +199,6 @@ As labeled on the oled display:
 | Push button 1 (left) | Led 3 turns on |
 | Push button 2 (right) | Led 4 turns on|
 | Blow warm/cold air into the temperature sensor | Led 9 changes color. Cold is blue, warm is yellow |
-| Breathe warm air onto the humidity sensor or wave it around to get dryer air | Led 10 changes colors. Not humid is blue, humid is yellow |
 | Tilt and move the y-board | Led 6, 7, 8 turns on and off. Sometimes this is hard to see |
 
 
