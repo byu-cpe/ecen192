@@ -17,10 +17,6 @@ This lab will introduce you to basic de-hashing and the CIA triangle.
 
 **There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.**
 
-## Background/Preparation
-
-In the last lab, you should have registered an account on the Y-Badge webpage. Log in to ensure you have this done. Find a partner and remain with them for the duration of the lab. NOTE: This lab must be done on-campus, and devices should be connected to the Wi-Fi called ADD THE NAMES HERE.
-Open this webpage: ADD THE WEBPAGE HERE. Follow along with this video: VIDEO HERE.
 
 ## Equipment and Materials
 
@@ -33,11 +29,11 @@ Open this webpage: ADD THE WEBPAGE HERE. Follow along with this video: VIDEO HER
 ### Webpage Exploration
 
     1. Turn on Y-Badge 
-    2. Open Y-Badge webpage and log in
+    2. Open Y-Badge [webpage](http://ecen192.byu.edu/) and log in
     3. Explore the site, click things
     4. Click on Y-Badge button on webpage
-    5. Look to your LED screen to find your IP address and password
-    6. Change the color of your Y-Badge LEDs
+    5. Look on your LED screen to find your IP address and password
+    6. Change the color of your Y-Badge LEDs like last lab
 
 ### Webpage Explotation
 
