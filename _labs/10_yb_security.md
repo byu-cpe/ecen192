@@ -13,7 +13,7 @@ Remember, hacking without permission is illegal and can result in severe legal c
 
 ## Overview
 
-This lab will introduce you to basic de-hashing and the CIA triangle. 
+This lab will introduce you to basic de-hashing and the CIA triangle. The code for this week's lab can be found [here](https://github.com/byu-ecen-192/y-board-cybersecurity). 
 
 **There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.**
 
@@ -29,7 +29,7 @@ This lab will introduce you to basic de-hashing and the CIA triangle.
 ### Webpage Exploration
 
     1. Turn on Y-Badge 
-    2. Open Y-Badge [webpage](http://ecen192.byu.edu/) and log in
+    2. Open Y-Badge webpage http://ecen192.byu.edu/ and log in
     3. Explore the site, click things
     4. Click on Y-Badge button on webpage
     5. Look on your LED screen to find your IP address and password
