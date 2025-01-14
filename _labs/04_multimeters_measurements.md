@@ -157,7 +157,7 @@ Summary: As you rotate the wiper (or knob) from left to right, the resistance in
 #### Measure Voltage:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/03_multimeters_measurements/voltage__circuit.png %}" style="display: block; margin: auto;">
+  <img src="{% link assets/03_multimeters_measurements/voltage_circuit.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> This is a schematic of the circuit we will be making to measure voltage in a cicuit.</figcaption>
 </figure>
 
