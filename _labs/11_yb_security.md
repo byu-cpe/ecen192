@@ -13,7 +13,7 @@ Remember, hacking without permission is illegal and can result in severe legal c
 
 ## Overview
 
-This lab will introduce you to basic de-hashing and the CIA triangle. The code for this week's lab can be found [here](https://github.com/byu-ecen-192/y-board-cybersecurity). 
+This lab will introduce you to basic de-hashing and the CIA triangle.
 
 **There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.**
 
@@ -25,6 +25,17 @@ This lab will introduce you to basic de-hashing and the CIA triangle. The code f
     • Computer or Phone
 
 ## Procedure
+
+### Getting the starter code:
+
+1. Open vs code.
+2. Click the “Source Control” button on the left toolbar.
+3. Click “Clone Repository.”
+  *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
+4. Enter the url: [https://github.com/byu-ecen-192/y-board-cybersecurity](https://github.com/byu-ecen-192/y-board-cybersecurity) and hit Enter.
+5. A window will open and ask you to select the destination folder. Choose where to put it.
+6. Open the PlatformIO Project.
+7. Build and Upload the code in the main.c file to the Y-Board.
 
 ### Webpage Exploration
 
