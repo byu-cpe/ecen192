@@ -55,9 +55,20 @@ These samples are stored in an audio file. The most basic type of audio file is 
 
 ## Procedure
 
+### Getting the starter code:
+
+1. Open vs code
+2. Click the “Source Control” button on the left toolbar
+3. Click “Clone Repository”
+  *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
+4. Enter the url: [https://github.com/byu-ecen-192/y-board-mic-speakers.git](https://github.com/byu-ecen-192/y-board-mic-speakers.git) and hit Enter
+5. A window will open and ask you to select the destination folder. Choose where to put it.
+6. Open the PlatformIO Project.
+7. Build and Upload the code in the main.c file to the Y-Board.
+
 ### Explore Tone Generation
 
-First, experiment with generating simple tones. Given a frequency, we can tell the y-badge all the samples it needs to play a single tone. Clone the github repo found here: https://github.com/byu-ecen-192/y-board-mic-speakers.git. Do this through the VS Code cloning feature like you did in the first y-board lab. This code is ready to be compiled and sent to your y-badge. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
+First, experiment with generating simple tones. Given a frequency, we can tell the y-badge all the samples it needs to play a single tone. Open the code with PlatformIO. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
 
 ### Putting Tones Together
 

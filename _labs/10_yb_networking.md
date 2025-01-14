@@ -35,11 +35,20 @@ A Wi-Fi transmission consists of packets, which are bundles of data that contain
 
 ## Procedure
 
+### Getting the starter code:
+
+1. Open vs code.
+2. Click the “Source Control” button on the left toolbar.
+3. Click “Clone Repository.”
+  *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
+4. Enter the url: [https://github.com/byu-ecen-192/y-board-networking.git](https://github.com/byu-ecen-192/y-board-networking.git) and hit Enter.
+5. A window will open and ask you to select the destination folder. Choose where to put it.
+6. Open the PlatformIO Project.
+7. Build and Upload the code in the main.c file to the Y-Board.
+
 ### Wifi Sniffer
 
-Clone the repository with the code [here](https://github.com/byu-ecen-192/y-board-networking.git) and upload it to your y-board. If you need help, check out the documentation for the previous labs on how to do this. 
-
-This code will turn your y-board into a Wi-Fi sniffer, which is a device that can listen to any Wi-Fi packets being sent, no matter the Wi-Fi network it is being sent on. A lot of the data in a Wi-Fi packet is encrypted, so that an attacker cannot intercept your information. However, there are some things we can tell from a sniffed packet. Every Wi-Fi packet contains a unique signature called a MAC address, which identifies the device that sent it. Every device in the world has a unique MAC address that no one shares so we can tell when the same device has sent multiple packets. Additionally, the first six digits of the MAC address uniquely identify the device manufacturer and by reading this, we can identify what company or organization made the device.
+After uploading the code, it will turn your y-board into a Wi-Fi sniffer, which is a device that can listen to any Wi-Fi packets being sent, no matter the Wi-Fi network it is being sent on. A lot of the data in a Wi-Fi packet is encrypted, so that an attacker cannot intercept your information. However, there are some things we can tell from a sniffed packet. Every Wi-Fi packet contains a unique signature called a MAC address, which identifies the device that sent it. Every device in the world has a unique MAC address that no one shares so we can tell when the same device has sent multiple packets. Additionally, the first six digits of the MAC address uniquely identify the device manufacturer and by reading this, we can identify what company or organization made the device.
 
 Make sure switch 2 is in the down position before turning the y-board on to enable sniffing mode. Also make sure your SD card is inserted. If it is not, press the reset button after inserting it. If your screen says “OUI Lookup not available,” ask a TA and they can help. Once on, you will see a bunch of blinking lights ranging from red (for a strong intercepted signal) to blue (a weak one). The knob controls the LED brightness. Your board is keeping a list of the most recent senders and assigns an LED to each one of them. Thus, when the same light blinks several times, it is the same device sending multiple packets. Two of the most recent ones are listed by their manufacturer name on the screen.
 

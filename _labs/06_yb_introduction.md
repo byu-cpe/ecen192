@@ -69,21 +69,23 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
 ## Procedure:
 
-### Step 1- Getting the starter code:
+### Getting the starter code:
 
-1. Open vs code
-2. Click the “Source Control” button on the left toolbar
-3. Click “Clone Repository”
+1. Open vs code.
+2. Click the “Source Control” button on the left toolbar.
+3. Click “Clone Repository.”
+  *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
+
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/05_yb_introduction/cloneRepo.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-4. Enter the url: https://github.com/byu-ecen-192/y-board-introduction.git and hit Enter
+4. Enter the url: [https://github.com/byu-ecen-192/y-board-introduction.git](https://github.com/byu-ecen-192/y-board-introduction.git) and hit Enter.
 5. A window will open and ask you to select the destination folder. Choose where to put it.
 
-### Step 2-Setting up the environment:
+### Setting up the environment:
 
 1. Click on the extensions sidebar
 
@@ -110,7 +112,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
 **While you’re waiting, go back and read the background for the lab. You can also continue ahead to read step 3 if you finish reading the background.**
 
-### Step 3- Programming:
+### Programming:
 
 1. We’ll be coding in c++ for these labs so remember to end every line of code with a semicolon. You can make one-line comments with two slashes 
 
@@ -164,7 +166,7 @@ In our `loop()` we run code to flash the leds and change colors when buttons or 
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>  
 
-### Step 4- Hardware Test
+### Hardware Test
 
 The hardware test will make sure that nothing is wrong with your board (this really helps with debugging future labs). If we know the board is working, then we know the problem lies in the code. Test the following to make sure your board and all its parts are working!
 
