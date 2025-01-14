@@ -1,6 +1,6 @@
 ---
-title: "Y-Board Mic & Speakers"
-number: 7
+title: "Y-Board Speakers and Sound"
+number: 8
 layout: lab
 ---
 
@@ -57,31 +57,28 @@ These samples are stored in an audio file. The most basic type of audio file is 
 
 ### Explore Tone Generation
 
-First, experiment with generating simple tones. Given a frequency, we can tell the y-badge all the samples it needs to play a single tone. Download the .zip for the lab’s code here. Unzip and open it, as in previous labs. This code is ready to be compiled and sent to your y-badge. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
+First, experiment with generating simple tones. Given a frequency, we can tell the y-badge all the samples it needs to play a single tone. Clone the github repo found here: https://github.com/byu-ecen-192/y-board-mic-speakers.git. Do this through the VS Code cloning feature like you did in the first y-board lab. This code is ready to be compiled and sent to your y-badge. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
 
 ### Putting Tones Together
 
 Now that you are able to play single notes, we can string them together to make a song. In your loop() function, comment out the line that says
 
 ```c
-“””
 tone_gen_loop();
-“””
 ```
 
 by putting two slashes (//) in front of it. Then uncomment the line following, which says 
 
 ```c
-“””
 play_notes();
-“””
 ```
 
 by removing the slashes in front of it. In the code, we already have several songs that you can choose from. They are:
-    • star_spangled_banner
-    • mario
-    • star_wars
-    • fight_song
+- star_spangled_banner
+- mario
+- star_wars
+- fight_song
+
 Insert one of these between the parentheses, replacing the phrase “put something here” to have the y-badge play this song when you press button 1. Upload the code and try it. If you are feeling adventurous, you can look at the code to see if there is another secret song programmed in. You might want to look at the file tone_gen.h. You can also create your own by putting in a string of notes between quotation marks. Check out the table at the end of this document to see the syntax on note entry.
 
 ### Play your audio file
@@ -89,9 +86,7 @@ Insert one of these between the parentheses, replacing the phrase “put somethi
 Playing a song might be interesting, but we want to be able to play any audio file, not just single synthesized notes. On your SD card, you should have several audio files preloaded that we will use today. Insert the SD card if it is not already. Comment out the play_notes line and uncomment the next, that says 
 
 ```c
-“””
 play_wav():
-“””
 ```
 
 Upload the code and you will hear your y-badge play Ode to Joy when you press button 1.
@@ -100,11 +95,8 @@ Upload the code and you will hear your y-badge play Ode to Joy when you press bu
 
 Have you ever noticed the knobs on stereos that adjust the treble and bass? A very important part of audio processing is being able to apply filters to improve sound quality. We can use filters to increase the bass in a song, remove the high-pitched ringing in a poor audio recording, or even add reverb to someone’s voice.
 
-At the top of the code, you will see a variable named FILENAME. Change the file path to be 
-“””
-“/audio_with_tone.wav”
-“””
-Upload the code and play this .wav file. You will hear a single tone and if you listen closely there is a quite voice speaking at the same time. We want to use a filter to remove the tone and understand what is being said. 
+At the top of the code, you will see a variable named FILENAME. Change the file path to be `/sd_card/audio_with_tone.wav`. Upload the code and play this .wav file. You will hear a single tone and if you listen closely there is a quiet voice speaking at the same time. We want to use a filter to remove the tone and understand what is being said.
+ 
 
 Now comment out the play_wav(); line and uncomment the following line that says filters(); 
 There are two main kinds of filters in audio processing, called high-pass filters and low-pass filters. A high-pass filter only lets high frequencies through (i.e., they pass through the filter), while a low-pass filter only allows low frequencies. If we want to remove all the high-pitched ringing from a recording, we can use a low-pass filter. But we can do better with our audio file. The tone being played in the recording is 440 Hz or A4. Combining a high-pass filter and a low-pass filter in a clever way can give us a new kind of filter called a notch filter. A notch filter allows all frequencies through except for a small range, removing a notch from the frequency spectrum where we don’t want it. This graph might help. The y-axis is the gain or volume of the sound, and the x-axis represents different frequencies along the spectrum.
@@ -121,9 +113,7 @@ In the paratheses of the filters function, replace the phrase “put something h
 You were able to play the .wav files we gave you. You can also add your own on the SD card and play them. All you have to do is change the FILENAME at the top of the code to the new filename. The y-badge is only coded to play .wav files with a single channel and a sample rate of 16,000 Hz. Most audio editing tools, like Audacity, can set this.
 If you want to play your own song using tones, instead of putting the variable name for the song, insert a string of note instructions between quotes like this:
 ```c
-“””
 “C4 E4 G4”
-“””
 ```
 
 Here is a table for the note notation. It should be noted that the number following the note name does not signify the octave as in most musical notation but the duration of the note.

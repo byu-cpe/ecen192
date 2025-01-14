@@ -1,6 +1,6 @@
 ---
 title: "Y-Board Networking"
-number: 9
+number: 10
 layout: lab
 ---
 
@@ -37,7 +37,7 @@ A Wi-Fi transmission consists of packets, which are bundles of data that contain
 
 ### Wifi Sniffer
 
-Download the zip file for the code here **ADD HYPERLINK TO REPO** and upload it to your y-board. If you need help, check out the documentation for the previous labs on how to do this. 
+Clone the repository with the code [here](https://github.com/byu-ecen-192/y-board-networking.git) and upload it to your y-board. If you need help, check out the documentation for the previous labs on how to do this. 
 
 This code will turn your y-board into a Wi-Fi sniffer, which is a device that can listen to any Wi-Fi packets being sent, no matter the Wi-Fi network it is being sent on. A lot of the data in a Wi-Fi packet is encrypted, so that an attacker cannot intercept your information. However, there are some things we can tell from a sniffed packet. Every Wi-Fi packet contains a unique signature called a MAC address, which identifies the device that sent it. Every device in the world has a unique MAC address that no one shares so we can tell when the same device has sent multiple packets. Additionally, the first six digits of the MAC address uniquely identify the device manufacturer and by reading this, we can identify what company or organization made the device.
 
@@ -55,14 +55,14 @@ Move switch 1 to the up position. This will bring up a menu to set the Wi-Fi cha
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/09_yb_networking/2-4-ghz_channels.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> A diagram of the internet "pathway" between your phone and the rest of the internet. </figcaption>
+  <figcaption style="text-align: center;"><strong></strong> Diagram of the 2.4 GHz Wi-Fi channels</figcaption>
 </figure>
 
 ### Connect to the Server
 
 Being able to listen to other people’s Wi-Fi traffic is great, but let’s get your board on the network. Do this by flipping switch 2. Now you will see that BYU servers assigned your device an IP address and a password. 
 
-Your IP address is how every device on the BYU network or any network for that matter knows who you are and how to talk to you. We are now going to control your device remotely. Navigate to ecen192.byu.edu. From there you will see a link on the top right of the page called send command. Here you will be able to login with your username and password as seen on your display and then control the color of the lights on your board.
+Your IP address is how every device on the BYU network or any network for that matter knows who you are and how to talk to you. We are now going to control your device remotely. Navigate to [this website](http://ecen192.byu.edu/control_device). Here you will be able to enter the ip address and password as seen on your display and then control the color of the lights on your board. Note: this will only work if you are connected to BYU's Wi-Fi network.
 
 Try changing the color of your board remotely from the computer. We will pick up from here next week!
 

@@ -12,7 +12,6 @@ In this lab, we will again be referring to a presentation for the bulk of the co
 
 ### View the Presentation
 
-#### ...Presentation to be embedded here...
 <!-- INSERT THE PRESENTATION EMBED -->
 <div style="display: flex; justify-content: center;">
     <iframe src="https://docs.google.com/presentation/d/1GTvaf5_BRBCuQHkWB23X4NHUpbnh06Do/embed?start=false&loop=true&delayms=3000" 

@@ -1,6 +1,6 @@
 ---
 title: "Y-Board Introduction"
-number: 5
+number: 6
 layout: lab
 ---
 
@@ -80,7 +80,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-4. Enter the url: https://github.com/Ehharv/ybadge_hardware_test_lab.git and hit Enter
+4. Enter the url: https://github.com/byu-ecen-192/y-board-introduction.git and hit Enter
 5. A window will open and ask you to select the destination folder. Choose where to put it.
 
 ### Step 2-Setting up the environment:
@@ -99,7 +99,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-3. Once it's done installing, click on the platformio icon on the left. Click “open folder” and choose the folder you just cloned in step 1.
+3. Once it's done installing, click on the platformio icon on the left. Click “open folder” or "open project" and choose the folder you just cloned in step 1.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/05_yb_introduction/openProject.png %}" style="display: block; margin: auto;">
@@ -146,7 +146,7 @@ int add(int x, int y){ // the return type is an integer
 }
 ```
 
-You’ll notice that there are two functions in the helloWorld file. `Void setup()` is run only once when we power on the y-badge board. It helps connect the esp32 to buttons, leds and the like. `Void loop()` is run continuously as fast as it possibly can (this is where clock rate from the background comes into play). You’ll notice that the return type for both is void, meaning they don’t return anything.
+In this repository, you should see several folders. In one called src, this is a file called main.cpp. This is the main file your y-board will run. In this file, you’ll notice that there are two functions. `Void setup()` is run only once when we power on the y-badge board. It helps connect the esp32 to buttons, leds and the like. `Void loop()` is run continuously as fast as it possibly can (this is where clock rate from the background comes into play). You’ll notice that the return type for both is void, meaning they don’t return anything.
 
 In our `setup()` loop, we initialize all the necessary parts of the board by calling some functions. This will get the esp32 ready to send and receive signals. We also play a song.
 
@@ -166,7 +166,7 @@ In our `loop()` we run code to flash the leds and change colors when buttons or 
 
 ### Step 4- Hardware Test
 
-The hardware test will make sure that nothing is wrong with your board (this really helps with debugging future labs. If we know the board is working, then we know the problem lies in the code. Test the following to make sure your board and all its parts are working!
+The hardware test will make sure that nothing is wrong with your board (this really helps with debugging future labs). If we know the board is working, then we know the problem lies in the code. Test the following to make sure your board and all its parts are working!
 
 Each feature corresponds to an led. The number is printed next to the led. In this example, we are looking at led 3.
 
@@ -179,7 +179,6 @@ If the screen isn’t already set up. Plug in the corresponding jumpers:
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/05_yb_introduction/gpio.jpg %}" style="display: block; margin: auto;">
-  <img src="{% link /assets/05_yb_introduction/oled_connections.jpg %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure> 
 
@@ -200,7 +199,6 @@ As labeled on the oled display:
 | Push button 1 (left) | Led 3 turns on |
 | Push button 2 (right) | Led 4 turns on|
 | Blow warm/cold air into the temperature sensor | Led 9 changes color. Cold is blue, warm is yellow |
-| Breathe warm air onto the humidity sensor or wave it around to get dryer air | Led 10 changes colors. Not humid is blue, humid is yellow |
 | Tilt and move the y-board | Led 6, 7, 8 turns on and off. Sometimes this is hard to see |
 
 
