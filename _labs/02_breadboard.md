@@ -22,27 +22,27 @@ NOTES:
 
 A breadboard, in circuitry, is a tool used primarily for prototyping or simple circuit development. They are especially useful because of their ability to be changed easily and their ability to work with a multitude of components. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand why breadboards are useful and how they function.
 
-**There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.**
+In todays lab you will:
+  - Setup your breadboard
+  - Build a simple LED circuit
+  - Build a Traffic Light with 3 LEDs
+  - Build a buzzer circuit
+  - Explore and Build a different circuit of your choosing
 
 ## Background/Preparation
 
-<figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/front_breadboard.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> A picture of a breadboard.</figcaption>
-</figure>
-
-Breadboards function in different rows and columns, commonly referred to as **busses**. All the pinholes on the breadboard that are connected to one another make up a single bus. If two wires or components are plugged into the same bus, they are connected to each other at those points. The busses that run along the long sides, for example, are referred to as the **power rails**. These power busses are marked by red and blue lines, which serve to help keep track of positive and negative polarities when powered elements are used in the circuit. 
-
- *<b>Note</b>: While busses have helpful notation, there are no rules specifically forcing you to plug things in correctly. Always make sure you double check the polarity and pins you choose when plugging in components to avoid damaging parts.*
-
-In contrast to the power rails along the long side, **terminal strips** are busses that run perpendicular to the power rails along the short sides of the breadboard. These are marked by numbers on the ends of some of the terminal strips. There are two sets of terminal strip rows which are separated by the **DIP Support** (Dual In-line Package), a measured gap that allows for more circuit components to fit nicely across multiple terminal strips. Traditionally, components that don't supply power are plugged into the terminal strips, which are, in turn, connected to the power rails by wires or resistors that then receive the power from somewhere off the breadboard. Another way to picture how this works is to look at the inside of the breadboard itself:
+### Intital Setup
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/back_breadboard.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> Picture of the inside and back of a breadboard</figcaption>
+  <img src="{% link assets/02_breadboard/breadboard_setup_1 %}">
 </figure>
-
-Breadboard busses are notable as they support connections without requiring you to manually attach every component with solder or another permanent method. What we will be doing today is utilizing a breadboard to create various circuits.
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/breadboard_setup_2 %}">
+</figure>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/breadboard_setup_3 %}">
+  <figcaption style="text-align: center;"><strong></strong> Breadboard Setup </figcaption>
+</figure>
 
 ## Equipment and Materials
 
@@ -52,8 +52,8 @@ Breadboard busses are notable as they support connections without requiring you 
 - wires to connect components
 - DIP Switch
 - power source (battery, connector and screw terminals)
-- (optional) button
-- (optional) buzzer
+- button
+- buzzer
 
 ## Procedure
 
@@ -114,7 +114,9 @@ Using the components that we have given you, make a new circuit according to you
 
 Recall how the square LED was much easier to see, and much nicer to look at than the other LEDs. This is because of how its cover diffuses light. For the post-lab, find an object at home that will work well as a light diffuser to put over one of your other LEDs. *(Hint: Try to find something translucent. If it is too solid, the light won't be able to get through, but if it is too clear, the light won't disperse as desired)*. Make the LED circuit again, and see how you can change the way the LED appears and lights up a space based on the diffuser you use.
 
-## Additional Help Video
+## Additional Information and Resources
+
+### Help Video
 
 <div style="display: flex; justify-content: center;">
     <iframe width="1280" 
@@ -127,6 +129,26 @@ Recall how the square LED was much easier to see, and much nicer to look at than
             allowfullscreen>
     </iframe>
 </div>
+
+### Breadboards
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/front_breadboard.jpg %}">
+  <figcaption style="text-align: center;"><strong></strong> A picture of a breadboard.</figcaption>
+</figure>
+
+Breadboards function in different rows and columns, commonly referred to as **busses**. All the pinholes on the breadboard that are connected to one another make up a single bus. If two wires or components are plugged into the same bus, they are connected to each other at those points. The busses that run along the long sides, for example, are referred to as the **power rails**. These power busses are marked by red and blue lines, which serve to help keep track of positive and negative polarities when powered elements are used in the circuit. 
+
+ *<b>Note</b>: While busses have helpful notation, there are no rules specifically forcing you to plug things in correctly. Always make sure you double check the polarity and pins you choose when plugging in components to avoid damaging parts.*
+
+In contrast to the power rails along the long side, **terminal strips** are busses that run perpendicular to the power rails along the short sides of the breadboard. These are marked by numbers on the ends of some of the terminal strips. There are two sets of terminal strip rows which are separated by the **DIP Support** (Dual In-line Package), a measured gap that allows for more circuit components to fit nicely across multiple terminal strips. Traditionally, components that don't supply power are plugged into the terminal strips, which are, in turn, connected to the power rails by wires or resistors that then receive the power from somewhere off the breadboard. Another way to picture how this works is to look at the inside of the breadboard itself:
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/back_breadboard.jpg %}">
+  <figcaption style="text-align: center;"><strong></strong> Picture of the inside and back of a breadboard</figcaption>
+</figure>
+
+Breadboard busses are notable as they support connections without requiring you to manually attach every component with solder or another permanent method. What we will be doing today is utilizing a breadboard to create various circuits.
 
 
 <!--      Dynamic figure numbering script      -->
