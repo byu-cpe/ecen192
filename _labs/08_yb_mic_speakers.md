@@ -129,15 +129,15 @@ If you want to play your own song using tones, instead of putting the variable n
 
 Here is a table for the note notation. It should be noted that the number following the note name does not signify the octave as in most musical notation but the duration of the note.
 
-| Command | Notation | Example |
-| ------- | -------- | ------- |
-| Play a note | Use the note name | `"A B C"` |
-| Set the note duration | Use numbers to indicate the "fraction" of the note (4 - quarter, 8 - eighth, etc.). default is 4. | `"A4 B8 C1"` |
-| Sharps / Flats | use a `+` for sharps, and a `-` for flats | `"C+ F- G+"` |
-| Set the tempo | Use `T` followed by a number (in units of BPM) | `“T80 A8 B8 C8 T120 A8 B8 C8”` | 
-| Set the octave | Use `O` followed by a number between 4 - 7 | `“O4 C4 O5 C4”` |
-| Rest | Use the letter `R` followed by the length (same lengths as notes) | `“C4 R8 E4”` |
-| Dotted Rhythm | Place a `.` after a note to hold the note 50% longer | `“C4 D4. C4”`|
+| Command               | Notation                                                                                          | Example                        |
+| --------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ |
+| Play a note           | Use the note name                                                                                 | `"A B C"`                      |
+| Set the note duration | Use numbers to indicate the "fraction" of the note (4 - quarter, 8 - eighth, etc.). default is 4. | `"A4 B8 C1"`                   |
+| Sharps / Flats        | use a `+` for sharps, and a `-` for flats                                                         | `"C+ F- G+"`                   |
+| Set the tempo         | Use `T` followed by a number (in units of BPM)                                                    | `“T80 A8 B8 C8 T120 A8 B8 C8”` |
+| Set the octave        | Use `O` followed by a number between 4 - 7                                                        | `“O4 C4 O5 C4”`                |
+| Rest                  | Use the letter `R` followed by the length (same lengths as notes)                                 | `“C4 R8 E4”`                   |
+| Dotted Rhythm         | Place a `.` after a note to hold the note 50% longer                                              | `“C4 D4. C4”`                  |
 
 <!--      Dynamic figure numbering script      -->
 <!-- This block is not visible to the students -->

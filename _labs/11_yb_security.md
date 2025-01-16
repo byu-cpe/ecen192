@@ -20,9 +20,9 @@ This lab will introduce you to basic de-hashing and the CIA triangle.
 
 ## Equipment and Materials
 
-    • Y-Badge
-    • LED screen
-    • Computer or Phone
+- Y-Badge
+- LED screen
+- Computer or Phone
 
 ## Procedure
 

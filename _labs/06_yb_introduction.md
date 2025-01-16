@@ -101,14 +101,14 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-3. Once it's done installing, click on the platformio icon on the left. Click “open folder” or "open project" and choose the folder you just cloned in step 1.
+3. Once it's done installing, click on the platformio icon on the left. Click "open folder" or "open project" and choose the folder you just cloned in step 1.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/05_yb_introduction/openProject.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-4. A message should pop up on the bottom right saying platformio is configuring your project. The first time you run this, it will take up to 10 minutes.
+1. A message should pop up on the bottom right saying platformio is configuring your project. The first time you run this, it will take up to 10 minutes.
 
 **While you’re waiting, go back and read the background for the lab. You can also continue ahead to read step 3 if you finish reading the background.**
 
@@ -148,7 +148,7 @@ int add(int x, int y){ // the return type is an integer
 }
 ```
 
-In this repository, you should see several folders. In one called src, this is a file called main.cpp. This is the main file your y-board will run. In this file, you’ll notice that there are two functions. `Void setup()` is run only once when we power on the y-badge board. It helps connect the esp32 to buttons, leds and the like. `Void loop()` is run continuously as fast as it possibly can (this is where clock rate from the background comes into play). You’ll notice that the return type for both is void, meaning they don’t return anything.
+In this repository, you should see several folders. In one called src, there is a file called main.cpp. This is the main file your y-board will run. In this file, you’ll notice that there are two functions. `void setup()` is run only once when we power on the y-badge board. It helps connect the esp32 to buttons, leds and the like. `void loop()` is run continuously as fast as it possibly can (this is where clock rate from the background comes into play). You’ll notice that the return type for both is void, meaning they don’t return anything.
 
 In our `setup()` loop, we initialize all the necessary parts of the board by calling some functions. This will get the esp32 ready to send and receive signals. We also play a song.
 
@@ -191,17 +191,17 @@ As labeled on the oled display:
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure> 
 
-| Action| Result |
-| -- | -- |
-| Screen | Displays "GPIO Test" |
-| Speaker| Plays part of the fight song when you first upload the code and when you push the reset button |
-| Turn the knob | Led 5 changes brightness |
-| Flip switch 1 (left) | Led 1 turns on |
-| Flip switch 2 (right)| Led 2 turns on |
-| Push button 1 (left) | Led 3 turns on |
-| Push button 2 (right) | Led 4 turns on|
-| Blow warm/cold air into the temperature sensor | Led 9 changes color. Cold is blue, warm is yellow |
-| Tilt and move the y-board | Led 6, 7, 8 turns on and off. Sometimes this is hard to see |
+| Action                                         | Result                                                                                         |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Screen                                         | Displays "GPIO Test"                                                                           |
+| Speaker                                        | Plays part of the fight song when you first upload the code and when you push the reset button |
+| Turn the knob                                  | Led 5 changes brightness                                                                       |
+| Flip switch 1 (left)                           | Led 1 turns on                                                                                 |
+| Flip switch 2 (right)                          | Led 2 turns on                                                                                 |
+| Push button 1 (left)                           | Led 3 turns on                                                                                 |
+| Push button 2 (right)                          | Led 4 turns on                                                                                 |
+| Blow warm/cold air into the temperature sensor | Led 9 changes color. Cold is blue, warm is yellow                                              |
+| Tilt and move the y-board                      | Led 6, 7, 8 turns on and off. Sometimes this is hard to see                                    |
 
 
 

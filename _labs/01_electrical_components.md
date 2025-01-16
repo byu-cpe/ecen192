@@ -14,7 +14,6 @@ Happy exploration!
 
 ### View the Presentation
 
-#### ...Presentation to be embedded here...
 <!-- INSERT THE PRESENTATION EMBED -->
 <div style="display: flex; justify-content: center;">
     <iframe src="https://docs.google.com/presentation/d/1O_nh7TUPZn9WJS3je9LGEc88SWYenw7M/embed?start=false&loop=false&delayms=3000" 

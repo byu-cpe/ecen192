@@ -49,11 +49,11 @@ Breadboard busses are notable as they support connections without requiring you 
 - breadboard
 - at least four LED lights
 - at least four resistors
+- button
 - wires to connect components
 - DIP Switch
 - power source (battery, connector and screw terminals)
-- (optional) button
-- (optional) buzzer
+
 
 ## Procedure
 
@@ -73,37 +73,27 @@ Our LEDs are less sensitive than other diodes, so if plugged in the wrong way, t
 </figure>
 
 
+### Add A Button
+
+Next, add a button inline in the circuit to control the light. You can put it anywhere in the circuit because any break in current will prevent the LED from lighting up.
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/circuit3.jpg %}">
+  <figcaption style="text-align: center;"><strong></strong> Second circuit picture with a button.</figcaption>
+</figure>
+
+
 ### Traffic Light Circuit
 
 Next, we will build a circuit like a traffic light. To do this, we will utilize a dipswitch (a name for that type of switch) placed over the DIP Support gap. Again, see the image below for help. While not always legible, the dipswitch should have an arrow labeled "ON" that will help with turning on and off the lights as desired. Make sure when you toggle the switch, you fully push it to one side or the other. DIP switches can be quite fickle and can get stuck halfway between on and off if not fully switched in one direction or the other. Also note that the dipswitch creates a physical break in the circuit, so it doesn't matter which direction you place over the DIP support.
 
 Sometimes your components can start to be difficult to insert and remove from the breadboard. To help this, straighten out the pins by loosely pinching each one with your fingers and running them along the length of them until it becomes easier to work with.
 
-Repeating the process from the one LED, place three other LEDs (ideally red, yellow and green for the traffic light effect) on the opposite side of the dipswitch to create a circuit that should look something like this:
+Repeating the process from the one LED, place three other LEDs (ideally red, yellow and green for the traffic light effect) inline with the dipswitch to produce a circuit that looks something like this:
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/circuit2.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> Second circuit picture.</figcaption>
-</figure>
-
-### Buzzer Circuit
-
-The third circuit involves a button and a buzzer. A **buzzer** is just another type of diode, one that produces sound instead of light. A **button** is like an on/off switch, but is only on while being held down. 
-
-*Notice: while it is a diode like the LEDs, buzzers are more fragile than the LEDS are. If you set up the buzzer's polarity  in the wrong direction, the buzzer could break. To avoid this, ensure that it is going in the right direction by pointing the cathode (the side indicated as "positive" on the top of the component) to the positive side of the circuit. Hopefully though, even if the buzzer breaks, electricity will still flow, so the rest of the circuit should still work.*
-
-Because its harder to see if this circuit has been porperly aligned, we will reuse the square LED from the first circuit so that we can be certain its working. Assuming that your breadboard has everything spaced the same way, the circuit itself should look like this:
-
-<figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/circuit3off.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> circuit in different states - off </figcaption>
-</figure>
-
-When the button is pressed, it should look like this and play a sound:
-
-<figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/circuit3on.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> circuit in different states - on </figcaption>
+  <figcaption style="text-align: center;"><strong></strong> Third circuit picture.</figcaption>
 </figure>
 
 ## Further Exploration
