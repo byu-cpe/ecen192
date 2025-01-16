@@ -1,6 +1,6 @@
 ---
 title: "Y-Board Buttons and Switches"
-number: 6
+number: 7
 layout: lab
 ---
 
@@ -20,7 +20,7 @@ NOTES:
 
 ## Overview
 
-This lab will introduce you to the process of coding on the Y-badge. We will first write some code for the LEDs and buttons and upload it to the Y-badge. 
+This lab will introduce you to the process of coding on the Y-Board. We will first write some code for the LEDs and buttons and upload it to the Y-Board. 
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/06_yb_buttons_switches/Y-Board.jpg %}" style="display: block; margin: auto;">
@@ -30,18 +30,28 @@ This lab will introduce you to the process of coding on the Y-badge. We will fir
 ## Background/Preparation
 
 - You should have finished the previous lab for a software, github, and PlatformIO intro.
-- You should have the [student code](https://github.com/byu-ecen-192/y-board-buttons-switches)(click here) downloaded as a .zip file from github. Right click on the file to extract it and then go to VS Code to open it. Make sure PlatformIO is working properly. 
 
 ## Equipment and Materials
 
-- Y-Badge
+- Y-Board
 - USB-C cord
 
 ## Procedure
 
+### Getting the starter code
+
+1. Open vs code.
+2. Click the “Source Control” button on the left toolbar.
+3. Click “Clone Repository.”
+  *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
+4. Enter the url: [https://github.com/byu-ecen-192/y-board-buttons-switches.git](https://github.com/byu-ecen-192/y-board-buttons-switches.git) and hit Enter.
+5. A window will open and ask you to select the destination folder. Choose where to put it.
+6. Open the PlatformIO Project.
+7. Build and Upload the code in the main.c file to the Y-Board.
+
 **As you go through this lab, copy the example code into the respective section on VS Code main.cpp file to explore how each part works.** Don't forget to uncomment the corresponding function under the `int main()` section near the top.
 
-### Part 1 - LED Exploration (5-10 minutes)
+### LED Exploration (5-10 minutes)
 
 - Each LED, labeled L1 to L20, is an RGB (red-green-blue) LED, which means that it is actually three smaller red, green, and blue lights packaged together. You can set the brightness of the red, green, and blue lights individually, making the LED  any color you like.
 
@@ -130,7 +140,7 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-### Part 2 - Loops (15 minutes)
+### Loops (15 minutes)
 
 #### While Loops
 
@@ -208,7 +218,7 @@ Replace the previous code with this example code under the `void loop_exploratio
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-### Part 3 - Buttons and Switches (15 minutes)
+### Buttons and Switches (15 minutes)
 
 #### Functions
 
@@ -333,7 +343,7 @@ while(true){
 ```
 - Multiplying the value by 255/100 is not necessary, but it will make the max value be 255 instead of 100 so that the max brightness or color can go up to 255.
 
-### Part 4 - Your Own Challenge (Post-lab if necessary)
+### Your Own Challenge (Post-lab if necessary)
 
 Come up with your own challenge to combine the use of LEDs and at least two more of the following:
 - buttons

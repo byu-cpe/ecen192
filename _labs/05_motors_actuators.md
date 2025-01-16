@@ -24,6 +24,6 @@ In this lab, we will again be referring to a presentation for the bulk of the co
     </iframe>
 </div>
 
-### Download Links:
+### Download Links
 
 [Download PowerPoint]({% link /assets/04_motors_actuators/presentation_lab_04.pptx %})

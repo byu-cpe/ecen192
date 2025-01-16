@@ -1,6 +1,6 @@
 ---
 title: "Y-Board Accelerometer & GPIO"
-number: 8
+number: 9
 layout: lab
 ---
 
@@ -60,7 +60,18 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 
 ## Procedure
 
-### Step 1: Hardware Setup
+### Getting the starter code
+
+1. Open vs code.
+2. Click the "Source Control" button on the left toolbar.
+3. Click "Clone Repository".
+  *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
+4. Enter the url: [https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git](https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git) and hit Enter.
+5. A window will open and ask you to select the destination folder. Choose where to put it.
+6. Open the PlatformIO Project.
+7. Build and Upload the code in the main.c file to the Y-Board.
+
+### Hardware Setup
 
 1.	Plug your 4 jumper wires into the OLED screen
 <!-- Put "oled.jpg" and "oled_i2c.jpg" here -->
@@ -82,16 +93,8 @@ If you used the same colors as I did, it should look like the following:
   <img src="{% link /assets/08_yb_accel_gpio/i2c_connection.jpg %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> The OLED screen with the jumper wires plugged in.</figcaption>
 </figure>
-
-### Step 2: Software Setup
-
-1. Click on the "Source Control" button on the lefthand bar of VSCode (hotkey: Ctrl+Shift+G)
-2. Enter this URL: https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git
-3. Choose a destination to save the lab files at
-4. Once you've opened the platformio project, build the project (hotkey: Ctrl+Alt+B)
-5. Upload the build to the Y-Board (hotkey: Ctrl+Alt+U)
  
-### Step 3: Tinker
+### Tinker
 
 Try out something cool yourself! I’ll list a few ideas below.
 1.	Change the text at the top of the OLED (easy)
