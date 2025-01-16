@@ -15,7 +15,7 @@ Remember, hacking without permission is illegal and can result in severe legal c
 
 This lab will introduce you to basic de-hashing and the CIA triangle.
 
-**There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.**
+**There is a Help Video section at the bottom that goes with this lab. Some instructions may require you to watch the video or will be easier to understand when following along with the video.**
 
 
 ## Equipment and Materials

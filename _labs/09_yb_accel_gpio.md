@@ -22,7 +22,7 @@ NOTES:
 
 This lab is about reading data off an accelerometer and sending that information to an off-board device using the GPIO pins. In this case, we are sending the data to a small OLED screen that displays how much acceleration the board is experiencing in real time in 3 dimensional space.
 
-**There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.** 
+**There is a Help Video section at the bottom that goes with this lab. Some instructions may require you to watch the video or will be easier to understand when following along with the video.** 
 
 <!-- Put "oled_accel.jpg" here -->
 <figure class="image mx-auto" style="max-width: 750px">

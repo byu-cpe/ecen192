@@ -27,7 +27,7 @@ In this lab we will be using some tools you are likely already familiar with to 
 
 Ohm’s Law is one of the most fundamental concepts in the theory of electronics. Ohm's law is states:
 
-The **current** *(amount of electricity)* flowing through a **conductor** *(anthing that allows electricity to flow through it)* at any two points is <ins>directly proportional</ins> to the **voltage** *(energy difference)* across the two points, and <ins>inversely proportional</ins> to the **resistance** *(of current flow)* between them. Ohm's law is written: <br>
+The **current** *(amount of electricity)* flowing through a **conductor** *(anything that allows electricity to flow through it)* at any two points is <ins>directly proportional</ins> to the **voltage** *(energy difference)* across the two points, and <ins>inversely proportional</ins> to the **resistance** *(of current flow)* between them. Ohm's law is written: <br>
 
 <p align = "center">
 </p>
@@ -84,7 +84,7 @@ Here are some things to keep in mind when you work with the multimeter:
 2. The **VΩmA** port is connected to the positive. It is considered the point of high voltage, and is often represented by a red wire.
 3. By turning the knob, we can measure the quantity of our choice. 
 
-Notice that while there are only 3 _types_ of measurements, V, A, and Ω, there are also several _quantities_ available for each type of measurement. Becuase there is so much variety in electronic design, difference scales are available depending on the range of V, A, or Ω you expect to encounter.
+Notice that while there are only 3 _types_ of measurements, V, A, and Ω, there are also several _quantities_ available for each type of measurement. Because there is so much variety in electronic design, difference scales are available depending on the range of V, A, or Ω you expect to encounter.
 
 **Warning: Before you use a multimeter, you need to know what values you expect to encounter and select the appropriate scale. Failure to do so can overload the multimeter and may even cause a short circuit, which can be dangerous to you, and permanently damaging to both the circuit and the multimeter.**
 
@@ -152,7 +152,7 @@ Summary: As you rotate the wiper (or knob) from left to right, the resistance in
  
 ### Voltage
 
-**Note:** Make sure you have set the multimeter in the right setting to measusre DC voltage (V symbol).
+**Note:** Make sure you have set the multimeter in the right setting to measure DC voltage (V symbol).
 
 #### Measure Voltage
 
@@ -163,7 +163,7 @@ Summary: As you rotate the wiper (or knob) from left to right, the resistance in
 
 **Step 1: Make connections:**  Follow the schematic to make the circuit shown above.
 
-**Step 2: Measure the voltage drop across the LED:** You will be connecting your two aligator clips to the points  <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> of the schematic to measure the voltage drop across the LED.
+**Step 2: Measure the voltage drop across the LED:** You will be connecting your two alligator clips to the points  <span style="color: red;"> <b> A </b> </span> (Positive) and  <span style = "color : red"> <b> B </b> </span> of the schematic to measure the voltage drop across the LED.
 
 
 #### Measure Varying Voltage
