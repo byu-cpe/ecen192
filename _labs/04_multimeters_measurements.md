@@ -19,7 +19,7 @@ NOTES:
 -->
 
 ## Overview
-In this lab we will be using some tools you are likely already familiar with to measure DC voltage, DC current, and resistance. Now that you know how to create and operate circuits using breadboards, it''s time to learn how to use multimeters.  
+In this lab we will be using some tools you are likely already familiar with to measure DC voltage, DC current, and resistance. Now that you know how to create and operate circuits using breadboards, it's time to learn how to use multimeters.  
 
 ## Background/Preparation <br>
 
@@ -157,8 +157,8 @@ Summary: As you rotate the wiper (or knob) from left to right, the resistance in
 #### Measure Voltage:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/03_multimeters_measurements/current__circuit_schematic.png %}" style="display: block; margin: auto;">
-  <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to caluculate current in a cicuit.</figcaption>
+  <img src="{% link assets/03_multimeters_measurements/potentiometer_led_circuit_schematic.png %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> This is a schematic we will be making to calculate varying current in a circuit using a potentiometer to control the current current.</figcaption>
 </figure>
 
 **Step 1: Make connections:**  Follow the schematic to make the circuit shown above.
