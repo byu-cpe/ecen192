@@ -18,13 +18,13 @@ NOTES:
   - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 -->
 
-## Overview:
+## Overview
 
 In his lab you’ll be setting up your coding environment, and learning the basics of programming the microcontroller on the y-badge. The end product will be a comprehensive hardware test.
 
 **ATTENTION: Skip down to "Procedure", begin with step 1, and continue until you are directed back to the "Background" section.**
 
-## Background:
+## Background
 
 ### Microcontrollers
 A microcontroller is a compact computer on a chip. They’re used in things that need some level of intelligence to perform a function but don't require a whole computer. At the heart of a microcontroller is a central processing unit, or CPU. It’s much simpler than the CPU in your laptop or desktop but is optimized to perform tasks efficiently with limited resources. Microcontrollers come with their own memory to store the program (instructions) and to store data temporarily while it's running. They have built-in input/output interfaces, which means they can read signals from and send signals to other devices. For example, a microcontroller in a vending machine reads inputs from the buttons you press, and controls outputs like returning change or vending a snack.
@@ -59,7 +59,7 @@ Line 24: This line specifies a library that is needed for the board to function.
 
 Line 25: This also specifies a necessary library. Notice that it is a link to a github repository. When this link is included, it goes to github and uses the repo, just like when we cloned the initial repository.
 
-## Equipment and Materials:
+## Equipment and Materials
 
 - Y badge board
 - Usb c to usb cable
@@ -67,9 +67,9 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
  **If your project is still configuring move on to read step 3**
 
-## Procedure:
+## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code.
 2. Click the “Source Control” button on the left toolbar.
@@ -85,7 +85,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 4. Enter the url: [https://github.com/byu-ecen-192/y-board-introduction.git](https://github.com/byu-ecen-192/y-board-introduction.git) and hit Enter.
 5. A window will open and ask you to select the destination folder. Choose where to put it.
 
-### Setting up the environment:
+### Setting up the environment
 
 1. Click on the extensions sidebar
 
@@ -112,7 +112,7 @@ Line 25: This also specifies a necessary library. Notice that it is a link to a 
 
 **While you’re waiting, go back and read the background for the lab. You can also continue ahead to read step 3 if you finish reading the background.**
 
-### Programming:
+### Programming
 
 1. We’ll be coding in c++ for these labs so remember to end every line of code with a semicolon. You can make one-line comments with two slashes 
 
@@ -257,7 +257,7 @@ Remember to turn the board on and plug it into the computer you’re using befor
 Try a different usb port, cord, or restart vscode, or restart the computer.
 
 
-## Post-lab work:
+## Post-lab Work
 
 Show your friend, coworker, or roommate your cool board and its hardware test. Explain what the hardware test is doing.
 

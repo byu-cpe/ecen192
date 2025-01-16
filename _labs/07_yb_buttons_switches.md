@@ -38,7 +38,7 @@ This lab will introduce you to the process of coding on the Y-badge. We will fir
 
 ## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code.
 2. Click the “Source Control” button on the left toolbar.

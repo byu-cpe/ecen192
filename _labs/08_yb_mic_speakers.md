@@ -18,7 +18,7 @@ NOTES:
   - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 --> 
 
-## Overview:
+## Overview
 
 In this lab, you will learn the basics of speakers and frequency generation. You will also learn how we store sound files and what a digital sample is. To conclude, you will explore some basic audio filters, and will have the chance to experiment with a few of these using your y-badge.
 
@@ -26,7 +26,7 @@ In this lab, you will learn the basics of speakers and frequency generation. You
 
 One of the most important aspects of any computer system is being able to interact with it. Audio is one of the most common forms of human-computer interaction. Think back to the last 24 hours. You likely used computer audio several times to watch a YouTube video, Instagram reel, or even make a phone call.
 
-### Speakers:
+### Speakers
 
 Speakers work by converting electrical signals, called samples, into sound waves that we can hear. This is done through an electromagnet and a diaphragm. As the electromagnet pulls the diaphragm forwards and backwards, it creates pressure waves that are propagated through the air as sound.
 
@@ -55,11 +55,11 @@ These samples are stored in an audio file. The most basic type of audio file is 
 
 ## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code
-2. Click the “Source Control” button on the left toolbar
-3. Click “Clone Repository”
+2. Click the "Source Control" button on the left toolbar
+3. Click "Clone Repository"
   *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
 4. Enter the url: [https://github.com/byu-ecen-192/y-board-mic-speakers.git](https://github.com/byu-ecen-192/y-board-mic-speakers.git) and hit Enter
 5. A window will open and ask you to select the destination folder. Choose where to put it.
@@ -119,7 +119,7 @@ There are two main kinds of filters in audio processing, called high-pass filter
 
 In the paratheses of the filters function, replace the phrase “put something here” with the frequency around which we want to remove, which is 440. Upload this code. When you press button one, you will hear the original sound file. When you press button 2, your board will filter the file and play the new audio. Can you hear what the secret word is? The tone won’t be removed completely because it is so loud in comparison, but you should be able to understand the voice now.
 
-## Further Exploration:
+## Further Exploration
 
 You were able to play the .wav files we gave you. You can also add your own on the SD card and play them. All you have to do is change the FILENAME at the top of the code to the new filename. The y-badge is only coded to play .wav files with a single channel and a sample rate of 16,000 Hz. Most audio editing tools, like Audacity, can set this.
 If you want to play your own song using tones, instead of putting the variable name for the song, insert a string of note instructions between quotes like this:

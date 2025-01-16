@@ -35,16 +35,16 @@ A Wi-Fi transmission consists of packets, which are bundles of data that contain
 
 ## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code.
-2. Click the “Source Control” button on the left toolbar.
-3. Click “Clone Repository.”
+2. Click the "Source Control" button on the left toolbar.
+3. Click "Clone Repository".
   *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
-4. Enter the url: [https://github.com/byu-ecen-192/y-board-networking.git](https://github.com/byu-ecen-192/y-board-networking.git) and hit Enter.
-5. A window will open and ask you to select the destination folder. Choose where to put it.
-6. Open the PlatformIO Project.
-7. Build and Upload the code in the main.c file to the Y-Board.
+1. Enter the url: [https://github.com/byu-ecen-192/y-board-networking.git](https://github.com/byu-ecen-192/y-board-networking.git) and hit Enter.
+2. A window will open and ask you to select the destination folder. Choose where to put it.
+3. Open the PlatformIO Project.
+4. Build and Upload the code in the main.c file to the Y-Board.
 
 ### Wifi Sniffer
 

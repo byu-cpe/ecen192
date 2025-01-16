@@ -27,7 +27,7 @@ Happy exploration!
 </div>
 
 
-### Download Links:
+### Download Links
 
 [Download the PowerPoint]({% link /assets/01_electrical_components/presentation_lab_01.pptx %})
 
