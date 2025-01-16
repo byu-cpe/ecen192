@@ -20,7 +20,7 @@ NOTES:
 
 ## Overview
 
-This lab will introduce you to the process of coding on the Y-badge. We will first write some code for the LEDs and buttons and upload it to the Y-badge. 
+This lab will introduce you to the process of coding on the Y-Board. We will first write some code for the LEDs and buttons and upload it to the Y-Board. 
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/06_yb_buttons_switches/Y-Board.jpg %}" style="display: block; margin: auto;">
@@ -33,7 +33,7 @@ This lab will introduce you to the process of coding on the Y-badge. We will fir
 
 ## Equipment and Materials
 
-- Y-Badge
+- Y-Board
 - USB-C cord
 
 ## Procedure

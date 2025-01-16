@@ -20,7 +20,7 @@ This lab will introduce you to basic de-hashing and the CIA triangle.
 
 ## Equipment and Materials
 
-- Y-Badge
+- Y-Board
 - LED screen
 - Computer or Phone
 
@@ -39,12 +39,12 @@ This lab will introduce you to basic de-hashing and the CIA triangle.
 
 ### Webpage Exploration
 
-    1. Turn on Y-Badge 
-    2. Open Y-Badge webpage http://ecen192.byu.edu/ and log in
+    1. Turn on Y-Board
+    2. Open Y-Board webpage http://ecen192.byu.edu/ and log in
     3. Explore the site, click things
-    4. Click on Y-Badge button on webpage
+    4. Click on Y-Board button on webpage
     5. Look on your LED screen to find your IP address and password
-    6. Change the color of your Y-Badge LEDs like last lab
+    6. Change the color of your Y-Board LEDs like last lab
 
 ### Webpage Explotation
 
@@ -63,19 +63,19 @@ This lab will introduce you to basic de-hashing and the CIA triangle.
     
 ### Breach of Integrity (changing something that you shouldn’t change)
 
-    1. Return to the Y-Badge section of the webpage
-    2. Input your partner’s Y-Badge IP address and the password you de-hashed
+    1. Return to the Y-Board section of the webpage
+    2. Input your partner’s Y-Board IP address and the password you de-hashed
     3. Change the LED colors of your partner’s badge
 
 ### Challenges
 
-    1. Scour the webpage to find easter eggs to send to your partner’s Y-Badge 
+    1. Scour the webpage to find easter eggs to send to your partner’s Y-Board 
         a. Hint: Consider checking other endpoints and disallowed paths
 
 ## Post-Lab Work
 
 Show your friend or roommate your project and quickly explain to them how it works. Answer any questions they have to the best of your ability and be prepared to report in class.
-The webpage and Y-Badges will be functional across BYU campus. Continue searching for easter eggs using the steps we followed. 
+The webpage and Y-Boards will be functional across BYU campus. Continue searching for easter eggs using the steps we followed. 
 
 ## Help Video
 

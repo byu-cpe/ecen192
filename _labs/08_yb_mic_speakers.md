@@ -20,7 +20,7 @@ NOTES:
 
 ## Overview
 
-In this lab, you will learn the basics of speakers and frequency generation. You will also learn how we store sound files and what a digital sample is. To conclude, you will explore some basic audio filters, and will have the chance to experiment with a few of these using your y-badge.
+In this lab, you will learn the basics of speakers and frequency generation. You will also learn how we store sound files and what a digital sample is. To conclude, you will explore some basic audio filters, and will have the chance to experiment with a few of these using your Y-Board.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Here is a graph of a wave that represents a tone with the frequency 440 Hz (A4 o
   <figcaption style="text-align: center;"><strong></strong> a sine wave on a graph, which is the tone A-440.</figcaption>
 </figure>
 
-This wave is continuous, meaning it is defined at every point with no gaps. Computers, however, do not have infinite memory to store these samples, so we must choose when to take a sample. The more samples we take, the better the audio quality. However, there reaches a point where the human ear can’t tell the difference, so we don’t go overboard. Generally, we take 44,100 samples per second (44,100 Hz), though due to computational limitation so the y-badge, we use slightly lower than that. Here is the same tone but how we could sample it.
+This wave is continuous, meaning it is defined at every point with no gaps. Computers, however, do not have infinite memory to store these samples, so we must choose when to take a sample. The more samples we take, the better the audio quality. However, there reaches a point where the human ear can’t tell the difference, so we don’t go overboard. Generally, we take 44,100 samples per second (44,100 Hz), though due to computational limitation so the Y-Board, we use slightly lower than that. Here is the same tone but how we could sample it.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/07_mic_speakers/sampled_tone.png %}" style="display: block; margin: auto;">
@@ -68,7 +68,7 @@ These samples are stored in an audio file. The most basic type of audio file is 
 
 ### Explore Tone Generation
 
-First, experiment with generating simple tones. Given a frequency, we can tell the y-badge all the samples it needs to play a single tone. Open the code with PlatformIO. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
+First, experiment with generating simple tones. Given a frequency, we can tell the Y-Board all the samples it needs to play a single tone. Open the code with PlatformIO. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
 
 ### Putting Tones Together
 
@@ -90,7 +90,7 @@ by removing the slashes in front of it. In the code, we already have several son
 - star_wars
 - fight_song
 
-Insert one of these between the parentheses, replacing the phrase “put something here” to have the y-badge play this song when you press button 1. Upload the code and try it. If you are feeling adventurous, you can look at the code to see if there is another secret song programmed in. You might want to look at the file tone_gen.h. You can also create your own by putting in a string of notes between quotation marks. Check out the table at the end of this document to see the syntax on note entry.
+Insert one of these between the parentheses, replacing the phrase "put something here" to have the Y-Board play this song when you press button 1. Upload the code and try it. If you are feeling adventurous, you can look at the code to see if there is another secret song programmed in. You might want to look at the file tone_gen.h. You can also create your own by putting in a string of notes between quotation marks. Check out the table at the end of this document to see the syntax on note entry.
 
 ### Play your audio file
 
@@ -100,7 +100,7 @@ Playing a song might be interesting, but we want to be able to play any audio fi
 play_wav():
 ```
 
-Upload the code and you will hear your y-badge play Ode to Joy when you press button 1.
+Upload the code and you will hear your Y-Board play Ode to Joy when you press button 1.
        
 ### Implement high and low pass filters
 
@@ -121,7 +121,7 @@ In the paratheses of the filters function, replace the phrase “put something h
 
 ## Further Exploration
 
-You were able to play the .wav files we gave you. You can also add your own on the SD card and play them. All you have to do is change the FILENAME at the top of the code to the new filename. The y-badge is only coded to play .wav files with a single channel and a sample rate of 16,000 Hz. Most audio editing tools, like Audacity, can set this.
+You were able to play the .wav files we gave you. You can also add your own on the SD card and play them. All you have to do is change the FILENAME at the top of the code to the new filename. The Y-Board is only coded to play .wav files with a single channel and a sample rate of 16,000 Hz. Most audio editing tools, like Audacity, can set this.
 If you want to play your own song using tones, instead of putting the variable name for the song, insert a string of note instructions between quotes like this:
 ```c
 “C4 E4 G4”

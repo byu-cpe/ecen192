@@ -20,7 +20,7 @@ NOTES:
 
 ## Overview
 
-In his lab you’ll be setting up your coding environment, and learning the basics of programming the microcontroller on the y-badge. The end product will be a comprehensive hardware test.
+In his lab you’ll be setting up your coding environment, and learning the basics of programming the microcontroller on the Y-Board. The end product will be a comprehensive hardware test.
 
 **ATTENTION: Skip down to "Procedure", begin with step 1, and continue until you are directed back to the "Background" section.**
 
@@ -31,14 +31,14 @@ A microcontroller is a compact computer on a chip. They’re used in things that
 
 Applications include, electric toothbrushes, wireless earbuds, microwaves, pacemakers, printers, anti-lock brakes, and many more.
 
-The microcontroller we’ll be using for this class is an ESP32-S3 mini. This microcontroller has a dual-core microprocessor which means it can handle more complex tasks compared to single-core microcontrollers. It runs at a clock speed of up to 240 MHz, which is faster than other microcontrollers, allowing it to process data quickly. One neat feature that we’ll explore in future labs is its built-in support for Wi-Fi and Bluetooth. You can find the microcontroller located on the top left of your y-badge. The esp32 is connected to the various components (buttons, switches, leds etc) by through traces (which are like wires embedded into the printed circuit board). One is highlighted in red in this image:
+The microcontroller we’ll be using for this class is an ESP32-S3 mini. This microcontroller has a dual-core microprocessor which means it can handle more complex tasks compared to single-core microcontrollers. It runs at a clock speed of up to 240 MHz, which is faster than other microcontrollers, allowing it to process data quickly. One neat feature that we’ll explore in future labs is its built-in support for Wi-Fi and Bluetooth. You can find the microcontroller located on the top left of your Y-Board. The esp32 is connected to the various components (buttons, switches, leds etc) by through traces (which are like wires embedded into the printed circuit board). One is highlighted in red in this image:
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/05_yb_introduction/Traces.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-For the rest of the labs in this course, we’ll be learning how to control different components on the y-badge with our microcontroller. To do this, we need to be able to give it instructions by writing and uploading a program. We’ll use visual studio code and an extension (platform io) to help us with this.
+For the rest of the labs in this course, we’ll be learning how to control different components on the Y-Board with our microcontroller. To do this, we need to be able to give it instructions by writing and uploading a program. We’ll use visual studio code and an extension (platform io) to help us with this.
 
 ### Github
 During step 1, we clone a repository from github. Github is an online platform where developers store, share, and collaborate on code. When you "clone a repository," you're making a copy of someone else's project (which is stored on GitHub) onto your own computer. This lets you work on the project locally.
@@ -148,7 +148,7 @@ int add(int x, int y){ // the return type is an integer
 }
 ```
 
-In this repository, you should see several folders. In one called src, there is a file called main.cpp. This is the main file your y-board will run. In this file, you’ll notice that there are two functions. `void setup()` is run only once when we power on the y-badge board. It helps connect the esp32 to buttons, leds and the like. `void loop()` is run continuously as fast as it possibly can (this is where clock rate from the background comes into play). You’ll notice that the return type for both is void, meaning they don’t return anything.
+In this repository, you should see several folders. In one called src, there is a file called main.cpp. This is the main file your Y-Board will run. In this file, you’ll notice that there are two functions. `void setup()` is run only once when we power on the Y-Board. It helps connect the esp32 to buttons, leds and the like. `void loop()` is run continuously as fast as it possibly can (this is where clock rate from the background comes into play). You’ll notice that the return type for both is void, meaning they don’t return anything.
 
 In our `setup()` loop, we initialize all the necessary parts of the board by calling some functions. This will get the esp32 ready to send and receive signals. We also play a song.
 
@@ -201,7 +201,7 @@ As labeled on the oled display:
 | Push button 1 (left)                           | Led 3 turns on                                                                                 |
 | Push button 2 (right)                          | Led 4 turns on                                                                                 |
 | Blow warm/cold air into the temperature sensor | Led 9 changes color. Cold is blue, warm is yellow                                              |
-| Tilt and move the y-board                      | Led 6, 7, 8 turns on and off. Sometimes this is hard to see                                    |
+| Tilt and move the Y-Board                      | Led 6, 7, 8 turns on and off. Sometimes this is hard to see                                    |
 
 
 
