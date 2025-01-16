@@ -78,18 +78,3 @@ Try changing the color of your board remotely from the computer. We will pick up
 ## Further Exploration
 
 Try using the Wi-Fi sniffer in different locations, such as a public place off-campus or your apartment. What kind of devices can you detect there? Can you locate a device by its signal strength? This might be challenging, but in areas with fewer Wi-Fi devices, it is possible.
-
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>

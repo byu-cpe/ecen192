@@ -208,19 +208,3 @@ You'll notice that the voltage increased as the thermister's temperature did. Us
 **Step 2: Adjust the setting:** Connect your multimeter at points <span style="color: red;"> <b> A </b> </span> (red lead) and  <span style = "color : red"> <b> B </b> </span>(black lead). Note that the multimeter acts as the final connection in the circuit. This is because it requires current to flow through it to measure it. Observe how the current changes while rotating the potentiometer's wiper. How does the LED change when you do that?   
 
 Using the Ohm's law $$ I = \frac{V}{R} $$, decide: what is happening to the LED when you change the current? What causes the change in brightness in the LED - voltage, or current? How do you know?
-
-
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>

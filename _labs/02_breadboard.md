@@ -117,19 +117,3 @@ Recall how the square LED was much easier to see, and much nicer to look at than
             allowfullscreen>
     </iframe>
 </div>
-
-
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>

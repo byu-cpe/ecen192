@@ -260,18 +260,3 @@ Try a different usb port, cord, or restart vscode, or restart the computer.
 ## Post-lab Work
 
 Show your friend, coworker, or roommate your cool board and its hardware test. Explain what the hardware test is doing.
-
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>

@@ -139,17 +139,3 @@ Here is a table for the note notation. It should be noted that the number follow
 | Rest                  | Use the letter `R` followed by the length (same lengths as notes)                                 | `“C4 R8 E4”`                   |
 | Dotted Rhythm         | Place a `.` after a note to hold the note 50% longer                                              | `“C4 D4. C4”`                  |
 
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>
