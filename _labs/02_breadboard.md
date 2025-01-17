@@ -111,7 +111,7 @@ Make a buzzer circuit. Use the schematic to take the 4 components and connect th
 Using these bins of random components, build your own circuit. For the components you chose, how do they work? What interesting thing can you do with these components? 
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/extra_components.png %}">
+  <img src="{% link assets/02_breadboard/extra_components.jpg %}">
 </figure>
 
 Some ideas:
