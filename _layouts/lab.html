@@ -17,3 +17,16 @@ layout: default
         {{ content }}
     </div>
 </article>
+
+<script>
+    // Select all figures on the page
+    const figures = document.querySelectorAll('figure');
+
+    // Loop through each figure and update the caption with dynamic numbering
+    figures.forEach((figure, index) => {
+        const figcaption = figure.querySelector('figcaption strong');
+        if (figcaption) {
+            figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
+        }
+    });
+</script>
