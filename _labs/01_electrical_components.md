@@ -30,5 +30,3 @@ Happy exploration!
 ### Download Links
 
 [Download the PowerPoint]({% link /assets/01_electrical_components/presentation_lab_01.pptx %})
-
-[Download the lab document]({% link /assets/01_electrical_components/lab_01_student.docx %})

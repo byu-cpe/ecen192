@@ -22,9 +22,127 @@ NOTES:
 
 A breadboard, in circuitry, is a tool used primarily for prototyping or simple circuit development. They are especially useful because of their ability to be changed easily and their ability to work with a multitude of components. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand why breadboards are useful and how they function.
 
-**There is a Help Video section at the bottom that goes with this lab. Some instructions may require you to watch the video or will be easier to understand when following along with the video.**
+
+In todays lab you will:
+  - Setup your breadboard
+  - Build a simple LED circuit
+  - Build a Traffic Light with 3 LEDs
+  - Build a buzzer circuit
+  - Explore and Build a different circuit of your choosing
 
 ## Background/Preparation
+
+### Intital Setup
+
+**You have your breadboard, battery, battery connector and terminal pins.**
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/breadboard_setup_1.png %}">
+</figure>
+**Screw the red and black wires from the battery connector into the terminal.**
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/breadboard_setup_2.png %}">
+</figure>
+**Put the terminal into the breadboard to match the red with the red rail and black with the blue rail.**
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/breadboard_setup_3.png %}">
+  <figcaption style="text-align: center;"><strong></strong> Breadboard Setup </figcaption>
+</figure>
+
+## Equipment and Materials
+
+- breadboard
+- at least four LED lights
+- at least four resistors
+- button
+- wires to connect components
+- DIP Switch
+- power source (battery, connector and screw terminals)
+- button
+- buzzer
+
+
+## Procedure
+
+### Simple LED Circuit
+
+Turn on an LED. **Use the components in the bag with the BLUE dot**
+
+Follow the diagram below to set up the components. Use the schematic to also compare the two and pay attention to how are they the same circuit.
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/led_fritzing_breadboard.png %}">
+  <figcaption style="text-align: center;"><strong></strong> Breadboard Diagram of Simple LED Circuit </figcaption>
+</figure>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/led_fritzing_schematic.png %}">
+  <figcaption style="text-align: center;"><strong></strong> Schematic Diagram of Simple LED Circuit </figcaption>
+</figure>
+
+**Before you plug the LED in, notice - Light-Emitting Diodes, are unidirectional, meaning that they only allow current to flow in one direction. Most manufacturers denote which side is which by making the positive node (or cathode) longer than the negative node (or anode). Ensure that your LED is plugged in the right direction!**
+
+
+### Traffic Light Circuit
+
+Make a traffic light. **Use the components in the bag with BLUE dot**
+
+We will utilize a dipswitch (a name for that type of switch) placed over the DIP Support gap. Again, see the image below for help. Make sure the switches are fully in the ON or OFF positions.
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/traffic_light_breadboard.jpg %}">
+  <figcaption style="text-align: center;"><strong></strong> Example of Traffic Light LED Circuit </figcaption>
+</figure>
+
+**Make sure the ground is connected on both sides of the breadboard. If you have a split rail make sure the ground rails are also connected.**
+
+### Buzzer Circuit
+
+Make a buzzer circuit. Use the schematic to take the 4 components and connect the on the breadboard in order to make it turn on an LED and a buzzer everytime you press a button.
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/buzzer_items.png %}">
+  <figcaption style="text-align: center;"><strong></strong> Items needed for Buzzer Circuit </figcaption>
+</figure>
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/buzzer_schematic.png %}">
+  <figcaption style="text-align: center;"><strong></strong> Schematic of Buzzer Circuit </figcaption>
+</figure>
+
+*Notice: while it is a diode like the LEDs, buzzers are more fragile than the LEDS are. If you set up the buzzer's polarity  in the wrong direction, the buzzer could break. To avoid this, ensure that it is going in the right direction by pointing the cathode (the side indicated as "positive" on the top of the component) to the positive side of the circuit. Hopefully though, even if the buzzer breaks, electricity will still flow, so the rest of the circuit should still work.*
+
+## Further Exploration
+
+Using these bins of random components, build your own circuit. For the components you chose, how do they work? What interesting thing can you do with these components? 
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/02_breadboard/extra_components.jpg %}">
+</figure>
+
+Some ideas:
+- LEDs in a line, in a matrix.
+- Charge capacitors and discharge them across LEDs
+-	Figure out how to connect a potentiometer (variable resistor) and how to use it to dim an LED.
+
+After trying something try drawing the schematic of what you made.
+
+If you want to do this more on your own, you can also visit the ECEn shop to buy any number of other parts. Almost any part you can think of comes in a version that will fit on a breadboard.
+
+## Additional Information and Resources
+
+### Help Video
+
+<div style="display: flex; justify-content: center;">
+    <iframe width="1280" 
+            height="720" 
+            src="https://www.youtube.com/embed/y2JopR6cwqk?si=BbLc3-5RrFuNJg5C" 
+            title="Breadboard lab - Youtube Player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+</div>
+
+### Breadboards
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/02_breadboard/front_breadboard.jpg %}">
@@ -44,76 +162,18 @@ In contrast to the power rails along the long side, **terminal strips** are buss
 
 Breadboard busses are notable as they support connections without requiring you to manually attach every component with solder or another permanent method. What we will be doing today is utilizing a breadboard to create various circuits.
 
-## Equipment and Materials
 
-- breadboard
-- at least four LED lights
-- at least four resistors
-- button
-- wires to connect components
-- DIP Switch
-- power source (battery, connector and screw terminals)
+<!--      Dynamic figure numbering script      -->
+<!-- This block is not visible to the students -->
+<script>
+  // Select all figures on the page
+  const figures = document.querySelectorAll('figure');
 
-
-## Procedure
-
-### Simple LED Circuit
-
-Start by inserting the screw terminal into the red and blue power rails *(see the image below)*; then put red and black wires into the screw terminals and tighten the screws so that you can connect the battery to the breadboard easier.
-
-Now we will set up the first circuit. Do this by connecting a resistor from one of the power rails to a terminal strip, and a wire from the other power rail to another terminal strip. Now you must connect the blue (square) LED by placing one end in each of the terminal strips you are using. 
-
-*Before you plug the LED in, notice - Light-Emitting Diodes, are unidirectional, meaning that they only allow current to flow in one direction. Most manufacturers denote which side is which by making the positive node (or cathode) longer than the negative node (or anode). Ensure that your LED is plugged in the right direction!*
-
-Our LEDs are less sensitive than other diodes, so if plugged in the wrong way, there is less risk of breaking, but the solution, but you will notice that the LED won't turn on unless you plug it in right.
-
-<figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/circuit1.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> First circuit picture with one blue led.</figcaption>
-</figure>
-
-
-### Add A Button
-
-Next, add a button inline in the circuit to control the light. You can put it anywhere in the circuit because any break in current will prevent the LED from lighting up.
-
-<figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/circuit3.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> Second circuit picture with a button.</figcaption>
-</figure>
-
-
-### Traffic Light Circuit
-
-Next, we will build a circuit like a traffic light. To do this, we will utilize a dipswitch (a name for that type of switch) placed over the DIP Support gap. Again, see the image below for help. While not always legible, the dipswitch should have an arrow labeled "ON" that will help with turning on and off the lights as desired. Make sure when you toggle the switch, you fully push it to one side or the other. DIP switches can be quite fickle and can get stuck halfway between on and off if not fully switched in one direction or the other. Also note that the dipswitch creates a physical break in the circuit, so it doesn't matter which direction you place over the DIP support.
-
-Sometimes your components can start to be difficult to insert and remove from the breadboard. To help this, straighten out the pins by loosely pinching each one with your fingers and running them along the length of them until it becomes easier to work with.
-
-Repeating the process from the one LED, place three other LEDs (ideally red, yellow and green for the traffic light effect) inline with the dipswitch to produce a circuit that looks something like this:
-
-<figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/02_breadboard/circuit2.jpg %}">
-  <figcaption style="text-align: center;"><strong></strong> Third circuit picture.</figcaption>
-</figure>
-
-## Further Exploration
-
-Using the components that we have given you, make a new circuit according to your own design! You could use different color LEDs, new layouts, as well as buttons, switches, or the buzzer; so long as it is according to your own design! If you want to do this more on your own, you can also visit the ECEn shop to buy any number of other parts. Almost any part you can think of comes in a version that will fit on a breadboard.
-
-## Post-lab Work
-
-Recall how the square LED was much easier to see, and much nicer to look at than the other LEDs. This is because of how its cover diffuses light. For the post-lab, find an object at home that will work well as a light diffuser to put over one of your other LEDs. *(Hint: Try to find something translucent. If it is too solid, the light won't be able to get through, but if it is too clear, the light won't disperse as desired)*. Make the LED circuit again, and see how you can change the way the LED appears and lights up a space based on the diffuser you use.
-
-## Additional Help Video
-
-<div style="display: flex; justify-content: center;">
-    <iframe width="1280" 
-            height="720" 
-            src="https://www.youtube.com/embed/y2JopR6cwqk?si=BbLc3-5RrFuNJg5C" 
-            title="Breadboard lab - Youtube Player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-    </iframe>
-</div>
+  // Loop through each figure and update the caption with dynamic numbering
+  figures.forEach((figure, index) => {
+    const figcaption = figure.querySelector('figcaption strong');
+    if (figcaption) {
+      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
+    }
+  });
+</script>
