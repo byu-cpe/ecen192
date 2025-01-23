@@ -22,6 +22,7 @@ NOTES:
 
 A breadboard, in circuitry, is a tool used primarily for prototyping or simple circuit development. They are especially useful because of their ability to be changed easily and their ability to work with a multitude of components. In addition to breadboards, we will be using LEDs and wires to create three or four circuits to better understand why breadboards are useful and how they function.
 
+
 In todays lab you will:
   - Setup your breadboard
   - Build a simple LED circuit
@@ -52,11 +53,13 @@ In todays lab you will:
 - breadboard
 - at least four LED lights
 - at least four resistors
+- button
 - wires to connect components
 - DIP Switch
 - power source (battery, connector and screw terminals)
 - button
 - buzzer
+
 
 ## Procedure
 

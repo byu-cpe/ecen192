@@ -20,11 +20,11 @@ NOTES:
 
 ## Overview
 
-In this lab, you will learn the basics of computer networking and the structure of Wi-Fi packets. You will then use this to turn your y-board into a Wi-Fi sniffer, that will be able to identify the unique signature of any device communicating a Wi-Fi network. Lastly, you will connect your y-board to the BYU Wi-Fi network and control it from the internet. This lab will transition into next week’s lab where you will explore vulnerabilities in this code and hack each other’s boards.
+In this lab, you will learn the basics of computer networking and the structure of Wi-Fi packets. You will then use this to turn your Y-Board into a Wi-Fi sniffer, that will be able to identify the unique signature of any device communicating a Wi-Fi network. Lastly, you will connect your Y-Board to the BYU Wi-Fi network and control it from the internet. This lab will transition into next week’s lab where you will explore vulnerabilities in this code and hack each other’s boards.
 
 ## Background/Preparation
 
-You’ve probably heard the terms Wi-Fi and the internet and likely use them daily. However, these terms are not synonymous and are often confused. **Wi-Fi** is a protocol for transmitting data over electromagnetic waves from a user device (i.e. your phone or laptop) to an access point, typically a router in your home. Your router then connects via a modem to the **internet**, a global network of connected computers and servers. In short, Wi-Fi is the way you send data wirelessly and can access the internet, and the internet is a massive web of computers connected all around the world. While you might be most familiar with accessing the internet through a browser, there are many other ways to do so, one of which we will explore today using your y-board.
+You’ve probably heard the terms Wi-Fi and the internet and likely use them daily. However, these terms are not synonymous and are often confused. **Wi-Fi** is a protocol for transmitting data over electromagnetic waves from a user device (i.e. your phone or laptop) to an access point, typically a router in your home. Your router then connects via a modem to the **internet**, a global network of connected computers and servers. In short, Wi-Fi is the way you send data wirelessly and can access the internet, and the internet is a massive web of computers connected all around the world. While you might be most familiar with accessing the internet through a browser, there are many other ways to do so, one of which we will explore today using your Y-Board.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/09_yb_networking/wifi_diagram.jpg %}" style="display: block; margin: auto;">
@@ -35,26 +35,26 @@ A Wi-Fi transmission consists of packets, which are bundles of data that contain
 
 ## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code.
-2. Click the “Source Control” button on the left toolbar.
-3. Click “Clone Repository.”
+2. Click the "Source Control" button on the left toolbar.
+3. Click "Clone Repository".
   *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
-4. Enter the url: [https://github.com/byu-ecen-192/y-board-networking.git](https://github.com/byu-ecen-192/y-board-networking.git) and hit Enter.
-5. A window will open and ask you to select the destination folder. Choose where to put it.
-6. Open the PlatformIO Project.
-7. Build and Upload the code in the main.c file to the Y-Board.
+1. Enter the url: [https://github.com/byu-ecen-192/y-board-networking.git](https://github.com/byu-ecen-192/y-board-networking.git) and hit Enter.
+2. A window will open and ask you to select the destination folder. Choose where to put it.
+3. Open the PlatformIO Project.
+4. Build and Upload the code in the main.c file to the Y-Board.
 
 ### Wifi Sniffer
 
-After uploading the code, it will turn your y-board into a Wi-Fi sniffer, which is a device that can listen to any Wi-Fi packets being sent, no matter the Wi-Fi network it is being sent on. A lot of the data in a Wi-Fi packet is encrypted, so that an attacker cannot intercept your information. However, there are some things we can tell from a sniffed packet. Every Wi-Fi packet contains a unique signature called a MAC address, which identifies the device that sent it. Every device in the world has a unique MAC address that no one shares so we can tell when the same device has sent multiple packets. Additionally, the first six digits of the MAC address uniquely identify the device manufacturer and by reading this, we can identify what company or organization made the device.
+After uploading the code, it will turn your Y-Board into a Wi-Fi sniffer, which is a device that can listen to any Wi-Fi packets being sent, no matter the Wi-Fi network it is being sent on. A lot of the data in a Wi-Fi packet is encrypted, so that an attacker cannot intercept your information. However, there are some things we can tell from a sniffed packet. Every Wi-Fi packet contains a unique signature called a MAC address, which identifies the device that sent it. Every device in the world has a unique MAC address that no one shares so we can tell when the same device has sent multiple packets. Additionally, the first six digits of the MAC address uniquely identify the device manufacturer and by reading this, we can identify what company or organization made the device.
 
-Make sure switch 2 is in the down position before turning the y-board on to enable sniffing mode. Also make sure your SD card is inserted. If it is not, press the reset button after inserting it. If your screen says “OUI Lookup not available,” ask a TA and they can help. Once on, you will see a bunch of blinking lights ranging from red (for a strong intercepted signal) to blue (a weak one). The knob controls the LED brightness. Your board is keeping a list of the most recent senders and assigns an LED to each one of them. Thus, when the same light blinks several times, it is the same device sending multiple packets. Two of the most recent ones are listed by their manufacturer name on the screen.
+Make sure switch 2 is in the down position before turning the Y-Board on to enable sniffing mode. Also make sure your SD card is inserted. If it is not, press the reset button after inserting it. If your screen says “OUI Lookup not available,” ask a TA and they can help. Once on, you will see a bunch of blinking lights ranging from red (for a strong intercepted signal) to blue (a weak one). The knob controls the LED brightness. Your board is keeping a list of the most recent senders and assigns an LED to each one of them. Thus, when the same light blinks several times, it is the same device sending multiple packets. Two of the most recent ones are listed by their manufacturer name on the screen.
 
 On campus, especially in the EB, you may notice Hewlett Packard Enterprises frequently because they are the manufacturer of the Wi-Fi access points in the building.
 
-Walk around for a bit, see what different devices you can pick up and at what strength. Can you get it to see your phone? What about another y-badge? It will appear as Espressif Inc
+Walk around for a bit, see what different devices you can pick up and at what strength. Can you get it to see your phone? What about another Y-Board? It will appear as Espressif Inc.
 
 ### Explore Channels
 
@@ -78,18 +78,3 @@ Try changing the color of your board remotely from the computer. We will pick up
 ## Further Exploration
 
 Try using the Wi-Fi sniffer in different locations, such as a public place off-campus or your apartment. What kind of devices can you detect there? Can you locate a device by its signal strength? This might be challenging, but in areas with fewer Wi-Fi devices, it is possible.
-
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>

@@ -20,7 +20,7 @@ NOTES:
 
 ## Overview
 
-This lab will introduce you to the process of coding on the Y-badge. We will first write some code for the LEDs and buttons and upload it to the Y-badge. 
+This lab will introduce you to the process of coding on the Y-Board. We will first write some code for the LEDs and buttons and upload it to the Y-Board. 
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/06_yb_buttons_switches/Y-Board.jpg %}" style="display: block; margin: auto;">
@@ -33,12 +33,12 @@ This lab will introduce you to the process of coding on the Y-badge. We will fir
 
 ## Equipment and Materials
 
-- Y-Badge
+- Y-Board
 - USB-C cord
 
 ## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code.
 2. Click the “Source Control” button on the left toolbar.
@@ -146,7 +146,7 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
 
 While loops run and re-run the code inside them until a certain condition is met. This saves us the trouble of copy-pasting the same lines of code over and over again. We can also use while loops to make our code run forever. What if we wanted to use a while loop to make the first 10 leds blink one time each, in sequence? We could do something like the following:
 
-Paste this code inside the brackets of the `void loops_exploration()` function, and ___don't forget to change which funtion is commented out under___ `int main()`. Also feel free to change the number of LEDs or the color. 
+Paste this code inside the brackets of the `void loops_exploration()` function, and ___don't forget to change which function is commented out under___ `int main()`. Also feel free to change the number of LEDs or the color. 
 ```c
 int currentLed = 1;
 while(currentLed <= 10) {
@@ -210,7 +210,7 @@ Replace the previous code with this example code under the `void loop_exploratio
 
 #### Activity
 
-- Make a single LED circle the board continueously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
+- Make a single LED circle the board continuously. Use whatever color or delay time you wish and show a neighbor when you have completed this challenge.
     - Hint: use the code from the For Loops section as a base, change the number of LEDs, and make it loop forever (putting everything inside a `while(true)` loop, like in the example above).
 
 <figure class="image mx-auto" style="max-width: 750px">
@@ -361,19 +361,3 @@ Come up with your own challenge to combine the use of LEDs and at least two more
 <li> Any other combination you can think of </li>
 </ul>
 </details>
-
-
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>

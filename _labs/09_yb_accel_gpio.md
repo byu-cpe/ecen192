@@ -22,7 +22,7 @@ NOTES:
 
 This lab is about reading data off an accelerometer and sending that information to an off-board device using the GPIO pins. In this case, we are sending the data to a small OLED screen that displays how much acceleration the board is experiencing in real time in 3 dimensional space.
 
-**There is a Help Video section at the bottom that goes with this lab. Some intructions may require you to watch the video or will be easier to understand when following along with the video.** 
+**There is a Help Video section at the bottom that goes with this lab. Some instructions may require you to watch the video or will be easier to understand when following along with the video.** 
 
 <!-- Put "oled_accel.jpg" here -->
 <figure class="image mx-auto" style="max-width: 750px">
@@ -60,11 +60,11 @@ The GPIO pins on your Y-board are found on the back. While there are six pins, o
 
 ## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code.
-2. Click the “Source Control” button on the left toolbar.
-3. Click “Clone Repository.”
+2. Click the "Source Control" button on the left toolbar.
+3. Click "Clone Repository".
   *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
 4. Enter the url: [https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git](https://github.com/byu-ecen-192/y-board-accelerometer-gpio.git) and hit Enter.
 5. A window will open and ask you to select the destination folder. Choose where to put it.
@@ -126,18 +126,3 @@ Go to LearningSuite and submit your attendance and feedback for this lab
             allowfullscreen>
     </iframe>
 </div> 
-
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>

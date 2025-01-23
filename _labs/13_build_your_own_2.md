@@ -1,5 +1,5 @@
 ---
-title: "Build Your Own Project Part 1"
+title: "Build Your Own Project Part 2"
 number: 13
 layout: lab
 ---

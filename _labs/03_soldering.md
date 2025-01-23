@@ -2,6 +2,7 @@
 title: "Soldering"
 number: 3
 layout: lab
+toc: false
 ---
 
 <!-- 
@@ -22,6 +23,7 @@ NOTES:
 
 Today you will be learning to solder. Soldering is when you join 2 electrical components together with metal to make a mechanical and electrical connection.
 
+
 ## Background/Preparation
 
 **CAUTION! Solder is done by melting lead solder, the iron gets hot. Do not leave it unattended.**
@@ -40,6 +42,7 @@ Today you will be learning to solder. Soldering is when you join 2 electrical co
     </iframe>
 </div>
 
+
 ## Equipment and Materials
 
 - Soldering Iron
@@ -49,6 +52,7 @@ Today you will be learning to solder. Soldering is when you join 2 electrical co
 - Circuit board
 - Mask
 - Fan
+
 
 ## Procedure
 
@@ -69,6 +73,7 @@ Today you will be learning to solder. Soldering is when you join 2 electrical co
 8. Repeat 3-7.
 
 9. Clean up station and make sure everything is off. 
+
 
 ## Additional Information and Resources
 

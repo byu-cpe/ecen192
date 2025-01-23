@@ -18,15 +18,15 @@ NOTES:
   - If you want to copy and past the shape above, you may, but remove the {% raw %} {% endraw%} tags in the <img src> block.
 --> 
 
-## Overview:
+## Overview
 
-In this lab, you will learn the basics of speakers and frequency generation. You will also learn how we store sound files and what a digital sample is. To conclude, you will explore some basic audio filters, and will have the chance to experiment with a few of these using your y-badge.
+In this lab, you will learn the basics of speakers and frequency generation. You will also learn how we store sound files and what a digital sample is. To conclude, you will explore some basic audio filters, and will have the chance to experiment with a few of these using your Y-Board.
 
 ## Introduction
 
 One of the most important aspects of any computer system is being able to interact with it. Audio is one of the most common forms of human-computer interaction. Think back to the last 24 hours. You likely used computer audio several times to watch a YouTube video, Instagram reel, or even make a phone call.
 
-### Speakers:
+### Speakers
 
 Speakers work by converting electrical signals, called samples, into sound waves that we can hear. This is done through an electromagnet and a diaphragm. As the electromagnet pulls the diaphragm forwards and backwards, it creates pressure waves that are propagated through the air as sound.
 
@@ -44,7 +44,7 @@ Here is a graph of a wave that represents a tone with the frequency 440 Hz (A4 o
   <figcaption style="text-align: center;"><strong></strong> a sine wave on a graph, which is the tone A-440.</figcaption>
 </figure>
 
-This wave is continuous, meaning it is defined at every point with no gaps. Computers, however, do not have infinite memory to store these samples, so we must choose when to take a sample. The more samples we take, the better the audio quality. However, there reaches a point where the human ear can’t tell the difference, so we don’t go overboard. Generally, we take 44,100 samples per second (44,100 Hz), though due to computational limitation so the y-badge, we use slightly lower than that. Here is the same tone but how we could sample it.
+This wave is continuous, meaning it is defined at every point with no gaps. Computers, however, do not have infinite memory to store these samples, so we must choose when to take a sample. The more samples we take, the better the audio quality. However, there reaches a point where the human ear can’t tell the difference, so we don’t go overboard. Generally, we take 44,100 samples per second (44,100 Hz), though due to computational limitation so the Y-Board, we use slightly lower than that. Here is the same tone but how we could sample it.
 
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link /assets/07_mic_speakers/sampled_tone.png %}" style="display: block; margin: auto;">
@@ -55,11 +55,11 @@ These samples are stored in an audio file. The most basic type of audio file is 
 
 ## Procedure
 
-### Getting the starter code:
+### Getting the starter code
 
 1. Open vs code
-2. Click the “Source Control” button on the left toolbar
-3. Click “Clone Repository”
+2. Click the "Source Control" button on the left toolbar
+3. Click "Clone Repository"
   *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
 4. Enter the url: [https://github.com/byu-ecen-192/y-board-mic-speakers.git](https://github.com/byu-ecen-192/y-board-mic-speakers.git) and hit Enter
 5. A window will open and ask you to select the destination folder. Choose where to put it.
@@ -68,7 +68,7 @@ These samples are stored in an audio file. The most basic type of audio file is 
 
 ### Explore Tone Generation
 
-First, experiment with generating simple tones. Given a frequency, we can tell the y-badge all the samples it needs to play a single tone. Open the code with PlatformIO. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
+First, experiment with generating simple tones. Given a frequency, we can tell the Y-Board all the samples it needs to play a single tone. Open the code with PlatformIO. Click the upload button. Once complete, the screen should show the current selected frequency. By pressing button 1, you should be able to generate and play a tone at that frequency. You can adjust the current frequency and the associated musical note by turning the potentiometer knob. The knob can be a little sensitive, so you might have to make small rotations to get the note you want.
 
 ### Putting Tones Together
 
@@ -90,7 +90,7 @@ by removing the slashes in front of it. In the code, we already have several son
 - star_wars
 - fight_song
 
-Insert one of these between the parentheses, replacing the phrase “put something here” to have the y-badge play this song when you press button 1. Upload the code and try it. If you are feeling adventurous, you can look at the code to see if there is another secret song programmed in. You might want to look at the file tone_gen.h. You can also create your own by putting in a string of notes between quotation marks. Check out the table at the end of this document to see the syntax on note entry.
+Insert one of these between the parentheses, replacing the phrase "put something here" to have the Y-Board play this song when you press button 1. Upload the code and try it. If you are feeling adventurous, you can look at the code to see if there is another secret song programmed in. You might want to look at the file tone_gen.h. You can also create your own by putting in a string of notes between quotation marks. Check out the table at the end of this document to see the syntax on note entry.
 
 ### Play your audio file
 
@@ -100,7 +100,7 @@ Playing a song might be interesting, but we want to be able to play any audio fi
 play_wav():
 ```
 
-Upload the code and you will hear your y-badge play Ode to Joy when you press button 1.
+Upload the code and you will hear your Y-Board play Ode to Joy when you press button 1.
        
 ### Implement high and low pass filters
 
@@ -119,9 +119,9 @@ There are two main kinds of filters in audio processing, called high-pass filter
 
 In the paratheses of the filters function, replace the phrase “put something here” with the frequency around which we want to remove, which is 440. Upload this code. When you press button one, you will hear the original sound file. When you press button 2, your board will filter the file and play the new audio. Can you hear what the secret word is? The tone won’t be removed completely because it is so loud in comparison, but you should be able to understand the voice now.
 
-## Further Exploration:
+## Further Exploration
 
-You were able to play the .wav files we gave you. You can also add your own on the SD card and play them. All you have to do is change the FILENAME at the top of the code to the new filename. The y-badge is only coded to play .wav files with a single channel and a sample rate of 16,000 Hz. Most audio editing tools, like Audacity, can set this.
+You were able to play the .wav files we gave you. You can also add your own on the SD card and play them. All you have to do is change the FILENAME at the top of the code to the new filename. The Y-Board is only coded to play .wav files with a single channel and a sample rate of 16,000 Hz. Most audio editing tools, like Audacity, can set this.
 If you want to play your own song using tones, instead of putting the variable name for the song, insert a string of note instructions between quotes like this:
 ```c
 “C4 E4 G4”
@@ -129,27 +129,13 @@ If you want to play your own song using tones, instead of putting the variable n
 
 Here is a table for the note notation. It should be noted that the number following the note name does not signify the octave as in most musical notation but the duration of the note.
 
-| Command | Notation | Example |
-| ------- | -------- | ------- |
-| Play a note | Use the note name | `"A B C"` |
-| Set the note duration | Use numbers to indicate the "fraction" of the note (4 - quarter, 8 - eighth, etc.). default is 4. | `"A4 B8 C1"` |
-| Sharps / Flats | use a `+` for sharps, and a `-` for flats | `"C+ F- G+"` |
-| Set the tempo | Use `T` followed by a number (in units of BPM) | `“T80 A8 B8 C8 T120 A8 B8 C8”` | 
-| Set the octave | Use `O` followed by a number between 4 - 7 | `“O4 C4 O5 C4”` |
-| Rest | Use the letter `R` followed by the length (same lengths as notes) | `“C4 R8 E4”` |
-| Dotted Rhythm | Place a `.` after a note to hold the note 50% longer | `“C4 D4. C4”`|
+| Command               | Notation                                                                                          | Example                        |
+| --------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ |
+| Play a note           | Use the note name                                                                                 | `"A B C"`                      |
+| Set the note duration | Use numbers to indicate the "fraction" of the note (4 - quarter, 8 - eighth, etc.). default is 4. | `"A4 B8 C1"`                   |
+| Sharps / Flats        | use a `+` for sharps, and a `-` for flats                                                         | `"C+ F- G+"`                   |
+| Set the tempo         | Use `T` followed by a number (in units of BPM)                                                    | `“T80 A8 B8 C8 T120 A8 B8 C8”` |
+| Set the octave        | Use `O` followed by a number between 4 - 7                                                        | `“O4 C4 O5 C4”`                |
+| Rest                  | Use the letter `R` followed by the length (same lengths as notes)                                 | `“C4 R8 E4”`                   |
+| Dotted Rhythm         | Place a `.` after a note to hold the note 50% longer                                              | `“C4 D4. C4”`                  |
 
-<!--      Dynamic figure numbering script      -->
-<!-- This block is not visible to the students -->
-<script>
-  // Select all figures on the page
-  const figures = document.querySelectorAll('figure');
-
-  // Loop through each figure and update the caption with dynamic numbering
-  figures.forEach((figure, index) => {
-    const figcaption = figure.querySelector('figcaption strong');
-    if (figcaption) {
-      figcaption.textContent = `Figure ${index + 1}:`; // Numbering starts at 1
-    }
-  });
-</script>
