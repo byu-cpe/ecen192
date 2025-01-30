@@ -55,7 +55,7 @@ We often compare this law to water in pipes.
 Most multimeters can measure DC voltage, AC voltage, DC current, resistance, can perform diode tests, and can measure battery resistance. 
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/03_multimeters_measurements/Multimeter.png %}" style="display: block; margin: auto;">
+  <img src="{% link assets/03_multimeters_measurements/multimeter.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong><br>
 1. LCD display<br>
 2. “FUNC” Push button<br>
