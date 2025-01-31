@@ -110,6 +110,11 @@ Image credit: Neoteck User Manual</figcaption>
 
 **Remember:** Make sure you have the multimeter to measure resistance (Ω symbol)
 
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/03_multimeters_measurements/MultimeterO.HEIC %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> Thermistor Circuit Schematic </figcaption>
+</figure>
+
 - Grab some resistors from the red bag
 
 - Read their color codes to figure out their resistance
@@ -131,6 +136,11 @@ Image credit: Neoteck User Manual</figcaption>
 ### Voltage
 
 **Note:** Make sure you have set the multimeter in the right setting to measure DC voltage (V symbol).
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/03_multimeters_measurements/MultimeterV.HEIC %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> Thermistor Circuit Schematic </figcaption>
+</figure>
 
 - Build the circuit
 
@@ -191,6 +201,11 @@ We will be using a temperature sensor for this lab; a temperature sensor contain
 ### Current
 
 **Note:** Make sure you have set the multimeter in the right setting to measusre DC current (A symbol).
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link /assets/03_multimeters_measurements/MultimeterA.HEIC %}" style="display: block; margin: auto;">
+  <figcaption style="text-align: center;"><strong></strong> Thermistor Circuit Schematic </figcaption>
+</figure>
 
 - Build the circuit
 
