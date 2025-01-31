@@ -1,6 +1,6 @@
 ---
-title: "Bonus Lab"
-number: 11
+title: "Show and Tell"
+number: 14
 layout: lab
 ---
 
