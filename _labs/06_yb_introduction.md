@@ -106,7 +106,7 @@ Now you're ready to upload the code to the Y board.
 3. If everything went well, the bottom of the screen should display 'Success.' If you don't see this, ask a TA for help.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/05_yb_introduction/SuccessUpload.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/05_yb_introduction/SuccessUpload.jpg %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
