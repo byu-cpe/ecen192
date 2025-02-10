@@ -206,7 +206,7 @@ In our setup() function, we initialize all the necessary parts of the board by c
 1. Let's run the code! First, plug the board into the computer. Next, push the upload button at the bottom left or top right of the vs code screen to send it to the esp32.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/05_yb_introduction/uploadBottom.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/05_yb_introduction/Upload.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>   
 
