@@ -51,7 +51,7 @@ This lab will introduce you to the process of coding on the Y-Board. We will fir
 
 **As you go through this lab, copy the example code into the respective section on VS Code main.cpp file to explore how each part works.** Don't forget to uncomment the corresponding function under the `int main()` section near the top.
 
-### LED Exploration (5-10 minutes)
+### led_exploration() (5-10 minutes)
 
 - Each LED, labeled L1 to L20, is an RGB (red-green-blue) LED, which means that it is actually three smaller red, green, and blue lights packaged together. You can set the brightness of the red, green, and blue lights individually, making the LED  any color you like.
 
@@ -140,7 +140,7 @@ Copy and paste these two lines of code inside the brackets under the `void led_e
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-### Loops (15 minutes)
+### loop_exploration() (15 minutes)
 
 #### While Loops
 
@@ -218,7 +218,7 @@ Replace the previous code with this example code under the `void loop_exploratio
   <figcaption style="text-align: center;"><strong></strong></figcaption>
 </figure>
 
-### Buttons and Switches (15 minutes)
+### button_exploration() (15 minutes)
 
 #### Functions
 
@@ -311,7 +311,7 @@ Replace the previous example with this code and upload it. **Remember to be care
 </figure>
 
 
-### Optional: Potentiometers
+### potentiometer_exploration()
 
 #### Functions
 The function to get the position of the wiper looks like this:
@@ -343,7 +343,7 @@ while(true){
 ```
 - Multiplying the value by 255/100 is not necessary, but it will make the max value be 255 instead of 100 so that the max brightness or color can go up to 255.
 
-### Your Own Challenge (Post-lab if necessary)
+### final_challenge()
 
 Come up with your own challenge to combine the use of LEDs and at least two more of the following:
 - buttons
