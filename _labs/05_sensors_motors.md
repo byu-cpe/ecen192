@@ -35,7 +35,7 @@ For this Circuit we need our battery, motor, transistor, photoresistor, and resi
 Follow the circuit diagram below:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/03_multimeters_measurements/PhotoFanSchem.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/04_motors_actuators/PhotoFanSchem.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> Light Sensor Circuit Schematic </figcaption>
 </figure>
 
@@ -43,12 +43,12 @@ Here’s one way you could configure this circuit.
 <span style="color: red;">WARNING!</span> If connected incorrectly, the transistor can get **REALLY** hot and burn your finger, so please be carful!
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/03_multimeters_measurements/PhotoFanBoard.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/04_motors_actuators/PhotoFanBoard.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> Light Sensor Circuit </figcaption>
 </figure>
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/03_multimeters_measurements/HowPhotoWorks.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/04_motors_actuators/HowPhotoWorks.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> How the Photoresistor Works </figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ For this Circuit we need our battery, motor, switch, and potentiometer.
 Follow the circuit diagram below:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/03_multimeters_measurements/PotentiometerSchem.png %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/04_motors_actuators/PotentiometerSchem.png %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> Potentiometer + Fan Circuit </figcaption>
 </figure>
 
