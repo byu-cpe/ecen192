@@ -1,5 +1,5 @@
 ---
-title: "Mic, Speakers and Digital Signals"
+title: "Y-board Mic, Speakers and Digital Signals"
 number: 8
 layout: lab
 ---
@@ -63,14 +63,14 @@ Now that you are able to play single notes, we can string them together to make 
 · comment out the tone_gen_loop() function. (comment out code by putting two slashes (//) in front of it.)
 · Uncomment the play_notes() function.
 · We already have several songs that you can choose from. They are:
-    o star_spangled_banner
-    o mario
-    o star_wars
-    o fight_song
-    o If you are feeling adventurous, you can look at the code to see if there is another secret song programmed in. You might want to look at the tone_gen.h file.
+  - star_spangled_banner
+  - mario
+  - star_wars
+  - fight_song
+  - If you are feeling adventurous, you can look at the code to see if there is another secret song programmed in. You might want to look at the tone_gen.h file.
 · Insert one of these between the parentheses, replacing the phrase “put something here” to have the Y-Board play this song when you press **button 1**.
 · Upload the code and try it.
-    o (you may have to push the **“reset”** button on your board after you upload)
+  - (you may have to push the **“reset”** button on your board after you upload)
 · To play your own song using tones, replace the variable name for the song with a string of note instructions, making sure to **include the quotation marks**, like this: "C4 E4 G4". (The table below explain the notation more.)
 
 | Command               | Notation                                                                                          | Example                        |
@@ -101,34 +101,34 @@ The graph below shows this concept: the **y-axis** represents sound volume (gain
   <figcaption style="text-align: center;"><strong></strong> A graph of frequency vs. gain (strength), which shows visually how a filter mutes specific frequencies. </figcaption>
 </figure>
 
-o Comment out the last function you used.
-o Uncomment the **filter_tone()** function.
-o Upload the code
-o This function gives you and example of a filtered signal. When you press **button 1** You will hear a single tone and if you listen closely there is a quiet voice speaking at the same time.
-o We want to use a filter to remove the tone and understand what is being said. Pressing **button 2** applies a bandpass filter to this recorded signal and plays the filtered version to you.
+ - Comment out the last function you used.
+ - Uncomment the **filter_tone()** function.
+ - Upload the code
+ - This function gives you and example of a filtered signal. When you press **button 1** You will hear a single tone and if you listen closely there is a quiet voice speaking at the same time.
+ - We want to use a filter to remove the tone and understand what is being said. Pressing **button 2** applies a bandpass filter to this recorded signal and plays the filtered version to you.
        
 
 ### record()
 
 Now play with applying filters to sound you record yourself. You will record a sound, then apply a low pass, or band pass filter to it.
 
-o Comment out the last function you used.
-o Uncomment the **record()** function.
-o Press and hold **button 1** to record
-o Use **switch 1** and **switch 2** control the filter settings
-o **Switch 1** down, **switch 2** down = no filtering
-o **Switch 1** up, **switch 2** down = low pass filter applied
-o **Switch 1** down, **switch 2** up = band pass filter applied
-o Press **button 2** to hear the filtered sound
-o Play around with different recordings (example, whistle, snap, low voice, etc.) and see how different filters affect this signal.
+ - Comment out the last function you used.
+ - Uncomment the **record()** function.
+ - Press and hold **button 1** to record
+ - Use **switch 1** and **switch 2** control the filter settings
+ - **Switch 1** down, **switch 2** down = no filtering
+ - **Switch 1** up, **switch 2** down = low pass filter applied
+ - **Switch 1** down, **switch 2** up = band pass filter applied
+ - Press **button 2** to hear the filtered sound
+ - Play around with different recordings (example, whistle, snap, low voice, etc.) and see how different filters affect this signal.
 
 
 ### play_song()
 
 To play any song on the Y board, use the play_song() function. Try this out with a prerecorded song first:
 
-o Comment out the last function you used and then uncomment the play_song() function.
-o Upload the code and you will hear your Y-Board play Ode to Joy when you press button 1.
+ - Comment out the last function you used and then uncomment the play_song() function.
+ - Upload the code and you will hear your Y-Board play Ode to Joy when you press button 1.
 
 You were able to play the .wav files we gave you. You can also add your own on the SD card and play them. All you have to do is change the SONG_FILENAME at the top of the code to the new filename. The Y-Board is only coded to play .wav files with a single channel and a sample rate of 16,000 Hz. Most online audio editing tools can set this (examples are TwistedWave, Bear Aduo Editor, and AudioMass)
 
