@@ -39,7 +39,7 @@ In this lab, you will explore the fundamentals of computer networking and the st
 ### Hallway walk – Wi-Fi detection
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/09_yb_networking/wifiDeection.jpg %}" style="display: block; margin: auto;">
+  <img src="{% link /assets/09_yb_networking/wifiDetection.jpg %}" style="display: block; margin: auto;">
   <figcaption style="text-align: center;"><strong></strong> Set up for WIFI Sniffer on Board </figcaption>
 </figure>
 
