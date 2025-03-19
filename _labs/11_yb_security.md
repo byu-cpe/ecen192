@@ -6,76 +6,60 @@ layout: lab
 
 <!-- There is no dynamic figures script on this page, as there are no elements. If you add elements, please go to another page and copy the notice and script at the top and bottom of the page, to keep the formatting of figures consistent. -->
 
-### Notice
-
-<span style="color:LightCoral">This cybersecurity lab provides students with hands-on experience in basic hacking within a controlled environment. All activities are confined to designated devices and systems for educational purposes only. Unauthorized hacking into any other systems, networks, or devices is strictly prohibited.
-Remember, hacking without permission is illegal and can result in severe legal consequences. Always act ethically and respect the boundaries of this lab. Violations of these guidelines may lead to disciplinary action and potential legal repercussions.</span>
-
-## Overview
-
-This lab will introduce you to basic de-hashing and the CIA triangle.
-
-**There is a Help Video section at the bottom that goes with this lab. Some instructions may require you to watch the video or will be easier to understand when following along with the video.**
-
-
-## Equipment and Materials
-
-- Y-Board
-- LED screen
-- Computer or Phone
-
 ## Procedure
+
+This lab introduces basic de-hashing and the CIA triad. Activities are strictly limited to designated devices for educational purposes only. **Unauthorized hacking is illegal and may result in disciplinary and legal consequences. Always act ethically**.
 
 ### Getting the starter code
 
-1. Open vs code.
-2. Click the "Source Control" button on the left toolbar.
-3. Click "Clone Repository".
+· Open vs code.
+· Click the "Source Control" button on the left toolbar.
+· Click "Clone Repository".
   *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
-4. Enter the url: [https://github.com/byu-ecen-192/y-board-cybersecurity](https://github.com/byu-ecen-192/y-board-cybersecurity) and hit Enter.
-5. A window will open and ask you to select the destination folder. Choose where to put it.
-6. Open the PlatformIO Project.
-7. Build and Upload the code in the main.c file to the Y-Board.
+· Enter the url: [https://github.com/byu-ecen-192/y-board-cybersecurity](https://github.com/byu-ecen-192/y-board-cybersecurity) and hit Enter.
+· A window will open and ask you to select the destination folder. Choose where to put it.
+· Open the PlatformIO Project.
+· Build and Upload the code in the main.cpp file to the Y-Board.
 
 ### Webpage Exploration
 
-    1. Turn on Y-Board
-    2. Open Y-Board webpage http://ecen192.byu.edu/ and log in
-    3. Explore the site, click things
-    4. Click on Y-Board button on webpage
-    5. Look on your LED screen to find your IP address and password
-    6. Change the color of your Y-Board LEDs like last lab
+· Open the Y-Board webpage http://ecen192.byu.edu/
+· Log in and explore the site.
+· Click on the “Send command” link in the upper right coner.
+· Look on your LED screen to find your IP address and password
+· Change the color of your Y-Board LEDs like last lab
 
-### Webpage Explotation
+### Webpage Hacking
 
-    1. Enter /robots.txt at the end of the domain (i.e. cloudflare.com/robots.txt)
-    2. Look for suspicious pages
-        a. Hint: Explore the disallowed pages
+· Enter /robots.txt at the end of the domain (i.e. http://ecen192.byu.edu/robots.txt)
+· Look for suspicious pages
+    - Hint: Explore the disallowed pages
+    - See more hints in “additional hints and things to hack” section at bottom of page.
 
 ### Breach of Confidentiality (seeing something you shouldn’t see)
 
-    1. Find the IP address of your partner on their LED screen
-        a. Hint: Consider “shoulder-surfing” their LED screen
-    2. Input your partner’s IP address to receive their password hash
-    3. Use one of the following tools to reveal the hashed password: 
-        a. DCode
-        b. Hashes
+· Find the IP address of a fellow student on their LED screen
+· Input your fellow student’s IP address to receive their password hash
+· Use the following website to reveal the hashed password:
+    - https://hashes.com/en/decrypt/hash
     
 ### Breach of Integrity (changing something that you shouldn’t change)
 
-    1. Return to the Y-Board section of the webpage
-    2. Input your partner’s Y-Board IP address and the password you de-hashed
-    3. Change the LED colors of your partner’s badge
+· Return to the Y-Board section of the webpage
+· Input your partner’s Y-Board IP address and the password you de-hashed
+· Change the LED colors of your partner’s badge
 
-### Challenges
+### Additional Hints and Things to Try and Hack
 
-    1. Scour the webpage to find easter eggs to send to your partner’s Y-Board 
-        a. Hint: Consider checking other endpoints and disallowed paths
-
-## Post-Lab Work
-
-Show your friend or roommate your project and quickly explain to them how it works. Answer any questions they have to the best of your ability and be prepared to report in class.
-The webpage and Y-Boards will be functional across BYU campus. Continue searching for easter eggs using the steps we followed. 
+· One of the disallowed pages has a list of commands
+    - (using pretty print makes the pages easier to read)
+· If you found the /get_commands page you will find a list of commands
+· In there you can find a description of how the commands work and an example url
+· Make changes to the url and put it in your search bar to run the command and parameters you’d like to get the command working
+    - (This is added to the back of http://ecen192.byu.edu/ like you would do for /robots.txt and other pages)
+· Example of how the example on that page will look like in use:
+    - http://ecen192.byu.edu/control_device?control_type=change_led_color&ip_address=192.168.1.1&password=password123&color=%233cec51#3cec51
+· Page will display success Note: The Rickroll is iffy, it may not work despite saying success, just check the last hacked
 
 ## Help Video
 
