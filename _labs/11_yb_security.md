@@ -16,7 +16,7 @@ This lab introduces basic de-hashing and the CIA triad. Activities are strictly 
 · Click the "Source Control" button on the left toolbar.
 · Click "Clone Repository".
   *Note: if you do not see the option to Clone Repository then you will need to open a new window of VisualStudios Code (VSCode)*
-· Enter the url: [https://github.com/byu-ecen-192/y-board-cybersecurity](https://github.com/byu-ecen-192/   y-board-cybersecurity) and hit Enter.
+· Enter the url: [https://github.com/byu-ecen-192/y-board-cybersecurity](https://github.com/byu-ecen-192/y-board-cybersecurity) and hit Enter.
 · A window will open and ask you to select the destination folder. Choose where to put it.
 · Open the PlatformIO Project.
 · Build and Upload the code in the main.cpp file to the Y-Board.
