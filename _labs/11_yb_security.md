@@ -26,7 +26,6 @@ This lab introduces basic de-hashing and the CIA triad. Activities are strictly 
 · Open the Y-Board webpage http://ecen192.byu.edu/
 · Log in and explore the site.
 · Click on the “Send command” link in the upper right coner.
-· Look on your LED screen to find your IP address
 · Change the color of your Y-Board LEDs like last lab
 
 ### Webpage Hacking
