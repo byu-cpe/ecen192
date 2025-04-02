@@ -34,7 +34,7 @@ In this lab we will be using some tools you are likely already familiar with to 
 We often compare this law to water in pipes.
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link /assets/03_multimeters_measurements/WaterAnalogy.png %}">
+  <img src="{% link /assets/03_multimeters_measurements/WaterAnalgy.png %}">
   <figcaption style="text-align: center;"><strong></strong> Ohm's Law Water Analogy </a>
   </figcaption>
 </figure>
